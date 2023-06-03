@@ -1,10 +1,10 @@
 { inputs, pkgs, lib, config, ... }:
 
 with lib;
-let cfg = config.modules.hyprland;
+let cfg = config.modules.desktop.hyprland;
 
 in {
-    options.modules.hyprland= { enable = mkEnableOption "hyprland"; };
+    options.modules.desktop.hyprland= { enable = mkEnableOption "hyprland"; };
     config = mkIf cfg.enable {
 	home.packages = with pkgs; [
         wofi rofi swaybg wlsunset wl-clipboard

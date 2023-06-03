@@ -1,10 +1,10 @@
 { pkgs, lib, config, ... }:
 
 with lib;
-let cfg = config.modules.tmux;
+let cfg = config.modules.cli.tmux;
 
 in {
-    options.modules.gpg = { enable = mkEnableOption "tmux"; };
+    options.modules.cli.tmux = { enable = mkEnableOption "tmux"; };
     config = mkIf cfg.enable {
         programs.tmux = {
             enable = true;

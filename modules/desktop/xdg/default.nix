@@ -1,10 +1,10 @@
 { pkgs, lib, config, ... }:
 
 with lib;
-let cfg = config.modules.xdg;
+let cfg = config.modules.desktop.xdg;
 
 in {
-    options.modules.xdg = { enable = mkEnableOption "xdg"; };
+    options.modules.desktop.xdg = { enable = mkEnableOption "xdg"; };
     config = mkIf cfg.enable {
         xdg.userDirs = {
             enable = true;

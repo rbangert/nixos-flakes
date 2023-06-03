@@ -1,7 +1,7 @@
 {  lib, config, pkgs, ... }:
 with lib;
 let
-    cfg = config.modules.nvim;
+    cfg = config.modules.development.nvim;
     # Source my theme
     jabuti-nvim = pkgs.vimUtils.buildVimPlugin {
         name = "jabuti-nvim";
@@ -13,7 +13,7 @@ let
         };
     };
 in {
-    options.modules.nvim = { enable = mkEnableOption "nvim"; };
+    options.modules.development.nvim = { enable = mkEnableOption "nvim"; };
     config = mkIf cfg.enable {
 
         home.file.".config/nvim/settings.lua".source = ./init.lua;

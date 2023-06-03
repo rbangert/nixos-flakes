@@ -41,8 +41,11 @@
             EDITOR = "nvim";
             DIRENV_LOG_FORMAT = "";
             DISABLE_QT5_COMPAT = "0";
+            DOTS = "$NIXOS_CONFIG_DIR";
+            STUFF = "$HOME/stuff";
+            JUNK = "$HOME/stuff/other";
+            };
         };
-    };
 
     # Install fonts
     fonts = {

@@ -1,10 +1,10 @@
 { pkgs, lib, config, ... }:
 
 with lib;
-let cfg = config.modules.direnv;
+let cfg = config.modules.development.direnv;
 
 in {
-    options.modules.direnv= { enable = mkEnableOption "direnv"; };
+    options.modules.development.direnv= { enable = mkEnableOption "direnv"; };
     config = mkIf cfg.enable {
         programs.direnv = {
             enable = true;

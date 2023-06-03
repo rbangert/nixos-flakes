@@ -1,9 +1,9 @@
 { inputs, lib, config, pkgs, ... }:
 with lib;
 let
-    cfg = config.modules.eww;
+    cfg = config.modules.desktop.eww;
 in {
-    options.modules.eww = { enable = mkEnableOption "eww"; };
+    options.modules.desktop.eww = { enable = mkEnableOption "eww"; };
 
     config = mkIf cfg.enable {
         # theres no programs.eww.enable here because eww looks for files in .config

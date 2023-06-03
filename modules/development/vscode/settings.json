@@ -1,0 +1,161 @@
+{
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "editor.fontVariations": false,
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "workbench.iconTheme": "vscode-icons",
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "type": "line",
+            "foreground": "#000",
+            "background": "#14DBEB",
+            "opacity": 100,
+            "fontWeight": "bold",
+            "icon": "check",
+            "iconColour": "#14DBEB",
+            "gutterIcon": true
+        },
+        "FIXME": {
+            "type": "line",
+            "foreground": "#000",
+            "background": "#F6F5AE",
+            "opacity": 100,
+            "fontWeight": "bold",
+            "icon": "tools",
+            "iconColour": "#F6F5AE",
+            "gutterIcon": true
+        },
+        "BUG": {
+            "type": "line",
+            "foreground": "#000",
+            "background": "#F24236",
+            "fontWeight": "bold",
+            "icon": "bug",
+            "iconColour": "#F24236",
+            "gutterIcon": true
+        },
+        "NOTE": {
+            "foreground": "#000",
+            "background": "#B3B7EE",
+            "fontWeight": "bold",
+            "type": "line",
+            "icon": "code-review",
+            "iconColour": "#B3B7EE",
+            "gutterIcon": true
+        },
+        "[ ]": {
+            "type": "line",
+            "foreground": "#000",
+            "background": "#6BFFB8",
+            "fontWeight": "bold",
+            "icon": "star-fill",
+            "iconColour": "#6BFFB8",
+            "gutterIcon": true
+        },
+        "[x]": {
+            "type": "line",
+            "foreground": "#000",
+            "background": "#172121",
+            "fontWeight": "bold",
+            "icon": "verified",
+            "iconColour": "#6BFFB8",
+            "gutterIcon": true
+        }
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.fontLigatures": false,
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "BUG",
+        "NOTE",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.general.showActivityBarBadge": true,
+    "todo-tree.general.statusBar": "tags",
+    "editor.guides.bracketPairs": "active",
+    "indentRainbow.colors": [
+
+        "rgba(0, 129, 167,0.5)",
+        "rgba(0, 175, 185,0.5)",
+        "rgba(253, 252, 220, 0.5)",
+        "rgba(254, 217, 183,0.5)",
+        "rgba(240, 113, 103,0.5)",
+        "rgba(240, 113, 103,0.7)",
+        "rgba(240, 113, 255,0.8)",
+        "rgba(240, 113, 255,0.6)"
+    ],
+    "indentRainbow.indicatorStyle": "light",
+    "todo-tree.filtering.excludeGlobs": [
+        "**/node_modules/*/**",
+        "**/History/*/**"
+    ],
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "sshfs.configs": [],
+    "todo-tree.filtering.includeHiddenFiles": true,
+    "todo-tree.regex.regex": "(//|#|##|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
+    "vscode-neovim.neovimExecutablePaths.linux": "/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/init.vim",
+    "redhat.telemetry.enabled": true,
+    "ansible.lightspeed.enabled": true,
+    "ansible.lightspeed.suggestions.enabled": true,
+    "RainbowBrackets.depreciation-notice": false,
+    "vim.enableNeovim": true,
+    "vim.insertModeKeyBindings": [
+    
+    ],
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "nix.enableLanguageServer": true, // Enable LSP.
+    "nix.serverPath": "/home/russ/.nix-profile/bin/nil",
+    "[nix]": {
+        "breadcrumbs.showArrays": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "jnoortheen.nix-ide"
+    },
+    "nix.formatterPath": "/home/russ/.nix-profile/bin/nil", 
+    "nix.serverSettings": {
+    
+        "nil": {
+        "formatting": { "command": ["nixpkgs-fmt"] }
+        },
+    },
+}

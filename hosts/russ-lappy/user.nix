@@ -1,9 +1,16 @@
 { inputs, outputs, lib, config, pkgs, ... }: 
 {
     imports = [ 
-        ../../modules/default.nix
+        ../../modules/apps/default.nix
+        ../../modules/cli/default.nix
+        ../../modules/desktop/default.nix
+        ../../modules/development/default.nix
+        ../../modules/nixos/default.nix
+        ../../modules/packages/default.nix
+        ../../modules/scripts/default.nix
+        #../../modules/system/default.nix
+
         inputs.nix-colors.homeManagerModules.default
-        # ./nvim.nix 
         ];
 
     home = {
@@ -11,10 +18,11 @@
         homeDirectory = "/home/russ";
     };
 
+    programs.home-manager.enable = true;
+
     modules = {
-        apps = { 
-            firefox.enable = true;
-        };
+        packages.enable = true;
+        apps.firefox.enable = true;
         
         desktop = {
             eww.enable = true;
@@ -32,17 +40,13 @@
         };
 
         development = {
-            vscode.enable = true;
+            #vscode-with-extensions.enable = true;
             nvim.enable = true;
             git.enable = true;
             direnv.enable = false;
         };
-        # system
-
-        packages.enable = true;
     };
 
-    programs.home-manager.enable = true;
 
     nixpkgs = {
         #overlays = [
@@ -56,7 +60,7 @@
             allowUnfree = true;
             allowUnfreePredicate = (_: true);
         };
-    };
+    };   
 
     systemd.user.startServices = "sd-switch";
 

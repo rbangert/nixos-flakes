@@ -1,10 +1,10 @@
 { pkgs, lib, config, ... }:
 
 with lib;
-let cfg = config.modules.foot;
+let cfg = config.modules.cli.foot;
 
 in {
-    options.modules.foot = { enable = mkEnableOption "foot"; };
+    options.modules.cli.foot = { enable = mkEnableOption "foot"; };
     config = mkIf cfg.enable {
         programs.foot = {
             enable = true;
