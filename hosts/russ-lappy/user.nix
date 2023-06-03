@@ -3,56 +3,46 @@
     imports = [ 
         ../../modules/default.nix
         inputs.nix-colors.homeManagerModules.default
-        # You can also split up your configuration and import pieces of it here:
         # ./nvim.nix 
         ];
 
     home = {
         username = "russ";
         homeDirectory = "/home/russ";
-        #programs.hyprland = { 
-        #    enable = true;
-        #    nvidiaPatches = false;
-        #    xwayland = {
-        #        enable = true;
-        #        hidpi = true;
-        #    };
-        #    #inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
-        #    #    "/absolute/path/to/plugin.so"
-        #    #];
-        #};
     };
 
     modules = {
-        # gui
-        firefox.enable = true;
-        foot.enable = true;
-        eww.enable = true;
-        dunst.enable = true;
-        hyprland.enable = true;
-        wofi.enable = true;
+        apps = { 
+            firefox.enable = true;
+        };
+        
+        desktop = {
+            eww.enable = true;
+            dunst.enable = true;
+            hyprland.enable = true;
+            wofi.enable = true;
+            xdg.enable = true;
+        };
 
-        # cli
-        nvim.enable = true;
-        zsh.enable = true;
-        git.enable = true;
-        gpg.enable = true;
-        direnv.enable = false;
+        cli = {
+            foot.enable = true;
+            zsh.enable = true;  
+            gpg.enable = true;
+            tmux.enable = true;
+        };
 
+        development = {
+            vscode.enable = true;
+            nvim.enable = true;
+            git.enable = true;
+            direnv.enable = false;
+        };
         # system
-        xdg.enable = true;
+
         packages.enable = true;
     };
 
-    programs = { 
-        home-manager.enable = true;
-        vscode = {
-            enable = true;
-            extensions = with pkgs.vscode-extensions; [
-                vscodevim.vim
-            ];
-        };
-    };
+    programs.home-manager.enable = true;
 
     nixpkgs = {
         #overlays = [

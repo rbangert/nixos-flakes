@@ -4,18 +4,22 @@ let cfg = config.modules.zsh;
 in {
     options.modules.zsh = { enable = mkEnableOption "zsh"; };
 
+#TODO: finish customization of shell
+
     config = mkIf cfg.enable {
         home.packages = [
         pkgs.zsh
+        pkgs.starship
 	];
 
         programs.zsh = {
             enable = true;
             dotDir = ".config/zsh";
-
             enableCompletion = true;
+            enableBashCompletion = true;
             enableAutosuggestions = true;
             enableSyntaxHighlighting = true;
+            }
 
             # .zshrc
             initExtra = ''

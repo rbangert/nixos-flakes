@@ -12,11 +12,13 @@
 
     users.users.russ = {
         isNormalUser = true;
+        #InitialHashedPassword = 
         openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOdfj6SbSBSWs2medcA8jKdFmVT1CL8l6iXTCyPUsw7y rbangert@proton.me"
         ];
         extraGroups = [ "wheel" "audio" "docker" "input" "networkmanager" ];
         shell = pkgs.zsh;
+        #packages = [ ];
     };
 
     environment = {
@@ -28,8 +30,10 @@
             pulseaudio pavucontrol
         ];
         variables = {
+            CONFIG_DIR = "$HOME/.config/";
             NIXOS_CONFIG_DIR = "$HOME/.config/nixos/";
             XDG_DATA_HOME = "$HOME/.local/share";
+            XDG_CONFIG_HOME = "$HOME/.config/";
             PASSWORD_STORE_DIR = "$HOME/.local/share/password-store";
             GTK_RC_FILES = "$HOME/.local/share/gtk-1.0/gtkrc";
             GTK2_RC_FILES = "$HOME/.local/share/gtk-2.0/gtkrc";

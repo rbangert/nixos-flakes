@@ -14,13 +14,12 @@ in {
             ripgrep ffmpeg tealdeer
             exa htop fzf
             pass gnupg bat obsidian
-            unzip lowdown zk
-            grim slurp slop
+            unzip lowdown zk slop
             imagemagick age libnotify
             git python3 lua zig 
-            mpv mattermost-desktop
+            mpv mattermost-desktop librewolf
             bandw maintenance
-            wf-recorder 
+            wf-recorder nil nixpkgs-fmt 
         ];
     };
 }

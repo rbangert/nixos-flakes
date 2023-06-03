@@ -7,8 +7,8 @@ in {
     options.modules.hyprland= { enable = mkEnableOption "hyprland"; };
     config = mkIf cfg.enable {
 	home.packages = with pkgs; [
-        wofi swaybg wlsunset wl-clipboard
-        grim slurp hyprland
+        wofi rofi swaybg wlsunset wl-clipboard
+        swaylock swayidle grim slurp hyprland
         ];
     };
 }
