@@ -1,291 +1,102 @@
-$base: #44465c;
-$blue: #3fc6de;
-$surface0: #44465c;
-$surface1: #44465c;
-$text: #d9e0ee;
-$overlay0: #6e738d;
-$red: #ec6a88;
-$peach: #efb993;
-$yellow: #efb993;
-$mauve: #b072d1;
-$green: #3fdaa4;
-$mantle: #292a37;
-$crust: #2e303e;
-$light-gray: #9699b7;
+$foreground: #ffffff;
+$grey: #aaaaaa;
+$foreground-alt: #465059;
+$background: #0e1419;
+$black: #000000;
+$red: #ff6565;
+$green: #b8cc52;
+$yellow: #e6c446;
+$blue: #68d4ff;
+$magenta: #ffa3aa;
+$cyan: #36a3d9;
+$white: #ffffff;
 
 * {
-    all: unset; //Unsets everything so you can style everything from scratch
-    font-family: "JetBrainsMono"
+  all: unset;
 }
 
-.icon {
-    font-family: monospace;
-    font-size: 1.4rem;
-}
-
-
-button {
-    transition: background-color 200ms, color 200ms;
-}
-
-.active {
-    color: $green;
-    font-size: 1.4rem;
-}
-
-.inactive {
-    color: $base;
-    font-size: 1.4rem;
-}
-
-.inactive:hover {
-    color: $light-gray;
+window {
+  background: $background;
+//  background: rgba(0, 0, 0, 0.2);
 }
 
 .bar {
-    background-color: $mantle;
-    border-left: 4px dotted $red;
+  font-family: "Noto Sans";
+  font-size: 13px;
+  margin: 0 10px;
 }
 
-.dashboard {
-    background-color: $mantle;
-    padding: 1rem;
-    margin-bottom: 1rem;
+.icon-module {
+  margin: 0 5px;
+  & > &__icon {
+    margin-right: 5px;
+    font-family: "Font Awesome 5 Free Solid";
+  }
 }
 
-.cal-box {
-    padding: 1rem 1rem .2rem;
+
+.workspaces {
+  font-family: "Font Awesome 5 Free Solid";
+  font-size: 12px;
+  margin-right: 20px;
+
+  button {
+    margin: 0px 3px;
+  }
+  .occupied {
+    color: $grey;
+  }
+
+  .focused {
+    color: $white;
+  }
+
+  .urgent {
+    color: $red; 
+  }
+
+  .empty {
+    padding-top: 2px;
+    color: $foreground-alt;
+    font-size: 10px;
+//  font-family: "Font Awesome 5 Free Regular"
+  }
 }
 
-.cal {
-    padding: 0;
-    border-radius: 8px;
+
+// Test
+.test-box {
+  background-color: #2a2a2a;
+}
+.test-box.red {
+    background-color: red;
+}
+.test-box.blue {
+    background-color: blue;
+}
+.test-box.green {
+    background-color: green;
 }
 
-.calendar_box {
-    padding: 1rem;
-    calendar:selected {
-        color: $blue;
-    }
 
-    calendar.header {
-        color: $blue;
-        font-weight: bold;
-    }
 
-    calendar.button {
-        color: $blue;
-    }
-
-    calendar.highlight {
-        color: $green;
-        font-weight: bold;
-    }
-
-    calendar:indeterminate {
-        color: rgba(205, 219, 249, 0.3);
-    }
+.revealer-on-hover .eventbox {
+  color: $grey;
+}
+.revealer-on-hover .eventbox:hover {
+  color: $foreground;
 }
 
-.sysinfo_box {
-    padding: 1rem;
-    .iconmem {
-        font-size: 3rem;
-        color: $yellow;
-    }
-    .iconcpu {
-        font-size: 3rem;
-        color: $blue;
-    }
-    .icondisk {
-        font-size: 3rem;
-        color: $green;
-    }
-    .cpubar, .membar, .diskbar {
-        background-color: $crust;
-    }
-}
-.slider_box {
-    padding: 0 1rem;
-    scale {
-        background-color: $crust;
-        border-radius: 100px;
-        margin: 0.5rem 0;
-    }
-
-    scale trough {
-        border-radius: 100px;
-    }
-
-    scale highlight {
-        padding: 8px;
-        margin: 8px;
-        border-radius: 100px;
-    }
-    
-    .brightness_slider highlight {
-        background-color: $yellow;
-    }
-
-    .volume_slider highlight {
-        background-color: $blue;
-    }
-
-    .micvolume_slider highlight {
-        background-color: $green;
-    }
-    
-    .slider_icon {
-        font-size: 2rem;
-        padding-right: 0.75rem;
-    }
-}
-
-.notification_box {
-}
-
-.wifi {
-  font-size: 2rem;
-  color: $blue;
-}
 
 .clock {
-  font-weight: bold;
-  background-color: $base;
-  color: $text;
-  border-radius: 10px;
-  padding: 0.2rem;
-  margin: 0.5rem;
-}
-
-.cpubar {
-  color: $blue;
-  background-color: $surface1;
-  margin: 4px 0;
-}
-
-.diskbar {
-  color: $green;
-  background-color: $surface1;
-  margin: 4px 0;
-}
-
-.membar {
-    color: $yellow;
-    background-color: $surface1;
-  margin: 4px 0;
-}
-
-.iconmem, .iconcpu, .icondisk {
-    color: $base;
-    font-size: 2.5rem;
-}
-
-.date {
-  font-size: 1.5rem;
-}
-
-.reg-btn { 
-    font-size: 2rem;
-    margin: 2px 8px;
-    border-radius: 10px;
-}
-
-.dashbutton {
-    color: $mauve;
-}
-
-.dashbutton:hover {
-    background-color: $base;
-}
-
-.dashbutton:active {
-    background-color: $mauve;
-    color: $mantle;
-}
-
-.powerbutton { 
-    color: $red; 
-}
-
-.powerbutton:hover {
-    background-color: $base;
-}
-
-.powerbutton:active {
-    background-color: $red;
-    color: $mantle;
-}
-
-.launchbutton { 
-    background-color: $blue; 
-    color: $mantle;
-    margin-top: 6px;
-}
-
-.launchbutton:hover {
-    background-color: $mauve;
-}
-
-.launchbutton:active {
-    color: $mauve;
-    background-color: $mantle;
-}
-
-.battery {
+  padding: 30px;
+  font-family: "Roboto Mono";
+  font-size: 1rem;
+  > .title {
     font-size: 1.5rem;
-    color: $blue;
-}
-
-// Credits AlphaTechnolog
-.powermenu-box {
-    padding: 0 2px;
-    margin: 7px 7px 7px 0px;
-    background: inherit;
-    .dispatcher {
-        border-radius: 15px;
-        background: $base;
-        color: $red;
-        font-size: 14px;
-        padding: 0 14px 0 10px;
-        &:hover { background-color: $surface0; }
-        &:active { background-color: $surface1; }
-    }
-}
-
-// powermenu
-.powermenu-container {
-  background: $crust;
-  color: $text;
-  padding: 10px;
-  font-size: 55px;
-
-  transition: all 200ms cubic-bezier(.1,-0.00,.0,1.49);
-
-  .btn { margin: 1rem;}
-  // shutdown
-  .shutdown-btn-box .btn {
+  }
+  > .remaining_time {
     color: $red;
-    border-radius: 15px;
-    background-color: $mantle;
-    &:hover { background-color: $base; }
-    &:active { background-color: $surface1; }
-  }
-  // reboot
-  .reboot-btn-box .btn {
-    color: $mauve;
-    border-radius: 15px;
-    background-color: $mantle;
-    &:hover { background-color: $base; }
-    &:active { background-color: $surface1; }
-  }
-  // exit
-  .exit-btn-box .btn {
-    color: $yellow;
-    border-radius: 15px;
-    background-color: $mantle;
-    &:hover { background-color: $base; }
-    &:active { background-color: $surface1; }
+    font-size: 6em;
   }
 }
-

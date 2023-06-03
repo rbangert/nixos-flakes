@@ -1,112 +1,57 @@
-{  lib, config, pkgs, ... }:
-with lib;
+{ config, lib, pkgs, ... }:
+
 let
-    cfg = config.modules.development.nvim;
-    # Source my theme
-    jabuti-nvim = pkgs.vimUtils.buildVimPlugin {
-        name = "jabuti-nvim";
-        src = pkgs.fetchFromGitHub {
-            owner = "jabuti-theme";
-            repo = "jabuti-nvim";
-            rev = "17f1b94cbf1871a89cdc264e4a8a2b3b4f7c76d2";
-            sha256 = "sha256-iPjwx/rTd98LUPK1MUfqKXZhQ5NmKx/rN8RX1PIuDFA=";
-        };
+  install_lsp = pkgs.writeShellScriptBin "install_lsp" ''
+      #!/bin/bash 
+    if [ ! -d ~/.npm-global ]; then  
+            mkdir ~/.npm-global
+            npm set prefix ~/.npm-global
+      else 
+            npm set prefix ~/.npm-global
+    fi
+    npm i -g npm vscode-langservers-extracted typescript typescript-language-server bash-language-server
+  '';
+in
+{
+  programs = {
+    neovim = {
+      enable = true;
+      withPython3 = true;
+      withNodeJs = true;
+      extraPackages = [
+      ];
+      #-- Plugins --#
+      plugins = with pkgs.vimPlugins;[ ];
+      #-- --#
     };
-in {
-    options.modules.development.nvim = { enable = mkEnableOption "nvim"; };
-    config = mkIf cfg.enable {
+  };
+  home = {
+    packages = with pkgs; [
+      #-- LSP --#
+      install_lsp
+      rnix-lsp
+      lua-language-server
+      gopls
+      pyright
+      zk
+      rust-analyzer
+      clang-tools
+      haskell-language-server
+      #-- tree-sitter --#
+      tree-sitter
+      #-- format --#
+      stylua
+      black
+      nixpkgs-fmt
+      rustfmt
+      beautysh
+      nodePackages.prettier
+      stylish-haskell
+      #-- Debug --#
+      lldb
+    ];
+  };
 
-        home.file.".config/nvim/settings.lua".source = ./init.lua;
-        
-        home.packages = with pkgs; [
-            rnix-lsp nixfmt # Nix
-            sumneko-lua-language-server stylua # Lua
-        ];
-
-        programs.zsh = {
-            initExtra = ''
-                export EDITOR="nvim"
-            '';
-
-            shellAliases = {
-                v = "nvim -i NONE";
-                nvim = "nvim -i NONE";
-            };
-        };
-
-        programs.neovim = {
-            enable = true;
-            plugins = with pkgs.vimPlugins; [ 
-                vim-nix
-                plenary-nvim
-                yuck-vim
-                vim-wayland-clipboard
-                vim-tmux-navigator
-                vim-prettier
-                vim-packer
-                vim-mustache-handlebars
-                vim-multiple-cursors
-                vim-go
-                vim-devicons
-                todo-nvim
-                tmuxline-vim
-                telescope-fzf-native-nvim
-                harpoon
-                go-nvim
-                
-                {
-                    plugin = zk-nvim;
-                    config = "require('zk').setup()";
-                }
-                {
-                    plugin = tokyonight-nvim;
-                    config = "colorscheme tokyonight";
-                }
-                {
-                    plugin = impatient-nvim;
-                    config = "lua require('impatient')";
-                }
-                {
-                    plugin = lualine-nvim;
-                    config = "lua require('lualine').setup()";
-                }
-                {
-                    plugin = telescope-nvim;
-                    config = "lua require('telescope').setup()";
-                }
-                {
-                    plugin = indent-blankline-nvim;
-                    config = "lua require('indent_blankline').setup()";
-                }
-                {
-                    plugin = nvim-lspconfig;
-                    config = ''
-                        lua << EOF
-                        require('lspconfig').rust_analyzer.setup{}
-                        require('lspconfig').sumneko_lua.setup{}
-                        require('lspconfig').rnix.setup{}
-                        require('lspconfig').zk.setup{}
-                        EOF
-                    '';
-                }
-                {
-                    plugin = nvim-treesitter;
-                    config = ''
-                    lua << EOF
-                    require('nvim-treesitter.configs').setup {
-                        highlight = {
-                            enable = true,
-                            additional_vim_regex_highlighting = false,
-                        },
-                    }
-                    EOF
-                    '';
-                }
-            ];
-
-            extraConfig = ''
-                luafile ~/.config/nvim/settings.lua
-            '';
-        };
-    };
+  home.file.".config/nvim/init.lua".source = ./init.lua;
+  home.file.".config/nvim/lua".source = ./lua;
 }

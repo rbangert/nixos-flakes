@@ -3,7 +3,6 @@
 {
     programs = {
         zsh.enable = true;
-        mtr.enable = true;
         gnupg.agent = {
             enable = true;
             enableSSHSupport = true;
@@ -24,9 +23,10 @@
     environment = {
         defaultPackages = [ ];
         systemPackages = with pkgs; [
-            acpi dhcpcd tlp 
-            git zsh curl wget
-            tailscale
+            acpi tlp 
+            curl wget
+            vim grep
+            tailscale dhcpcd
             pulseaudio pavucontrol
         ];
         variables = {
@@ -47,12 +47,12 @@
             };
         };
 
-    # Install fonts
     fonts = {
         fonts = with pkgs; [
-            jetbrains-mono
-            roboto
-            openmoji-color
+            noto-sans noto-fonts-emoji
+            jetbrains-mono nerdfonts
+            roboto twemoji-color-font
+            openmoji-color font-awesome-5
             (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
         ];
 
@@ -64,8 +64,6 @@
         };
     };
 
-
-    # Wayland stuff: enable XDG integration, allow sway to use brillo
     xdg = {
         portal = {
             enable = true;
@@ -113,7 +111,6 @@
         keyMap = "us";
     };
 
-    # Set up networking and secure it
     networking = {
         #networkmanager.enable = true;
         wireless.iwd.enable = true;
@@ -135,8 +132,7 @@
                 sddm.enable = true;
                 sddm.enableHidpi  = true;
                 sessionPackages = [ pkgs.hyprland ];
-            };
-            desktopManager.plasma5.enable = true;       
+            };     
         };
         pipewire = {
             enable = true;
@@ -181,5 +177,11 @@
         };
     };
     
-    system.stateVersion = "22.11";
+    system = {
+        stateVersion = "22.11";
+        autoUpgrade = {
+            enable = false;
+            channel = "https://nixos.org/channels/nixos-unstable";
+        };
+    };
 }
