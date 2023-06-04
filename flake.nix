@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     
     nix-colors.url = "github:misterio77/nix-colors";
     hyprland.url = "github:hyprwm/Hyprland";
@@ -12,6 +12,23 @@
       url = "github:nix-community/home-manager/release-23.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    fufexan = {
+      url = "github:fufexan/dotfiles";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    snowfall-lib = {
+			url = "github:snowfallorg/lib";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+
+		plusultra = {
+			url = "github:rbangert/config";
+			inputs.nixpkgs.follows = "nixpkgs";
+			inputs.unstable.follows = "unstable";
+		};
+
     #nur = {
     #  url = "github:nix-community/NUR";
     #  inputs.nixpkgs.follows = "nixpkgs";

@@ -1,6 +1,8 @@
 { config, lib, pkgs, ... }:
 
+with lib;
 let
+  cfg = config.modules.development.neovim;
   install_lsp = pkgs.writeShellScriptBin "install_lsp" ''
       #!/bin/bash 
     if [ ! -d ~/.npm-global ]; then  
@@ -11,9 +13,10 @@ let
     fi
     npm i -g npm vscode-langservers-extracted typescript typescript-language-server bash-language-server
   '';
-in
-{
-  programs = {
+in {
+  options.modules.development.neovim = { enable = mkEnableOption "neovim"; };
+  config = mkIf cfg.enable {
+    programs = {
     neovim = {
       enable = true;
       withPython3 = true;
@@ -21,12 +24,16 @@ in
       extraPackages = [
       ];
       #-- Plugins --#
-      plugins = with pkgs.vimPlugins;[ ];
-      #-- --#
+      plugins = with pkgs.vimPlugins;[ 
+        barbecue-nvim # https://github.com/utilyre/barbecue.nvim
+        yuck-vim # https://github.com/elkowar/yuck.vim/
+      ];
     };
   };
   home = {
     packages = with pkgs; [
+      neovide
+      uivonim
       #-- LSP --#
       install_lsp
       rnix-lsp
@@ -52,6 +59,7 @@ in
     ];
   };
 
-  home.file.".config/nvim/init.lua".source = ./init.lua;
-  home.file.".config/nvim/lua".source = ./lua;
+    home.file.".config/nvim/init.lua".source = ./init.lua;
+    home.file.".config/nvim/lua".source = ./lua;
+  };
 }

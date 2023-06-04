@@ -1,4 +1,4 @@
-{ pkgs, lib, config, ... }:
+{ inputs, lib, config, pkgs, ... }:
 
 with lib;
 let cfg = config.modules.cli.zsh;
@@ -7,53 +7,68 @@ let cfg = config.modules.cli.zsh;
 in {
     options.modules.cli.zsh = { enable = mkEnableOption "zsh"; };
     config = mkIf cfg.enable {
-        home.packages = [
-        pkgs.zsh
+        home.packages = with pkgs; [
+        zsh
 	];
 
+        #home.file.".config/zsh/starship.toml".source = ./myStarship.toml;
+        
+        programs.starship.enable = true; 
+        
         programs.zsh = {
             enable = true;
             dotDir = ".config/zsh";
-            enableCompletion = true;
-            #enableBashCompletion = true;
-            enableAutosuggestions = true;
-            enableSyntaxHighlighting = true;
-
-            # .zshrc
+            #interactiveShellInit = ;
             initExtra = ''
-                PROMPT="%F{blue}%m %~%b "$'\n'"%(?.%F{green}%Bλ%b |.%F{red}?) %f"
+                export ZPLUG_HOME="$ZDOTDIR/zplug"
+                export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
+                source $ZDOTDIR/aliases
+                source $ZDOTDIR/functions
+                source $ZPLUG_HOME/init.zsh
 
-                export PASSWORD_STORE_DIR="$XDG_DATA_HOME/password-store";
-                export ZK_NOTEBOOK_DIR="~/stuff/notes";
-                export DIRENV_LOG_FORMAT="";
-                export DOT="$NIXOS_CONFIG_DIR";
+                # Install Zplug
+                if [[ ! -d $ZDOTDIR/zplug ]]; then
+                    git clone https://github.com/zplug/zplug $ZDOTDIR/zplug
+                    source $ZPLUG_HOME/init.zsh && zplug update --self
+                fi
+
+                # Plugin List
+                zplug "chrissicool/zsh-256color"
+                zplug "zsh-users/zsh-completions"
+                zplug "rupa/z"
+                zplug "changyuheng/fz.sh"
+                zplug "zsh-users/zsh-history-substring-search", defer:3
+
+                # Install new plugins
+                if ! zplug check --verbose; then
+                    printf "Install? [y/N]: "
+                    if read -q; then
+                        echo; zplug install
+                    else
+                        echo
+                    fi
+                fi
+
+                zplug load
+
+                eval "$(starship init zsh)"
+
 
                 # TODO: evaluate
+                PROMPT="%F{blue}%m %~%b "$'\n'"%(?.%F{green}%Bλ%b |.%F{red}?) %f"
                 #bindkey '^ ' autosuggest-accept
                 #edir() { tar -cz $1 | age -p > $1.tar.gz.age && rm -rf $1 &>/dev/null && echo "$1 encrypted" }
                 #ddir() { age -d $1 | tar -xz && rm -rf $1 &>/dev/null && echo "$1 decrypted" }
             '';
 
-            # Tweak settings for history
             history = {
                 save = 10000;
                 size = 10000;
                 path = "$HOME/.cache/zsh_history";
             };
-
-            # Set some aliases
-            shellAliases = {
-                c = "clear";
-                mkdir = "mkdir -vp";
-                rm = "rm -rifv";
-                mv = "mv -iv";
-                cp = "cp -riv";
-                cat = "bat --paging=never --style=plain";
-                ls = "exa -a --icons";
-                tree = "exa --tree --icons";
-                nd = "nix develop -c $SHELL";
-                rebuild = "doas nixos-rebuild switch --flake $NIXOS_CONFIG_DIR --fast; notify-send 'Rebuild complete\!'";
-            };
+            enableCompletion = true;
+            enableAutosuggestions = true;
+            enableSyntaxHighlighting = true;
 
             # Source all plugins, nix-style
             plugins = [

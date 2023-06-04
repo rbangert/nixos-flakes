@@ -40,7 +40,6 @@ in {
                     "app.shield.optoutstudies.enabled" = false;
                     "dom.security.https_only_mode_ever_enabled" = true;
                     "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
-                    "browser.toolbars.bookmarks.visibility" = "never";
                     "geo.enabled" = false;
 
                     # Disable telemetry

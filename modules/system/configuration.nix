@@ -1,14 +1,28 @@
 { config, pkgs, inputs, ... }:
 
-{
+
+{   
     programs = {
-        zsh.enable = true;
-        gnupg.agent = {
-            enable = true;
-            enableSSHSupport = true;
-        };
+      zsh.enable = true;
+      gnupg.agent = {
+          enable = true;
+          enableSSHSupport = true;
+      };
+      #gtk = {
+      #    enable = true;
+      #    theme = {
+      #        name = "Catppuccin-Latte-Compact-Pink-Dark";
+      #        package = pkgs.catppuccin-gtk.override {
+      #            accents = [ "pink" ];
+      #            size = "compact";
+      #            tweaks = [ "rimless" "black" ];
+      #            variant = "latte";
+      #        };
+      #    };
+      #  };
     };
 
+    
     users.users.russ = {
         isNormalUser = true;
         #InitialHashedPassword = 
@@ -17,23 +31,31 @@
         ];
         extraGroups = [ "wheel" "audio" "docker" "input" "networkmanager" ];
         shell = pkgs.zsh;
-        #packages = [ ];
     };
 
     environment = {
         defaultPackages = [ ];
         systemPackages = with pkgs; [
-            acpi tlp 
-            curl wget
-            vim grep
-            tailscale dhcpcd
-            pulseaudio pavucontrol
+          ripgrep ffmpeg tealdeer
+          exa htop fzf curl wget
+          pass gnupg bat obsidian
+          unzip lowdown zk slop
+          imagemagick age libnotify
+          git python3 lua zig 
+          mpv mattermost-desktop librewolf
+          # TODO: examine these scripts left over in modules/packages 
+          # bandw maintenance 
+          wf-recorder nil nixpkgs-fmt 
+          taskwarrior taskwarrior-tui
+          acpi tlp vim nano     
+          tailscale dhcpcd
+          pulseaudio pavucontrol
         ];
         variables = {
-            CONFIG_DIR = "$HOME/.config/";
-            NIXOS_CONFIG_DIR = "$HOME/.config/nixos/";
+            CONFIG_DIR = "$HOME/.config";
+            NIXOS_CONFIG_DIR = "$HOME/.config/nixos";
             XDG_DATA_HOME = "$HOME/.local/share";
-            XDG_CONFIG_HOME = "$HOME/.config/";
+            XDG_CONFIG_HOME = "$HOME/.config";
             PASSWORD_STORE_DIR = "$HOME/.local/share/password-store";
             GTK_RC_FILES = "$HOME/.local/share/gtk-1.0/gtkrc";
             GTK2_RC_FILES = "$HOME/.local/share/gtk-2.0/gtkrc";
@@ -44,15 +66,17 @@
             DOTS = "$NIXOS_CONFIG_DIR";
             STUFF = "$HOME/stuff";
             JUNK = "$HOME/stuff/other";
+            TASKRC= "$CONFIG_DIR/taskrc";
             };
         };
 
     fonts = {
         fonts = with pkgs; [
-            noto-sans noto-fonts-emoji
+            noto-fonts-emoji
             jetbrains-mono nerdfonts
             roboto twemoji-color-font
-            openmoji-color font-awesome-5
+            #material-symbols-outline
+            openmoji-color jost
             (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
         ];
 
@@ -61,16 +85,6 @@
             defaultFonts = {
             emoji = [ "OpenMoji Color" ];
             };
-        };
-    };
-
-    xdg = {
-        portal = {
-            enable = true;
-            extraPortals = with pkgs; [
-                xdg-desktop-portal-wlr
-                xdg-desktop-portal-gtk
-            ];
         };
     };
 
@@ -126,20 +140,23 @@
     services = { 
         tailscale.enable = true; 
         openssh.enable = true;
-        xserver = { 
-            enable = true;
-            displayManager = {
-                sddm.enable = true;
-                sddm.enableHidpi  = true;
-                sessionPackages = [ pkgs.hyprland ];
-            };     
-        };
         pipewire = {
             enable = true;
             alsa.enable = true;
             alsa.support32Bit = true;
             pulse.enable = true;
             jack.enable = true;
+        };
+        xserver.displayManager.lightdm = { 
+            greeters.slick = {
+                enable = true;
+                # TODO: theme lightdm https://github.com/linuxmint/lightdm-settings
+                #theme =
+                #iconTheme = 
+                #font = 
+                #draw-user-backgrounds = 
+                #extraConfig = 
+            };
         };
     };
 

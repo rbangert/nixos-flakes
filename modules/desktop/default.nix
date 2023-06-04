@@ -3,8 +3,8 @@
 {
     imports = [
         ./hyprland
-        ./eww # TODO:
         ./dunst
+        ./eww
         ./wofi # TODO: 
         ./xdg
     ];

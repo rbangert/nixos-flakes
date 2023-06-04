@@ -2,82 +2,116 @@
 with lib;
 let
     cfg = config.modules.desktop.eww;
-in
-{
-    options.modules.desktop.eww = { enable = mkEnableOption "eww"; };
 
-    config = mkIf cfg.enable {
-        # theres no programs.eww.enable here because eww looks for files in .config
-        # thats why we have all the files
-    
-        # eww package
-        home = {
-            packages = with pkgs; [
-                eww-wayland
-                pamixer
-                brightnessctl
-                (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-            ];
+    reload_script = pkgs.writeShellScript "reload_eww" ''
+        windows=$(eww windows | rg '\*' | tr -d '*')
+        systemctl --user restart eww.service
+        echo $windows | while read -r w; do
+            eww open $w
+        done
+    '';
 
-            # configuration
-            file.".config/eww/eww.scss".source = ./eww.scss;
-            file.".config/eww/eww.yuck".source = ./eww.yuck;
+    dependencies = with pkgs; [
+        bash
+        blueberry
+        bluez
+        brillo
+        coreutils
+        dbus
+        findutils
+        gawk
+        gnome.gnome-control-center
+        gnused
+        imagemagick
+        jaq
+        jc
+        libnotify
+        networkmanager
+        pavucontrol
+        playerctl
+        procps
+        pulseaudio
+        ripgrep
+        socat
+        udev
+        upower
+        util-linux
+        wget
+        wireplumber
+        wlogout
+    ];
 
-            # scripts
-            file.".config/eww/modules/trash.sh" = {
-                source = ./modules/trash.sh;
-                executable = true;
-            };
+in {
+  options.modules.desktop.eww = { 
+      enable = mkEnableOption "eww"; 
 
-            file.".config/eww/modules/noisetorch.sh" = {
-                source = ./modules/noisetorch.sh;
-                executable = true;
-            };
+      #package = lib.mkOption {
+      #    type = with lib.types; nullOr package;
+      #    default = pkgs.eww-wayland;
+      #    defaultText = lib.literalExpression "pkgs.eww-wayland";
+      #    description = "Eww package to use.";
+      #};
 
-            file.".config/eww/modules/updates.sh" = {
-                source = ./modules/updates.sh;
-                executable = true;
-            };
+      autoReload = lib.mkOption {
+          type = lib.types.bool;
+          default = false;
+          defaultText = lib.literalExpression "false";
+          description = "Whether to restart the eww daemon and windows on change.";
+      };
 
-            file.".config/eww/modules/github.sh" = {
-                source = ./modules/github.sh;
-                executable = true;
-            };
+      colors = lib.mkOption {
+          type = with lib.types; nullOr lines;
+          default = null;
+          defaultText = lib.literalExpression "null";
+          description = ''
+              SCSS file with colors defined in the same way as Catppuccin colors are,
+              to be used by eww.
+              Defaults to Catppuccin Mocha.
+          '';
+      };
+  };
 
-            file.".config/eww/modules/ping.sh" = {
-                source = ./modules/ping.sh;
-                executable = true;
-            };
+  config = mkIf cfg.enable {
+    home.packages = with pkgs; [
+        eww-wayland
+        pamixer
+        brightnessctl
+        (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    ];
 
-            file.".config/eww/modules/workspaces.sh" = {
-                source = ./modules/workspaces.sh;
-                executable = true;
-            };
-
-            file.".config/eww/modules/player.sh" = {
-                source = ./modules/player.sh;
-                executable = true;
-            };
-
-            file.".config/eww/modules/nvidia.sh" = {
-                source = ./modules/nvidia.sh;
-                executable = true;
-            };
-
-            file.".config/eww/modules/notifications.sh" = {
-                source = ./modules/notifications.sh;
-                executable = true;
-            };
-
-            file.".config/eww/modules/microphone.sh" = {
-                source = ./modules/microphone.sh;
-                executable = true;
-            };
-
-            file.".config/eww/modules/speaker.sh" = {
-                source = ./modules/speaker.sh;
-                executable = true;
-            };
+    xdg.configFile."eww" = {
+        source = lib.cleanSourceWith {
+            filter = name: _type: let
+                baseName = baseNameOf (toString name);
+            in
+                !(lib.hasSuffix ".nix" baseName) && (baseName != "_colors.scss");
+            src = lib.cleanSource ./.;
         };
+        recursive = true;
+        onChange =
+            if cfg.autoReload
+            then reload_script.outPath
+            else "";
     };
+    xdg.configFile."eww/css/_colors.scss".text =
+      if cfg.colors != null
+      then cfg.colors
+      else (builtins.readFile ./css/_colors.scss);
+
+    systemd.user.services.eww = {
+      Unit = {
+        Description = "Eww Daemon";
+        # not yet implemented
+        # PartOf = ["tray.target"];
+        PartOf = ["graphical-session.target"];
+      };
+      Service = {
+        Environment = "PATH=/run/wrappers/bin:${lib.makeBinPath dependencies}";
+        ExecStart = "${cfg.package}/bin/eww daemon --no-daemonize";
+        Restart = "on-failure";
+      };
+      Install.WantedBy = ["graphical-session.target"];
+    };
+  };
 }
+
