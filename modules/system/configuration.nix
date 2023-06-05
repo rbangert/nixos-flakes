@@ -8,21 +8,8 @@
           enable = true;
           enableSSHSupport = true;
       };
-      #gtk = {
-      #    enable = true;
-      #    theme = {
-      #        name = "Catppuccin-Latte-Compact-Pink-Dark";
-      #        package = pkgs.catppuccin-gtk.override {
-      #            accents = [ "pink" ];
-      #            size = "compact";
-      #            tweaks = [ "rimless" "black" ];
-      #            variant = "latte";
-      #        };
-      #    };
-      #  };
     };
 
-    
     users.users.russ = {
         isNormalUser = true;
         #InitialHashedPassword = 
@@ -38,10 +25,10 @@
         systemPackages = with pkgs; [
           ripgrep ffmpeg tealdeer
           exa htop fzf curl wget
-          pass gnupg bat obsidian
+          pass gnupg bat obsidian xfce.thunar
           unzip lowdown zk slop
           imagemagick age libnotify
-          git python3 lua zig 
+          git python3 lua zig perl go
           mpv mattermost-desktop librewolf
           # TODO: examine these scripts left over in modules/packages 
           # bandw maintenance 
@@ -71,21 +58,24 @@
         };
 
     fonts = {
-        fonts = with pkgs; [
-            noto-fonts-emoji
-            jetbrains-mono nerdfonts
-            roboto twemoji-color-font
-            #material-symbols-outline
-            openmoji-color jost
-            (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-        ];
-
-        fontconfig = {
-            hinting.autohint = true;
-            defaultFonts = {
-            emoji = [ "OpenMoji Color" ];
-            };
+      enableDefaultFonts = false;
+      fonts = with pkgs; [
+        noto-fonts noto-fonts-emoji
+        jetbrains-mono nerdfonts
+        twemoji-color-font 
+        material-icons lexend
+        openmoji-color jost 
+        (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
+      ];
+      fontconfig = {
+        hinting.autohint = true;
+        defaultFonts = { 
+          serif = ["Noto Serif" "Noto Color Emoji"];
+          sansSerif = ["Noto Sans" "Noto Color Emoji"];
+          monospace = ["JetBrainsMono Nerd Font" "Noto Color Emoji"];
+          emoji = ["Noto Color Emoji"];
         };
+      };
     };
 
     nixpkgs.config.allowUnfree = true;
@@ -162,10 +152,13 @@
 
     # Sound
     sound.enable = true;
-
+    
     # Security 
     security = {
-        sudo.enable = true;
+        sudo = { 
+          enable = true;
+          wheelNeedsPassword = false;
+        };
         rtkit.enable = true;
         doas = {
             enable = true;

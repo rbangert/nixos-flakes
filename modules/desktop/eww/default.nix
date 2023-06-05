@@ -45,12 +45,12 @@ in {
   options.modules.desktop.eww = { 
       enable = mkEnableOption "eww"; 
 
-      #package = lib.mkOption {
-      #    type = with lib.types; nullOr package;
-      #    default = pkgs.eww-wayland;
-      #    defaultText = lib.literalExpression "pkgs.eww-wayland";
-      #    description = "Eww package to use.";
-      #};
+      package = lib.mkOption {
+          type = with lib.types; nullOr package;
+          default = pkgs.eww-wayland;
+          defaultText = lib.literalExpression "pkgs.eww-wayland";
+          description = "Eww package to use.";
+      };
 
       autoReload = lib.mkOption {
           type = lib.types.bool;

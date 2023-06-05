@@ -1,0 +1,14 @@
+[Unit]
+Description=tmux test 2 service
+PartOf=master.service
+After=master.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+User=lancer
+ExecStart=/usr/bin/tmux new-session -s test2 -d
+ExecStop=/usr/bin/tmux kill-session -t test2
+
+[Install]
+WantedBy=multi-user.target
