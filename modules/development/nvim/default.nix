@@ -1,65 +1,79 @@
-{ config, lib, pkgs, ... }:
+{ inputs, lib, config, pkgs, ... }:
 
 with lib;
-let
-  cfg = config.modules.development.neovim;
-  install_lsp = pkgs.writeShellScriptBin "install_lsp" ''
-      #!/bin/bash 
-    if [ ! -d ~/.npm-global ]; then  
-            mkdir ~/.npm-global
-            npm set prefix ~/.npm-global
-      else 
-            npm set prefix ~/.npm-global
-    fi
-    npm i -g npm vscode-langservers-extracted typescript typescript-language-server bash-language-server
-  '';
+let cfg = config.modules.development.nixneovim;
 in {
-  options.modules.development.neovim = { enable = mkEnableOption "neovim"; };
+  options.modules.cli.nixneovim = { enable = mkEnableOption "nixneovim"; };
   config = mkIf cfg.enable {
-    programs = {
-    neovim = {
-      enable = true;
-      withPython3 = true;
-      withNodeJs = true;
-      extraPackages = [
-      ];
-      #-- Plugins --#
-      plugins = with pkgs.vimPlugins;[ 
-        barbecue-nvim # https://github.com/utilyre/barbecue.nvim
-        yuck-vim # https://github.com/elkowar/yuck.vim/
-      ];
-    };
-  };
-  home = {
-    packages = with pkgs; [
-      neovide
-      uivonim
-      #-- LSP --#
-      install_lsp
-      rnix-lsp
-      lua-language-server
-      gopls
-      pyright
-      zk
-      rust-analyzer
-      clang-tools
-      haskell-language-server
-      #-- tree-sitter --#
-      tree-sitter
-      #-- format --#
-      stylua
-      black
-      nixpkgs-fmt
-      rustfmt
-      beautysh
-      nodePackages.prettier
-      stylish-haskell
-      #-- Debug --#
-      lldb
+    home.packages = with pkgs; [
+      nixneovim
     ];
-  };
-
-    home.file.".config/nvim/init.lua".source = ./init.lua;
-    home.file.".config/nvim/lua".source = ./lua;
+    programs.nixneovim = {
+      enable = true;
+      extraConfigVim = ''
+        # you can add your old config to make the switch easier
+        ${lib.strings.fileContents ./init.vim}
+        # or with lua
+        lua << EOF
+          ${lib.strings.fileContents ./init.lua}
+        EOF
+      '';
+# NOTE: https://nixneovim.github.io/NixNeovim/options.html
+      # to install plugins just activate their modules
+      plugins = {
+        lsp = {
+          enable = true;
+          hls.enable = true;
+          rust-analyzer.enable = true;
+          servers = { 
+            nil = {
+              enable = true;
+              #extraConfig = ''
+              #'';
+            };
+            rnix-lsp = {
+              enable = true;
+              #extraConfig = ''
+              #'';
+            };
+            gopls = {
+              enable = true;
+              #extraConfig = ''
+              #'';
+            };
+            bashls = {
+              enable = true;
+              #extraConfig = ''
+              #'';
+            };
+          };
+        };
+        vimwiki.enable  = true;
+        which-key.enable  = true;
+        treesitter = {
+          enable = true;
+          indent = true;
+        };
+        mini = {
+          enable = true;
+          ai.enable = true;
+          jump.enable = true;
+        };
+        telescope = { 
+          enable = true; 
+        };
+        todo-comments.enable = { 
+          enable = true; 
+        };
+      };
+      colorschemes.tokyonight = {
+        enable = true;
+      };
+      # Not all plugins have own modules
+      # You can add missing plugins here
+      # `pkgs.vimExtraPlugins` is added by the overlay you added at the beginning
+      # For a list of available plugins, look here: [available plugins](https://github.com/jooooscha/nixpkgs-vim-extra-plugins/blob/main/plugins.md)
+      #extraPlugins = [ pkgs.vimExtraPlugins.<plugin> ];
+    };
   };
 }

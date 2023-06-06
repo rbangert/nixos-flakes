@@ -1,5 +1,29 @@
 { config, pkgs, inputs, ... }:
 
+# TODO: virtualization
+  # Virtmanager settings
+  #programs.dconf.enable = true;
+  #services.qemuGuest.enable = true;
+  # 
+  # virtualisation.libvirtd = {
+  #  enable = true;
+  #  qemuOvmf = true;
+  #  qemuRunAsRoot = true;
+  #  onBoot = "ignore";
+  #  onShutdown = "shutdown";
+  #};
+
+  # virtualisation.virtualbox.guest.enable = true;
+  # virtualisation.virtualbox.host.enable = true;
+  # virtualisation.virtualbox.host.enableExtensionPack = true;
+
+  # services.xrdp.enable = true;
+  # services.xrdp.defaultWindowManager = "startplasma-x11";
+  # networking.firewall.allowedTCPPorts = [ 3389 ];
+
+    # Docker
+  #virtualisation.docker.enable = true;
+  #virtualisation.docker.enableOnBoot = true;
 
 {   
     programs = {
@@ -23,23 +47,24 @@
     environment = {
         defaultPackages = [ ];
         systemPackages = with pkgs; [
-          ripgrep ffmpeg tealdeer
-          exa htop fzf curl wget
+          ripgrep ffmpeg tealdeer lynx
+          exa htop fzf curl wget alacritty xxh remmina
           pass gnupg bat obsidian xfce.thunar
           unzip lowdown zk slop
-          imagemagick age libnotify
-          git python3 lua zig perl go
+          imagemagick age libnotify kicad
+          git gh python3 lua zig perl go neovim neovide helix 
           mpv mattermost-desktop librewolf
           # TODO: examine these scripts left over in modules/packages 
           # bandw maintenance 
-          wf-recorder nil nixpkgs-fmt 
-          taskwarrior taskwarrior-tui
-          acpi tlp vim nano     
+          wf-recorder nil nixfmt nixpkgs-fmt  
+          taskwarrior taskwarrior-tui vit 
+          python311Packages.tasklib python311Packages.pynvim
+          acpi tlp vim nano 
           tailscale dhcpcd
           pulseaudio pavucontrol
         ];
         variables = {
-            CONFIG_DIR = "$HOME/.config";
+            CFG = "$HOME/.config";
             NIXOS_CONFIG_DIR = "$HOME/.config/nixos";
             XDG_DATA_HOME = "$HOME/.local/share";
             XDG_CONFIG_HOME = "$HOME/.config";
@@ -53,7 +78,7 @@
             DOTS = "$NIXOS_CONFIG_DIR";
             STUFF = "$HOME/stuff";
             JUNK = "$HOME/stuff/other";
-            TASKRC= "$CONFIG_DIR/taskrc";
+            TASKRC= "/home/russ/.config/task/taskrc";
             };
         };
 
@@ -78,21 +103,29 @@
       };
     };
 
-    nixpkgs.config.allowUnfree = true;
+    nixpkgs = { 
+      config = { 
+        allowUnfree = true;
+        permittedInsecurePackages = [
+              "python-2.7.18.6"
+        ];
+      };
+    };
 
     nix = {
-        settings.auto-optimise-store = true;
-        settings.allowed-users = [ "russ" ];
-        gc = {
-            automatic = true;
-            dates = "weekly";
-            options = "--delete-older-than 7d";
-        };
-        extraOptions = ''
-            experimental-features = nix-command flakes
-            keep-outputs = true
-            keep-derivations = true
-        '';
+      settings.auto-optimise-store = true;
+      settings.allowed-users = [ "russ" ];
+      gc = {
+          automatic = true;
+          dates = "weekly";
+          options = "--delete-older-than 7d";
+      };
+      extraOptions = ''
+          experimental-features = nix-command flakes
+          keep-outputs = true
+          keep-derivations = true
+      '';
+      
     };
 
     boot = {
@@ -116,8 +149,9 @@
     };
 
     networking = {
-        #networkmanager.enable = true;
-        wireless.iwd.enable = true;
+      enableIPv6 = false;
+      #networkmanager.enable = true;
+      wireless.iwd.enable = true;
         firewall = {
             enable = true;
             checkReversePath = "loose";
