@@ -14,28 +14,30 @@ in {
 
         #home.file.".config/zsh/starship.toml".source = ./myStarship.toml;
         
-        programs.starship.enable = true; 
+        #programs.starship.enable = true; 
         
         programs.zsh = {
             enable = true;
             dotDir = ".config/zsh";
-            #interactiveShellInit = ;    powerline-go
-
+            enableCompletion = true;
+            enableAutosuggestions = true;
+            enableSyntaxHighlighting = true;
             initExtra = ''
                 #export ZPLUG_HOME="$ZDOTDIR/zplug"
                 #source $ZPLUG_HOME/init.zsh
                 #source $ZDOTDIR/powerline-go
-                #eval "$(oh-my-posh init zsh)"
-                #eval "$(oh-my-posh init zsh --config ~/.config/zsh/clean-detail.yml)"
+                #export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
 
                 source $ZDOTDIR/aliases
                 source $ZDOTDIR/functions
 
                 export TMUXP_CONFIGDIR=$HOME/tmux
                 export TASKRC=/home/russ/.config/task/taskrc
-                export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
+                export PATH="$(yarn global bin):$PATH"
 
-                eval "$(starship init zsh)" 
+                #eval "$(oh-my-posh init zsh)"
+                eval "$(oh-my-posh init zsh --config ~/.config/zsh/clean-detail.yml)"
+                #eval "$(starship init zsh)" 
 
                 # TODO: evaluate
                 #PROMPT="%F{blue}%m %~%b "$'\n'"%(?.%F{green}%Bλ%b |.%F{red}?) %f"
@@ -49,10 +51,7 @@ in {
                 size = 10000;
                 path = "$HOME/.cache/zsh_history";
             };
-            #enableCompletion = true;
-            #enableAutosuggestions = true;
-            #enableSyntaxHighlighting = true;
-#
+
             ## Source all plugins, nix-style
             #plugins = [
             #    {

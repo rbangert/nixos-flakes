@@ -49,18 +49,24 @@
         systemPackages = with pkgs; [
           ripgrep ffmpeg tealdeer lynx
           exa htop fzf curl wget alacritty xxh remmina
-          pass gnupg bat obsidian xfce.thunar
+          pass gnupg bat obsidian 
+          xfce.thunar xfce.thunar-archive-plugin xfce.thunar-volman
           unzip lowdown zk slop
-          imagemagick age libnotify kicad
-          git gh python3 lua zig perl go neovim neovide helix 
+          imagemagick age libnotify kicad nodejs_20
+          git gh python3 lua zig perl go yarn
+          neovim neovide helix tmux-sessionizer
           mpv mattermost-desktop librewolf
           # TODO: examine these scripts left over in modules/packages 
           # bandw maintenance 
           wf-recorder nil nixfmt nixpkgs-fmt  
-          taskwarrior taskwarrior-tui vit 
-          python311Packages.tasklib python311Packages.pynvim
-          acpi tlp vim nano 
-          tailscale dhcpcd
+          taskwarrior taskwarrior-tui vit tasknc dstask wtf
+          python311Packages.tasklib python311Packages.pynvim python311Packages.shtab
+          virt-viewer virt-manager-qt spice-gtk boxes
+          pkgs._1password pkgs._1password-gui git-credential-1password
+          acpi tlp vim nano xcape
+          tailscale dhcpcd busybox
+          copyq pstree
+          wgcf # cloudflare warp client clone
           pulseaudio pavucontrol
         ];
         variables = {
@@ -214,8 +220,7 @@
             driSupport = true;
             extraPackages = with pkgs; [
                 intel-media-driver # LIBVA_DRIVER_NAME=iHD
-                vaapiIntel         # LIBVA_DRIVER_NAME=i965 (older but works better for Firefox/Chromium)
-                vaapiVdpau
+                vaapiIntel         # LIBVA_DRIVER_NAME=i965
                 libvdpau-va-gl
             ];
         };

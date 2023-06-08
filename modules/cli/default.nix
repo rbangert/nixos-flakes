@@ -3,7 +3,7 @@
 {
     imports = [
         ./foot
-        #./tmux
+        ./tmux
         ./gpg
         ./zsh
     ];

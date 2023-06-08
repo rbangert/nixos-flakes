@@ -41,7 +41,7 @@
       foot.enable = true;
       zsh.enable = true;
       gpg.enable = true;
-      #tmux.enable = true;
+      tmux.enable = true;
     };
 
     development = {
