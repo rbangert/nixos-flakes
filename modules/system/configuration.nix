@@ -42,6 +42,8 @@
         ];
         extraGroups = [ "wheel" "audio" "docker" "input" "networkmanager" ];
         shell = pkgs.zsh;
+        sessionVariables = {
+ 
     };
 
     environment = {
@@ -50,7 +52,8 @@
           #inputs.fufexan.packages."x86_64-linux".codeium
           ripgrep ffmpeg tealdeer lynx bash
           exa htop fzf curl wget alacritty xxh remmina
-          pass gnupg bat obsidian nb
+          pass gnupg bat obsidian nb jq hugo 
+          ntfy-sh ntfy gotify-cli gotify-server gotify-desktop #
           xfce.thunar xfce.thunar-archive-plugin xfce.thunar-volman
           unzip lowdown zk slop
           imagemagick age libnotify kicad nodejs_20
@@ -60,15 +63,17 @@
           # TODO: examine these scripts left over in modules/packages 
           # bandw maintenance 
           wf-recorder nil nixfmt nixpkgs-fmt  
-          taskwarrior taskwarrior-tui vit tasknc dstask wtf
+          dstask wtf
           python311Packages.tasklib python311Packages.pynvim python311Packages.shtab
           virt-viewer virt-manager-qt spice-gtk boxes
           pkgs._1password pkgs._1password-gui git-credential-1password
           acpi tlp vim nano xcape
-          tailscale dhcpcd busybox
+          tailscale dhcpcd busybox nmap 
           copyq pstree
           wgcf # cloudflare warp client clone
           pulseaudio pavucontrol
+          yai aichat matterhorn discordo #  
+          nextcloud-client qownnotes #
         ];
         variables = {
             CFG = "$HOME/.config";
@@ -113,7 +118,7 @@
     nixpkgs = { 
       config = { 
         allowUnfree = true;
-        allowUnsupportedSystem = true;
+
         permittedInsecurePackages = [
               "python-2.7.18.6"
         ];

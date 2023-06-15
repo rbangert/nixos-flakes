@@ -33,7 +33,7 @@ in {
             keyMode = "vi";
             terminal = "tmux-256color";
             mouse = true;
-            tmuxp.enable = true;
+            tmuxp.enable = true; 
             extraConfig = ''
             # Reload tmux config
             bind r source-file ~/.config/tmux/tmux.conf
@@ -51,6 +51,14 @@ in {
             bind c new-window -c "#{pane_current_path}"
             bind '"' split-window -c "#{pane_current_path}"
             bind % split-window -h -c "#{pane_current_path}"
+
+            # vim-like pane switching
+            bind -r ^ last-window
+            bind -r k select-pane -U
+            bind -r j select-pane -D
+            bind -r h select-pane -L
+            bind -r l select-pane -R
+
             #
             # Tokyonight theme
             #
