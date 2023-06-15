@@ -47,9 +47,10 @@
     environment = {
         defaultPackages = [ ];
         systemPackages = with pkgs; [
-          ripgrep ffmpeg tealdeer lynx
+          #inputs.fufexan.packages."x86_64-linux".codeium
+          ripgrep ffmpeg tealdeer lynx bash
           exa htop fzf curl wget alacritty xxh remmina
-          pass gnupg bat obsidian 
+          pass gnupg bat obsidian nb
           xfce.thunar xfce.thunar-archive-plugin xfce.thunar-volman
           unzip lowdown zk slop
           imagemagick age libnotify kicad nodejs_20
@@ -94,7 +95,7 @@
         noto-fonts noto-fonts-emoji
         jetbrains-mono nerdfonts
         twemoji-color-font 
-        material-icons lexend
+        material-icons material-symbols lexend
         openmoji-color jost 
         (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
       ];
@@ -112,6 +113,7 @@
     nixpkgs = { 
       config = { 
         allowUnfree = true;
+        allowUnsupportedSystem = true;
         permittedInsecurePackages = [
               "python-2.7.18.6"
         ];

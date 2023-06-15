@@ -2,18 +2,18 @@
   description = "nix config";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.05";
-    unstable = {
-      url = "github:nixos/nixpkgs/nixos-unstable";
-      inputs.unstable.follows = "unstable";
-    };
+    nixpkgs.url = 
+      "github:nixos/nixpkgs/nixos-23.05";
+    unstable.url = 
+      "github:nixos/nixpkgs/nixos-unstable";
+  
     home-manager = {
       url = "github:nix-community/home-manager/release-23.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     fufexan = {
       url = "github:fufexan/dotfiles";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.fufexan.inputs.nixpkgs.follows = "nixpkgs";
     };
     plusultra = {
       url = "github:jakehamilton/config";
@@ -24,7 +24,6 @@
 			url = "github:rbangert/neovim";
 			# This flake currently requires changes that are only on the Unstable channel.
 			inputs.nixpkgs.follows = "nixpkgs";
-			inputs.unstable.follows = "unstable";
 		};
     
     # Generate System Images
@@ -57,7 +56,7 @@
   };
 
 
-  outputs = { self, nixpkgs, unstable, snowfall-lib, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, unstable, fufexan, snowfall-lib, home-manager, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;

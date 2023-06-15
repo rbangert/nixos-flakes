@@ -15,7 +15,7 @@ in {
   };
   config = mkIf cfg.enable {
 	home.packages = with pkgs; [
-        wofi rofi swaybg wlsunset wl-clipboard
+        wofi rofi swaybg wlsunset wl-clipboard waybar cliphist
         swaylock-effects swayidle grim slurp hyprland
         ];
   };
