@@ -240,4 +240,5 @@
             channel = "https://nixos.org/channels/nixos-unstable";
         };
     };
+  };
 }

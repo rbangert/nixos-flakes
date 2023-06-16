@@ -13,6 +13,19 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
+  boot = {
+        #cleanOnBoot = true;
+      loader = {
+      systemd-boot.enable = true;
+      systemd-boot.editor = false;
+      timeout = 0;
+          efi ={
+              efiSysMountPoint = "/boot/efi";
+              canTouchEfiVariables = true;
+          };
+      };
+  };
+
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/387271e5-2e20-4b47-ab14-f1c20323ed51";
       fsType = "ext4";
