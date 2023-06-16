@@ -1,244 +1,316 @@
 { config, pkgs, inputs, ... }:
 
 # TODO: virtualization
-  # Virtmanager settings
-  #programs.dconf.enable = true;
-  #services.qemuGuest.enable = true;
-  # 
-  # virtualisation.libvirtd = {
-  #  enable = true;
-  #  qemuOvmf = true;
-  #  qemuRunAsRoot = true;
-  #  onBoot = "ignore";
-  #  onShutdown = "shutdown";
-  #};
+# Virtmanager settings
+#programs.dconf.enable = true;
+#services.qemuGuest.enable = true;
+# 
+# virtualisation.libvirtd = {
+#  enable = true;
+#  qemuOvmf = true;
+#  qemuRunAsRoot = true;
+#  onBoot = "ignore";
+#  onShutdown = "shutdown";
+#};
 
-  # virtualisation.virtualbox.guest.enable = true;
-  # virtualisation.virtualbox.host.enable = true;
-  # virtualisation.virtualbox.host.enableExtensionPack = true;
+# virtualisation.virtualbox.guest.enable = true;
+# virtualisation.virtualbox.host.enable = true;
+# virtualisation.virtualbox.host.enableExtensionPack = true;
 
-  # services.xrdp.enable = true;
-  # services.xrdp.defaultWindowManager = "startplasma-x11";
-  # networking.firewall.allowedTCPPorts = [ 3389 ];
+# services.xrdp.enable = true;
+# services.xrdp.defaultWindowManager = "startplasma-x11";
+# networking.firewall.allowedTCPPorts = [ 3389 ];
 
-    # Docker
-  #virtualisation.docker.enable = true;
-  #virtualisation.docker.enableOnBoot = true;
+# Docker
+#virtualisation.docker.enable = true;
+#virtualisation.docker.enableOnBoot = true;
 
-{   
-    programs = {
-      zsh.enable = true;
-      gnupg.agent = {
-          enable = true;
-          enableSSHSupport = true;
+{
+  programs = {
+    zsh.enable = true;
+    gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+    };
+  };
+
+  users.users.russ = {
+    isNormalUser = true;
+    #InitialHashedPassword = 
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOdfj6SbSBSWs2medcA8jKdFmVT1CL8l6iXTCyPUsw7y rbangert@proton.me"
+    ];
+    extraGroups = [ "wheel" "audio" "docker" "input" "networkmanager" ];
+    shell = pkgs.zsh;
+  };
+
+  environment = {
+    defaultPackages = [ ];
+    systemPackages = with pkgs; [
+      #inputs.fufexan.packages."x86_64-linux".codeium
+      ripgrep
+      ffmpeg
+      tealdeer
+      lynx
+      bash
+      exa
+      htop
+      fzf
+      curl
+      wget
+      alacritty
+      xxh
+      remmina
+      pass
+      gnupg
+      bat
+      obsidian
+      nb
+      jq
+      hugo
+      ntfy-sh
+      ntfy
+      gotify-cli
+      gotify-server
+      gotify-desktop #
+      xfce.thunar
+      xfce.thunar-archive-plugin
+      xfce.thunar-volman
+      unzip
+      lowdown
+      zk
+      slop
+      imagemagick
+      age
+      libnotify
+      kicad
+      nodejs_20
+      git
+      gh
+      python3
+      lua
+      zig
+      perl
+      go
+      yarn
+      neovim
+      neovide
+      helix
+      tmux-sessionizer
+      mpv
+      mattermost-desktop
+      librewolf
+      # TODO: examine these scripts left over in modules/packages 
+      # bandw maintenance 
+      wf-recorder
+      nil
+      nixfmt
+      nixpkgs-fmt
+      dstask
+      wtf
+      python311Packages.tasklib
+      python311Packages.pynvim
+      python311Packages.shtab
+      virt-viewer
+      virt-manager-qt
+      spice-gtk
+      boxes
+      pkgs._1password
+      pkgs._1password-gui
+      git-credential-1password
+      acpi
+      tlp
+      vim
+      nano
+      xcape
+      tailscale
+      dhcpcd
+      busybox
+      nmap
+      copyq
+      pstree
+      wgcf # cloudflare warp client clone
+      pulseaudio
+      pavucontrol
+      yai
+      aichat
+      matterhorn
+      discordo #  
+      nextcloud-client
+      qownnotes #
+    ];
+    variables = {
+      CFG = "$HOME/.config";
+      NIXOS_CONFIG_DIR = "$HOME/.config/nixos";
+      XDG_DATA_HOME = "$HOME/.local/share";
+      XDG_CONFIG_HOME = "$HOME/.config";
+      PASSWORD_STORE_DIR = "$HOME/.local/share/password-store";
+      GTK_RC_FILES = "$HOME/.local/share/gtk-1.0/gtkrc";
+      GTK2_RC_FILES = "$HOME/.local/share/gtk-2.0/gtkrc";
+      MOZ_ENABLE_WAYLAND = "1";
+      DIRENV_LOG_FORMAT = "";
+      DISABLE_QT5_COMPAT = "0";
+      DOTS = "$NIXOS_CONFIG_DIR";
+      STUFF = "$HOME/stuff";
+      JUNK = "$HOME/stuff/other";
+      TASKRC = "/home/russ/.config/task/taskrc";
+    };
+    sessionVariables = {
+      EDITOR = "nvim";
+      BROWSER = "firefox";
+      TERMINAL = "alacritty";
+    };
+  };
+
+  fonts = {
+    enableDefaultFonts = false;
+    fonts = with pkgs; [
+      noto-fonts
+      noto-fonts-emoji
+      jetbrains-mono
+      nerdfonts
+      twemoji-color-font
+      material-icons
+      material-symbols
+      lexend
+      openmoji-color
+      jost
+      (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
+    ];
+    fontconfig = {
+      hinting.autohint = true;
+      defaultFonts = {
+        serif = [ "Noto Serif" "Noto Color Emoji" ];
+        sansSerif = [ "Noto Sans" "Noto Color Emoji" ];
+        monospace = [ "JetBrainsMono Nerd Font" "Noto Color Emoji" ];
+        emoji = [ "Noto Color Emoji" ];
       };
     };
+  };
 
-    users.users.russ = {
-        isNormalUser = true;
-        #InitialHashedPassword = 
-        openssh.authorizedKeys.keys = [
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOdfj6SbSBSWs2medcA8jKdFmVT1CL8l6iXTCyPUsw7y rbangert@proton.me"
-        ];
-        extraGroups = [ "wheel" "audio" "docker" "input" "networkmanager" ];
-        shell = pkgs.zsh;
-        sessionVariables = {
- 
-    };
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
 
-    environment = {
-        defaultPackages = [ ];
-        systemPackages = with pkgs; [
-          #inputs.fufexan.packages."x86_64-linux".codeium
-          ripgrep ffmpeg tealdeer lynx bash
-          exa htop fzf curl wget alacritty xxh remmina
-          pass gnupg bat obsidian nb jq hugo 
-          ntfy-sh ntfy gotify-cli gotify-server gotify-desktop #
-          xfce.thunar xfce.thunar-archive-plugin xfce.thunar-volman
-          unzip lowdown zk slop
-          imagemagick age libnotify kicad nodejs_20
-          git gh python3 lua zig perl go yarn
-          neovim neovide helix tmux-sessionizer
-          mpv mattermost-desktop librewolf
-          # TODO: examine these scripts left over in modules/packages 
-          # bandw maintenance 
-          wf-recorder nil nixfmt nixpkgs-fmt  
-          dstask wtf
-          python311Packages.tasklib python311Packages.pynvim python311Packages.shtab
-          virt-viewer virt-manager-qt spice-gtk boxes
-          pkgs._1password pkgs._1password-gui git-credential-1password
-          acpi tlp vim nano xcape
-          tailscale dhcpcd busybox nmap 
-          copyq pstree
-          wgcf # cloudflare warp client clone
-          pulseaudio pavucontrol
-          yai aichat matterhorn discordo #  
-          nextcloud-client qownnotes #
-        ];
-        variables = {
-            CFG = "$HOME/.config";
-            NIXOS_CONFIG_DIR = "$HOME/.config/nixos";
-            XDG_DATA_HOME = "$HOME/.local/share";
-            XDG_CONFIG_HOME = "$HOME/.config";
-            PASSWORD_STORE_DIR = "$HOME/.local/share/password-store";
-            GTK_RC_FILES = "$HOME/.local/share/gtk-1.0/gtkrc";
-            GTK2_RC_FILES = "$HOME/.local/share/gtk-2.0/gtkrc";
-            MOZ_ENABLE_WAYLAND = "1";
-            EDITOR = "nvim";
-            DIRENV_LOG_FORMAT = "";
-            DISABLE_QT5_COMPAT = "0";
-            DOTS = "$NIXOS_CONFIG_DIR";
-            STUFF = "$HOME/stuff";
-            JUNK = "$HOME/stuff/other";
-            TASKRC= "/home/russ/.config/task/taskrc";
-            };
-        };
-
-    fonts = {
-      enableDefaultFonts = false;
-      fonts = with pkgs; [
-        noto-fonts noto-fonts-emoji
-        jetbrains-mono nerdfonts
-        twemoji-color-font 
-        material-icons material-symbols lexend
-        openmoji-color jost 
-        (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
+      permittedInsecurePackages = [
+        "python-2.7.18.6"
       ];
-      fontconfig = {
-        hinting.autohint = true;
-        defaultFonts = { 
-          serif = ["Noto Serif" "Noto Color Emoji"];
-          sansSerif = ["Noto Sans" "Noto Color Emoji"];
-          monospace = ["JetBrainsMono Nerd Font" "Noto Color Emoji"];
-          emoji = ["Noto Color Emoji"];
-        };
+    };
+  };
+
+  nix = {
+    settings.auto-optimise-store = true;
+    settings.allowed-users = [ "russ" ];
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
+    };
+    extraOptions = ''
+      experimental-features = nix-command flakes
+      keep-outputs = true
+      keep-derivations = true
+    '';
+
+  };
+
+  boot = {
+    #cleanOnBoot = true;
+    loader = {
+      systemd-boot.enable = true;
+      systemd-boot.editor = false;
+      timeout = 0;
+      efi = {
+        efiSysMountPoint = "/boot/efi";
+        canTouchEfiVariables = true;
       };
     };
+  };
 
-    nixpkgs = { 
-      config = { 
-        allowUnfree = true;
+  time.timeZone = "America/Denver";
+  i18n.defaultLocale = "en_US.UTF-8";
+  console = {
+    font = "Lat2-Terminus16";
+    keyMap = "us";
+  };
 
-        permittedInsecurePackages = [
-              "python-2.7.18.6"
-        ];
+  networking = {
+    enableIPv6 = false;
+    #networkmanager.enable = true;
+    wireless.iwd.enable = true;
+    firewall = {
+      enable = true;
+      checkReversePath = "loose";
+      #    allowedTCPPorts = [ 443 80 ];
+      #    allowedUDPPorts = [ 443 80 44857 ];
+      #    allowPing = false;
+    };
+  };
+
+  services = {
+    tailscale.enable = true;
+    openssh.enable = true;
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+      jack.enable = true;
+    };
+    xserver.displayManager.lightdm = {
+      greeters.slick = {
+        enable = true;
+        # TODO: theme lightdm https://github.com/linuxmint/lightdm-settings
+        #theme =
+        #iconTheme = 
+        #font = 
+        #draw-user-backgrounds = 
+        #extraConfig = 
       };
     };
+  };
 
-    nix = {
-      settings.auto-optimise-store = true;
-      settings.allowed-users = [ "russ" ];
-      gc = {
-          automatic = true;
-          dates = "weekly";
-          options = "--delete-older-than 7d";
-      };
-      extraOptions = ''
-          experimental-features = nix-command flakes
-          keep-outputs = true
-          keep-derivations = true
-      '';
-      
-    };
+  # Sound
+  sound.enable = true;
 
-    boot = {
-        #cleanOnBoot = true;
-        loader = {
-        systemd-boot.enable = true;
-        systemd-boot.editor = false;
-        timeout = 0;
-            efi ={
-                efiSysMountPoint = "/boot/efi";
-                canTouchEfiVariables = true;
-            };
-        };
+  # Security 
+  security = {
+    sudo = {
+      enable = true;
+      wheelNeedsPassword = false;
     };
+    rtkit.enable = true;
+    doas = {
+      enable = true;
+      extraRules = [{
+        users = [ "russ" ];
+        keepEnv = true;
+        persist = true;
+      }];
+    };
+    # Extra security
+    protectKernelImage = true;
+  };
 
-    time.timeZone = "America/Denver";
-    i18n.defaultLocale = "en_US.UTF-8";
-    console = {
-        font = "Lat2-Terminus16";
-        keyMap = "us";
+  hardware = {
+    pulseaudio.enable = false;
+    bluetooth.enable = true;
+    opengl = {
+      enable = true;
+      driSupport = true;
+      extraPackages = with pkgs; [
+        intel-media-driver # LIBVA_DRIVER_NAME=iHD
+        vaapiIntel # LIBVA_DRIVER_NAME=i965
+        libvdpau-va-gl
+      ];
     };
+  };
 
-    networking = {
-      enableIPv6 = false;
-      #networkmanager.enable = true;
-      wireless.iwd.enable = true;
-        firewall = {
-            enable = true;
-            checkReversePath = "loose";
-        #    allowedTCPPorts = [ 443 80 ];
-        #    allowedUDPPorts = [ 443 80 44857 ];
-        #    allowPing = false;
-        };
-    };
-
-    services = { 
-        tailscale.enable = true; 
-        openssh.enable = true;
-        pipewire = {
-            enable = true;
-            alsa.enable = true;
-            alsa.support32Bit = true;
-            pulse.enable = true;
-            jack.enable = true;
-        };
-        xserver.displayManager.lightdm = { 
-            greeters.slick = {
-                enable = true;
-                # TODO: theme lightdm https://github.com/linuxmint/lightdm-settings
-                #theme =
-                #iconTheme = 
-                #font = 
-                #draw-user-backgrounds = 
-                #extraConfig = 
-            };
-        };
-    };
-
-    # Sound
-    sound.enable = true;
-    
-    # Security 
-    security = {
-        sudo = { 
-          enable = true;
-          wheelNeedsPassword = false;
-        };
-        rtkit.enable = true;
-        doas = {
-            enable = true;
-            extraRules = [{
-                users = [ "russ" ];
-                keepEnv = true;
-                persist = true;
-            }];
-        };
-        # Extra security
-        protectKernelImage = true;
-    };
-    
-    hardware = {
-        pulseaudio.enable = false;
-        bluetooth.enable = true;
-        opengl = {
-            enable = true;
-            driSupport = true;
-            extraPackages = with pkgs; [
-                intel-media-driver # LIBVA_DRIVER_NAME=iHD
-                vaapiIntel         # LIBVA_DRIVER_NAME=i965
-                libvdpau-va-gl
-            ];
-        };
-    };
-    
-    system = {
-        stateVersion = "22.11";
-        autoUpgrade = {
-            enable = false;
-            channel = "https://nixos.org/channels/nixos-unstable";
-        };
+  system = {
+    stateVersion = "22.11";
+    autoUpgrade = {
+      enable = false;
+      channel = "https://nixos.org/channels/nixos-unstable";
     };
   };
 }
