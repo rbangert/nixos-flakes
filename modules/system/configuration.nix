@@ -60,6 +60,7 @@
       wget
       alacritty
       xxh
+      rsync
       remmina
       pass
       gnupg
