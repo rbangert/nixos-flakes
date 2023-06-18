@@ -2,30 +2,29 @@
   description = "nix config";
 
   inputs = {
-    nixpkgs.url = 
+    nixpkgs.url =
       "github:nixos/nixpkgs/nixos-23.05";
-    unstable.url = 
+    unstable.url =
       "github:nixos/nixpkgs/nixos-unstable";
-  
+
     home-manager = {
       url = "github:nix-community/home-manager/release-23.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     fufexan = {
       url = "github:fufexan/dotfiles";
-      inputs.fufexan.inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     plusultra = {
       url = "github:jakehamilton/config";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.unstable.follows = "unstable";
     };
-		neovim = {
-			url = "github:rbangert/neovim";
-			# This flake currently requires changes that are only on the Unstable channel.
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
-    
+    neovim = {
+      url = "github:neovim/neovim/stable?dir=contrib";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Generate System Images
     nixos-generators.url = "github:nix-community/nixos-generators";
     nixos-generators.inputs.nixpkgs.follows = "nixpkgs";
@@ -36,13 +35,12 @@
     # Snowfall Flake
     flake.url = "github:snowfallorg/flake";
     flake.inputs.nixpkgs.follows = "unstable";
-    flake.inputs.snowfall-lib.follows = "snowfall-lib";
-
 
     # System Deployment
     deploy-rs.url = "github:serokell/deploy-rs";
     deploy-rs.inputs.nixpkgs.follows = "unstable";
-
+    nixd.url =
+      "github:nix-community/nixd";
     nil-lsp.url = "github:oxalica/nil";
     nix-colors.url = "github:misterio77/nix-colors";
     hyprland.url = "github:hyprwm/Hyprland";
@@ -56,13 +54,13 @@
   };
 
 
-  outputs = { self, nixpkgs, unstable, fufexan, snowfall-lib, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, unstable, fufexan, flake, snowfall-lib, home-manager, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
       lib = nixpkgs.lib;
 
-      
+
       mkSystem = pkgs: system: hostname:
         pkgs.lib.nixosSystem {
           system = system;
@@ -80,7 +78,7 @@
               };
             }
           ];
-          specialArgs = { inherit inputs; neovim = inputs.neovim.defaultPackage.${system};};
+          specialArgs = { inherit inputs; };
         };
 
     in
@@ -89,5 +87,5 @@
         russ-lappy = mkSystem inputs.nixpkgs "x86_64-linux" "russ-lappy";
       };
     };
-    
+
 }

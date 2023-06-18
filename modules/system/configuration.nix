@@ -47,17 +47,21 @@
   environment = {
     defaultPackages = [ ];
     systemPackages = with pkgs; [
-      #inputs.fufexan.packages."x86_64-linux".codeium
+      nano
       ripgrep
       ffmpeg
       tealdeer
       lynx
+      vim
+      nano
       bash
       exa
       htop
       fzf
       curl
       wget
+      ranger
+      #terminology
       alacritty
       xxh
       rsync
@@ -94,35 +98,39 @@
       perl
       go
       yarn
-      neovim
-      neovide
-      helix
+
       tmux-sessionizer
       mpv
-      mattermost-desktop
-      librewolf
-      # TODO: examine these scripts left over in modules/packages 
-      # bandw maintenance 
+      
       wf-recorder
+
       nil
       nixfmt
       nixpkgs-fmt
+      #flake
       dstask
+      # tui apps
       wtf
-      python311Packages.tasklib
-      python311Packages.pynvim
-      python311Packages.shtab
+      lazygit
+      lazycli
+      lazydocker
+      # what are these for?
+      #python311Packages.tasklib
+      #python311Packages.pynvim
+      #python311Packages.shtab
+      # Virtualization
       virt-viewer
       virt-manager-qt
       spice-gtk
       boxes
+
       pkgs._1password
       pkgs._1password-gui
       git-credential-1password
+      # laptop stuff
       acpi
       tlp
-      vim
-      nano
+
       xcape
       tailscale
       dhcpcd
@@ -135,6 +143,7 @@
       pavucontrol
       yai
       aichat
+      mattermost-desktop
       matterhorn
       discordo #  
       nextcloud-client

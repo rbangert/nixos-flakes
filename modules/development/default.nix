@@ -4,6 +4,5 @@
     imports = [
       ./direnv
       ./git
-      #./nvim
     ];
 }

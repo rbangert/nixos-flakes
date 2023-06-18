@@ -45,7 +45,6 @@
     };
 
     development = {
-      #vscode-with-extensions.enable = true;
       #neovim.enable = true;
       git.enable = true;
       direnv.enable = false;
@@ -54,7 +53,8 @@
 
   nixpkgs = {
     overlays = with inputs; [
-      neovim.overlay
+      snowfall-flake.overlay
+    #  neovim.overlay
     #    outputs.overlays.additions
     #    outputs.overlays.modifications
     #    outputs.overlays.unstable-packages
