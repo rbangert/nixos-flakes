@@ -97,6 +97,10 @@
       zig
       perl
       go
+      charm
+      vhs
+      glow
+      gum
       yarn
 
       tmux-sessionizer
