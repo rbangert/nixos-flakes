@@ -23,7 +23,7 @@
     };
   };
 
-  home = {
+  homeasdd = {
     username = "russ";
     homeDirectory = "/home/russ";
     packages = with pkgs; [
@@ -38,7 +38,6 @@
   };
 
   programs = { 
-    neovim.enable = true;
     home-manager.enable = true;
     git.enable = true;
     vscode = {

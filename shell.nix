@@ -13,6 +13,6 @@
             export PS1="[\e[0;34m(Flakes)\$\e[m:\w]\$ "
   '';
 
-  nativeBuildInputs = with pkgs; [ nix home-manager git neovim ];
+  nativeBuildInputs = with pkgs; [ nix home-manager git ];
   NIX_CONFIG = "experimental-features = nix-command flakes"
 }

@@ -7,7 +7,7 @@
     ../../modules/development/default.nix
     ../../modules/nixos/default.nix
     ../../modules/scripts/default.nix
-  #../../modules/system/default.nix
+    inputs.neovim-flake.nixosModules.x86_64-linux
   #../../packages/modules/default.nix
   ];
 
@@ -24,10 +24,16 @@
   programs = {
     home-manager.enable = true;
     vscode.enable = true;
+    neovim-ide = {
+      enable = true;
+      settings = {
+      #... your options ...
+      };
+    };
   };
 
   modules = {
-    apps.firefox.enable = true;
+    apps.firefox.enable = false;
 
     desktop = {
       dunst.enable = true;
@@ -42,10 +48,10 @@
       zsh.enable = true;
       gpg.enable = true;
       tmux.enable = true;
+      
     };
 
     development = {
-      #neovim.enable = true;
       git.enable = true;
       direnv.enable = false;
     };
@@ -54,7 +60,6 @@
   nixpkgs = {
     overlays = with inputs; [
       snowfall-flake.overlay
-    #  neovim.overlay
     #    outputs.overlays.additions
     #    outputs.overlays.modifications
     #    outputs.overlays.unstable-packages

@@ -66,6 +66,7 @@
       xxh
       rsync
       remmina
+      librewolf
       pass
       gnupg
       bat
@@ -127,7 +128,7 @@
       virt-manager-qt
       spice-gtk
       boxes
-
+      docker-client
       pkgs._1password
       pkgs._1password-gui
       git-credential-1password
@@ -167,11 +168,10 @@
       DOTS = "$NIXOS_CONFIG_DIR";
       STUFF = "$HOME/stuff";
       JUNK = "$HOME/stuff/other";
-      TASKRC = "/home/russ/.config/task/taskrc";
     };
     sessionVariables = {
       EDITOR = "nvim";
-      BROWSER = "firefox";
+      BROWSER = "librewolf";
       TERMINAL = "alacritty";
     };
   };
@@ -205,7 +205,6 @@
   nixpkgs = {
     config = {
       allowUnfree = true;
-
       permittedInsecurePackages = [
         "python-2.7.18.6"
       ];

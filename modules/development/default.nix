@@ -4,5 +4,6 @@
     imports = [
       ./direnv
       ./git
+      #./neovim
     ];
 }
