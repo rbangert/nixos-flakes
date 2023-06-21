@@ -1,0 +1,27 @@
+{
+	"name": "@caddyserver/vscode-caddyfile",
+	"description": "Rich Caddyfile support for Visual Studio Code ",
+	"version": "0.3.0",
+	"license": "MIT",
+	"publisher": "matthewpi",
+	"private": true,
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "$npm_node_execpath build.mjs",
+		"clean": "rimraf .turbo dist out",
+		"dev": "cross-env NODE_ENV=development pnpm run build"
+	},
+	"dependencies": {
+		"tree-kill": "workspace:*",
+		"vscode-languageclient": "6.1.4"
+	},
+	"devDependencies": {
+		"@caddyserver/caddyfile-language-server": "workspace:*",
+		"@types/node": "18.16.10",
+		"@types/vscode": "1.59.0",
+		"cross-env": "7.0.3",
+		"esbuild": "0.17.19",
+		"rimraf": "5.0.0",
+		"typescript": "5.0.4"
+	}
+}

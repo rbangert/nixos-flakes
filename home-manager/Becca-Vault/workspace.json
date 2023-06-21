@@ -1,0 +1,299 @@
+{
+  "main": {
+    "id": "43d00f2b6446ef35",
+    "type": "split",
+    "children": [
+      {
+        "id": "1966e412f86dc79b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e420df1f343556d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Medical & Dental/Adderall Prescription.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eb2a7e464357615e",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b05ae8f85ca4734",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18391d412667d864",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0809413c3dbf6ef6",
+            "type": "leaf",
+            "state": {
+              "type": "mk-file-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "a2c3a29dec614d16",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "33e51ca8842d4919",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "9e3705fae0ced16e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 377.51103591918945
+  },
+  "right": {
+    "id": "ffe09998f170acb3",
+    "type": "split",
+    "children": [
+      {
+        "id": "b4561eaeafb6c722",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "45f6f7e626234fa5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Medical & Dental/Adderall Prescription.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6101116614eb0b3c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Medical & Dental/Adderall Prescription.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "df30dbfd5069b7a5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f3c1a47254ecbb5b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Medical & Dental/Adderall Prescription.md"
+              }
+            }
+          },
+          {
+            "id": "78d3128ae52472d5",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "634e3a6d5a037bcc",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
+          },
+          {
+            "id": "0b6c4a3ca933a00a",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {}
+            }
+          },
+          {
+            "id": "eee1a4383ac8d48c",
+            "type": "leaf",
+            "state": {
+              "type": "BC-tree",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "02f5269c99444b6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "092a2a8bf0f2a38b",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Medical & Dental/Adderall Prescription.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.7132754626224436,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 353.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "juggl:Juggl global graph": false,
+      "templater-obsidian:Templater": false,
+      "homepage:Open homepage": false,
+      "obsidian-metatable:Metatable": false,
+      "custom-sort:Toggle custom sorting": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "18391d412667d864",
+  "lastOpenFiles": [
+    "Job Search/Interviews/Application & Interview Template/Sales & Marketing Coordinator - Fluent Commerce.md",
+    "Job Search/Interviews/Application & Interview Template/2023.06.13 - Nicola - Interview - Fluent Commerce.md",
+    "Job Search/Interviews/Application & Interview Template/2023.06.08 - Jess Nelson - Interview.md",
+    "Job Search/Interviews/Application & Interview Template/2023.06.05 - Senada - Fluent Commerce - Interview.md",
+    "Home/Appliances/Vacuum Filters.md",
+    "Home/Appliances/Air Filters.md",
+    "Business/Business.md",
+    "Job Search/Interviews/Application & Interview Template/Tech Stack Email.md",
+    "Job Search/Interviews/Application & Interview Template/Application & Interview Template.md",
+    "Work/Contract Template/WorkLogs/WorkLogs.md",
+    "Work/Contract Template/Clients/Client Name/WorkLogs/WorkLogs.md",
+    "Work/Contract Template/Clients/Client Name/Meetings/Meetings.md",
+    "Work/Contract Template/Clients/Client Name/Docs/Docs.md",
+    "Work/Contract Template/Clients/Client Name/attachments/attachments.md",
+    "Work/Contract Template/Contract Template.md",
+    "Work/Contract Template/Meetings/Meetings.md",
+    "Work/Contract Template/Inbox/Inbox.md",
+    "Work/Contract Template/Docs/Docs.md",
+    "Work/Contract Template/attachments/attachments.md",
+    "Work/Work.md",
+    "People Library/People Library.md",
+    "Communication/Communication.md",
+    "Information Library/PDFs/PDFs.md",
+    "Information Library/attachments/attachments.md",
+    "Communication/VideoMeetings/VideoMeetings.md",
+    "Cats/Vets/Vets.md",
+    "Work/CRMD/Clients/MyClient2/WorkLog",
+    "Work/CRMD/Clients/MyClient2/Meetings",
+    "Work/CRMD/Clients/MyClient2",
+    "Work/CRMD/Clients/MyClient/WorkLogs",
+    "Work/CRMD/Clients/MyClient/Meetings",
+    "Work/CRMD/Clients/MyClient",
+    "Work/CRMD/Clients/MyClient/WorkLog",
+    "Work/CRMD/Clients/MyClient/Meetings",
+    "Work/CRMD/Clients/MyClient",
+    "Work/Testing/Clients/Fantasy Client",
+    "Projects/QuickCapture/Pasted image 20230313100609.png",
+    "Projects/QuickCapture/Pasted image 20230312180517.png",
+    "Projects/QuickCapture/Pasted image 20230312175916.png",
+    "Inbox/attachments/chrome_iep2UFKRMc.png",
+    "Inbox/attachments/Zoom_RX792qdD9K.png",
+    "Inbox/attachments/Zoom_IPkxhtF60C.png",
+    "Inbox/attachments/Zoom_GXEiJpg8dV.png",
+    "Inbox/attachments/Zoom_idzZXHrsVW.png",
+    "Inbox/attachments/Zoom_auixGT3Jml.png",
+    "Inbox/attachments/Zoom_nZELg9uAk0.png",
+    "Vault/Home Dashboard/Pixie-Tech Command Center.canvas",
+    "Vault - Copy/Home Dashboard/Pixie-Tech Command Center.canvas",
+    "INE/Obsidian/Vault/Home Dashboard/Pixie-Tech Command Center.canvas",
+    "Untitled.canvas",
+    "Untitled 1.canvas"
+  ]
+}

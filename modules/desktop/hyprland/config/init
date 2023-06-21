@@ -1,0 +1,64 @@
+# TODO: check functionality with 1 monitor
+monitor=eDP-1,1920x1080@60,0x0,1
+monitor=HDMI-A-1,1920x1080@60,1920x0,1
+
+# Binding workspaces to monitors
+wsbind=1,eDP-1
+wsbind=2,eDP-1
+wsbind=3,eDP-1
+wsbind=4,eDP-1
+wsbind=5,eDP-1
+wsbind=6,HDMI-A-1
+wsbind=7,HDMI-A-1
+wsbind=8,HDMI-A-1
+wsbind=9,HDMI-A-1
+wsbind=10,HDMI-A-1
+
+# Init
+exec-once=alacritty
+exec-once=eww daemon
+exec-once=dunst
+exec-once=wlsunset -l -111 -L -40 -t 6500
+
+# TODO: Add swayidle configs and verify fuctionality.
+# exec-once=swayidle -w timeout 300 'swaylock' before-sleep 'swaylock -f'
+
+
+# TODO: set window rules and create startup script
+# Window rules 
+windowrule=workspace 1 silent,alacritty
+#windowrule=workspace 2 silent,move 0 0,title:^(Firefox)(.*)$
+#windowrule=workspace 3 silent,mattermost-desktop
+#windowrule=workspace 4 silent,librewolf 
+##windowrul2=workspace 5 silent,
+#windowrule=workspace 6 silent,code
+#windowrule=workspace 7 silent,obsidian
+#windowrule=workspace 8 silent, 
+#windowrule=workspace 9 silent, 
+#windowrule=workspace 0 silent, 
+
+# example window rules
+# for windows named/classed as abc and xyz
+#windowrule=float,move 0 0,pqiv
+#windowrule=float,foot-notes
+#windowrule=size 420 69,abc
+#windowrule=tile,xyz
+#windowrule=float,abc
+#windowrule=pseudo,abc
+#windowrule=monitor 0,xyz
+
+# TODO: configure special workspace and scratch pad
+    # special workspace
+#exec-once=[workspace special; size 75% 20%;move 12.5% 40] alacritty
+    #bind = $mod SHIFT, grave, movetoworkspace, special
+    #bind = $mod, grave, togglespecialworkspace, eDP-1
+
+dwindle {
+    pseudotile=0 # enable pseudotiling on dwindle
+    force_split=2 # always on the right/bottom
+}
+
+input {
+    follow_mouse=0
+}
+

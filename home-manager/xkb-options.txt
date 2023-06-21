@@ -1,0 +1,221 @@
+! options
+================================================
+
+  grp                  Switching to another layout
+  grp:switch           Right Alt (while pressed)
+  grp:lswitch          Left Alt (while pressed)
+  grp:lwin_switch      Left Win (while pressed)
+  grp:rwin_switch      Right Win (while pressed)
+  grp:win_switch       Any Win (while pressed)
+  grp:menu_switch      Menu (while pressed), Shift+Menu for Menu
+  grp:psps_switch      Caps Lock (while pressed), Alt+Caps Lock for the original Caps Lock action
+  grp:rctrl_switch     Right Ctrl (while pressed)
+  grp:toggle           Right Alt
+  grp:lalt_toggle      Left Alt
+  grp:caps_toggle      Caps Lock
+  grp:shift_caps_toggle Shift+Caps Lock
+  grp:shift_caps_switch Caps Lock to first layout; Shift+Caps Lock to last layout
+  grp:win_menu_switch  Left Win to first layout; Right Win/Menu to last layout
+  grp:lctrl_rctrl_switch Left Ctrl to first layout; Right Ctrl to last layout
+  grp:alt_caps_toggle  Alt+Caps Lock
+  grp:shifts_toggle    Both Shift together
+  grp:alts_toggle      Both Alt together
+  grp:ctrls_toggle     Both Ctrl together
+  grp:ctrl_shift_toggle Ctrl+Shift
+  grp:lctrl_lshift_toggle Left Ctrl+Left Shift
+  grp:rctrl_rshift_toggle Right Ctrl+Right Shift
+  grp:ctrl_alt_toggle  Alt+Ctrl
+  grp:alt_shift_toggle Alt+Shift
+  grp:lalt_lshift_toggle Left Alt+Left Shift
+  grp:alt_space_toggle Alt+Space
+  grp:menu_toggle      Menu
+  grp:lwin_toggle      Left Win
+  grp:win_space_toggle Win+Space
+  grp:rwin_toggle      Right Win
+  grp:lshift_toggle    Left Shift
+  grp:rshift_toggle    Right Shift
+  grp:lctrl_toggle     Left Ctrl
+  grp:rctrl_toggle     Right Ctrl
+  grp:sclk_toggle      Scroll Lock
+  grp:lctrl_lwin_rctrl_menu Left Ctrl+Left Win to first layout; Right Ctrl+Menu to second layout
+  grp:lctrl_lwin_toggle Left Ctrl+Left Win
+  lv2                  Key to choose the 2nd level
+  lv2:lsgt_switch      The "&lt; &gt;" key
+  lv3                  Key to choose the 3rd level
+  lv3:switch           Right Ctrl
+  lv3:menu_switch      Menu
+  lv3:win_switch       Any Win
+  lv3:lwin_switch      Left Win
+  lv3:rwin_switch      Right Win
+  lv3:alt_switch       Any Alt
+  lv3:lalt_switch      Left Alt
+  lv3:ralt_switch      Right Alt
+  lv3:ralt_switch_multikey Right Alt; Shift+Right Alt as Compose
+  lv3:ralt_alt         Right Alt never chooses 3rd level
+  lv3:enter_switch     Enter on keypad
+  lv3:caps_switch      Caps Lock
+  lv3:bksl_switch      Backslash
+  lv3:lsgt_switch      The "&lt; &gt;" key
+  lv3:caps_switch_latch Caps Lock; acts as onetime lock when pressed together with another 3rd-level chooser
+  lv3:bksl_switch_latch Backslash; acts as onetime lock when pressed together with another 3rd level chooser
+  lv3:lsgt_switch_latch The "&lt; &gt;" key; acts as onetime lock when pressed together with another 3rd level chooser
+  ctrl                 Ctrl position
+  ctrl:nocaps          Caps Lock as Ctrl
+  ctrl:lctrl_meta      Left Ctrl as Meta
+  ctrl:swapcaps        Swap Ctrl and Caps Lock
+  ctrl:swapcaps_hyper  Caps Lock as Ctrl, Ctrl as Hyper
+  ctrl:ac_ctrl         To the left of "A"
+  ctrl:aa_ctrl         At the bottom left
+  ctrl:rctrl_ralt      Right Ctrl as Right Alt
+  ctrl:menu_rctrl      Menu as Right Ctrl
+  ctrl:swap_lalt_lctl  Swap Left Alt with Left Ctrl
+  ctrl:swap_lwin_lctl  Swap Left Win with Left Ctrl
+  ctrl:swap_rwin_rctl  Swap Right Win with Right Ctrl
+  ctrl:swap_lalt_lctl_lwin Left Alt as Ctrl, Left Ctrl as Win, Left Win as Left Alt
+  grp_led              Use keyboard LED to show alternative layout
+  grp_led:num          Num Lock
+  grp_led:caps         Caps Lock
+  grp_led:scroll       Scroll Lock
+  mod_led              Use keyboard LED to indicate modifiers
+  mod_led:compose      Compose
+  keypad               Layout of numeric keypad
+  keypad:legacy        Legacy
+  keypad:oss           Unicode arrows and math operators
+  keypad:future        Unicode arrows and math operators on default level
+  keypad:legacy_wang   Legacy Wang 724
+  keypad:oss_wang      Wang 724 keypad with Unicode arrows and math operators
+  keypad:future_wang   Wang 724 keypad with Unicode arrows and math operators on default level
+  keypad:hex           Hexadecimal
+  keypad:atm           Phone and ATM style
+  kpdl                 Numeric keypad Delete behavior
+  kpdl:dot             Legacy key with dot
+  kpdl:comma           Legacy key with comma
+  kpdl:dotoss          Four-level key with dot
+  kpdl:dotoss_latin9   Four-level key with dot, Latin-9 only
+  kpdl:commaoss        Four-level key with comma
+  kpdl:momayyezoss     Four-level key with momayyez
+  kpdl:kposs           Four-level key with abstract separators
+  kpdl:semi            Semicolon on third level
+  caps                 Caps Lock behavior
+  caps:internal        Caps Lock uses internal capitalization; Shift "pauses" Caps Lock
+  caps:internal_nocancel Caps Lock uses internal capitalization; Shift does not affect Caps Lock
+  caps:shift           Caps Lock acts as Shift with locking; Shift "pauses" Caps Lock
+  caps:shift_nocancel  Caps Lock acts as Shift with locking; Shift does not affect Caps Lock
+  caps:capslock        Caps Lock toggles normal capitalization of alphabetic characters
+  caps:shiftlock       Caps Lock toggles Shift Lock (affects all keys)
+  caps:swapescape      Swap Esc and Caps Lock
+  caps:escape          Make Caps Lock an additional Esc
+  caps:escape_shifted_capslock Make Caps Lock an additional Esc, but Shift + Caps Lock is the regular Caps Lock
+  caps:backspace       Make Caps Lock an additional Backspace
+  caps:super           Make Caps Lock an additional Super
+  caps:hyper           Make Caps Lock an additional Hyper
+  caps:menu            Make Caps Lock an additional Menu key
+  caps:numlock         Make Caps Lock an additional Num Lock
+  caps:ctrl_modifier   Make Caps Lock an additional Ctrl
+  caps:none            Caps Lock is disabled
+  altwin               Alt and Win behavior
+  altwin:menu          Add the standard behavior to Menu key
+  altwin:menu_win      Menu is mapped to Win
+  altwin:meta_alt      Alt and Meta are on Alt
+  altwin:alt_win       Alt is mapped to Win and the usual Alt
+  altwin:ctrl_win      Ctrl is mapped to Win and the usual Ctrl
+  altwin:ctrl_rwin     Ctrl is mapped to Right Win and the usual Ctrl
+  altwin:ctrl_alt_win  Ctrl is mapped to Alt, Alt to Win
+  altwin:meta_win      Meta is mapped to Win
+  altwin:left_meta_win Meta is mapped to Left Win
+  altwin:hyper_win     Hyper is mapped to Win
+  altwin:alt_super_win Alt is mapped to Right Win, Super to Menu
+  altwin:swap_lalt_lwin Left Alt is swapped with Left Win
+  altwin:swap_alt_win  Alt is swapped with Win
+  altwin:prtsc_rwin    Win is mapped to PrtSc and the usual Win
+  Compose key          Position of Compose key
+  compose:ralt         Right Alt
+  compose:lwin         Left Win
+  compose:lwin-altgr   3rd level of Left Win
+  compose:rwin         Right Win
+  compose:rwin-altgr   3rd level of Right Win
+  compose:menu         Menu
+  compose:menu-altgr   3rd level of Menu
+  compose:lctrl        Left Ctrl
+  compose:lctrl-altgr  3rd level of Left Ctrl
+  compose:rctrl        Right Ctrl
+  compose:rctrl-altgr  3rd level of Right Ctrl
+  compose:caps         Caps Lock
+  compose:caps-altgr   3rd level of Caps Lock
+  compose:102          The "&lt; &gt;" key
+  compose:102-altgr    3rd level of the "&lt; &gt;" key
+  compose:paus         Pause
+  compose:prsc         PrtSc
+  compose:sclk         Scroll Lock
+  compat               Compatibility options
+  numpad:pc            Default numeric keypad keys
+  numpad:mac           Numeric keypad always enters digits (as in macOS)
+  numpad:microsoft     Num Lock on: digits; Shift for arrows. Num Lock off: arrows (as in Windows)
+  numpad:shift3        Shift does not cancel Num Lock, chooses 3rd level instead
+  srvrkeys:none        Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server
+  apple:alupckeys      Apple Aluminium emulates Pause, PrtSc, Scroll Lock
+  shift:breaks_caps    Shift cancels Caps Lock
+  misc:typo            Enable extra typographic characters
+  misc:apl             Enable APL overlay characters
+  shift:both_capslock  Both Shift together enable Caps Lock
+  shift:both_capslock_cancel Both Shift together enable Caps Lock; one Shift key disables it
+  shift:both_shiftlock Both Shift together enable Shift Lock
+  keypad:pointerkeys   Shift + Num Lock enables PointerKeys
+  grab:break_actions   Allow breaking grabs with keyboard actions (warning: security risk)
+  grab:debug           Allow grab and window tree logging
+  currencysign         Currency signs
+  eurosign:e           Euro on E
+  eurosign:2           Euro on 2
+  eurosign:4           Euro on 4
+  eurosign:5           Euro on 5
+  rupeesign:4          Rupee on 4
+  lv5                  Key to choose 5th level
+  lv5:lsgt_switch      The "&lt; &gt;" key chooses 5th level
+  lv5:ralt_switch      Right Alt chooses 5th level
+  lv5:menu_switch      Menu chooses 5th level
+  lv5:lsgt_switch_lock The "&lt; &gt;" key chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser
+  lv5:ralt_switch_lock Right Alt chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser
+  lv5:lwin_switch_lock Left Win chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser
+  lv5:rwin_switch_lock Right Win chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser
+  lv5:lsgt_switch_lock_cancel The "&lt; &gt;" key chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser
+  lv5:lsgt_switch      The "&lt; &gt;" key chooses 5th level
+  lv5:ralt_switch      Right Alt chooses 5th level
+  lv5:menu_switch      Menu chooses 5th level
+  lv5:lsgt_switch_lock The "&lt; &gt;" key chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser
+  lv5:ralt_switch_lock Right Alt chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser
+  lv5:lwin_switch_lock Left Win chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser
+  lv5:rwin_switch_lock Right Win chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser
+  nbsp                 Non-breaking space input
+  nbsp:none            Usual space at any level
+  nbsp:level2          Non-breaking space at the 2nd level
+  nbsp:level3          Non-breaking space at the 3rd level
+  nbsp:level3s         Non-breaking space at the 3rd level, nothing at the 4th level
+  nbsp:level3n         Non-breaking space at the 3rd level, thin non-breaking space at the 4th level
+  nbsp:level4          Non-breaking space at the 4th level
+  nbsp:level4n         Non-breaking space at the 4th level, thin non-breaking space at the 6th level
+  nbsp:level4nl        Non-breaking space at the 4th level, thin non-breaking space at the 6th level (via Ctrl+Shift)
+  nbsp:zwnj2           Zero-width non-joiner at the 2nd level
+  nbsp:zwnj2zwj3       Zero-width non-joiner at the 2nd level, zero-width joiner at the 3rd level
+  nbsp:zwnj2zwj3nb4    Zero-width non-joiner at the 2nd level, zero-width joiner at the 3rd level, non-breaking space at the 4th level
+  nbsp:zwnj2nb3        Zero-width non-joiner at the 2nd level, non-breaking space at the 3rd level
+  nbsp:zwnj2nb3s       Zero-width non-joiner at the 2nd level, non-breaking space at the 3rd level, nothing at the 4th level
+  nbsp:zwnj2nb3zwj4    Zero-width non-joiner at the 2nd level, non-breaking space at the 3rd level, zero-width joiner at the 4th level
+  nbsp:zwnj2nb3nnb4    Zero-width non-joiner at the 2nd level, non-breaking space at the 3rd level, thin non-breaking space at the 4th level
+  nbsp:zwnj3zwj4       Zero-width non-joiner at the 3rd level, zero-width joiner at the 4th level
+  japan                Japanese keyboard options
+  japan:kana_lock      Kana Lock key is locking
+  japan:nicola_f_bs    NICOLA-F style Backspace
+  japan:hztg_escape    Make Zenkaku Hankaku an additional Esc
+  korean               Korean Hangul/Hanja keys
+  korean:ralt_hangul   Make right Alt a Hangul key
+  korean:rctrl_hangul  Make right Ctrl a Hangul key
+  korean:ralt_hanja    Make right Alt a Hanja key
+  korean:rctrl_hanja   Make right Ctrl a Hanja key
+  esperanto            Esperanto letters with superscripts
+  esperanto:qwerty     At the corresponding key in a QWERTY layout
+  esperanto:dvorak     At the corresponding key in a Dvorak layout
+  esperanto:colemak    At the corresponding key in a Colemak layout
+  solaris              Old Solaris keycodes compatibility
+  solaris:sun_compat   Sun key compatibility
+  terminate            Key sequence to kill the X server
+  terminate:ctrl_alt_bksp Ctrl+Alt+Backspace

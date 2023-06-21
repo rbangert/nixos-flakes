@@ -1,0 +1,25 @@
+{
+	"name": "@caddyserver/caddyfile-language-server",
+	"description": "",
+	"version": "0.3.0",
+	"license": "MIT",
+	"publisher": "matthewpi",
+	"private": true,
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "$npm_node_execpath build.mjs",
+		"clean": "rimraf .turbo dist out",
+		"dev": "cross-env NODE_ENV=development pnpm run build"
+	},
+	"dependencies": {
+		"vscode-languageserver": "6.1.1",
+		"vscode-languageserver-textdocument": "1.0.7"
+	},
+	"devDependencies": {
+		"@types/node": "18.16.10",
+		"cross-env": "7.0.3",
+		"esbuild": "0.17.19",
+		"rimraf": "5.0.0",
+		"typescript": "5.0.4"
+	}
+}

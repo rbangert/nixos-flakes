@@ -1,0 +1,44 @@
+# Replace some more things with better alternatives
+#alias cat='bat --style header --style snip --style changes --style header'
+#[ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
+
+# quick connects
+alias rrsv='ssh russ@172.245.210.126'
+
+
+# dots repo
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias cadd='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add'
+
+alias nixconf='sudo nixos-rebuild switch --flake .#russ-lappy'
+
+# Common use
+alias tarnow='tar -acf '
+alias untar='tar -xvf '
+alias wget='wget -c '
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+alias tb='~/.yarn/bin/tb'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias hw='hwinfo --short'                          # Hardware Info
+# Replace ls with exa
+alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
+alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first --icons'  # long format
+alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
+alias l.="exa -a | egrep '^\.'"                                     # show only dotfiles
+alias ip="ip -color"
+
+# Admin Tools
+alias jctl="journalctl -p 3 -xb" # Get the error messages from journalctl
+

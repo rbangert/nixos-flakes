@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"path": "../.config/nixos"
+		},
+		{
+			"path": "../.config/alacritty"
+		},
+		{
+			"path": "../.config/dunst"
+		},
+		{
+			"path": "../.config/eww"
+		},
+		{
+			"path": "../.config/hypr"
+		},
+		{
+			"path": "../.config/nvim"
+		},
+		{
+			"path": "../.config/rofi"
+		},
+		{
+			"path": "../.config/swaylock"
+		},
+		{
+			"path": "../.config/systemd"
+		},
+		{
+			"path": "../.config/tmux"
+		},
+		{
+			"path": "../.config/waybar"
+		},
+		{
+			"path": "../.config/wtf"
+		},
+		{
+			"path": "../.config/zsh"
+		}
+	],
+    "settings": {}
+}

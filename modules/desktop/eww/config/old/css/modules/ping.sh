@@ -1,0 +1,1 @@
+/nix/store/wbk50gv1sjpzqvn99zdnc5rvviihb0jq-home-manager-files/.config/eww/modules/ping.sh

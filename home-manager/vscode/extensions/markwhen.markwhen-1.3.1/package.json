@@ -1,0 +1,141 @@
+{
+	"name": "markwhen",
+	"displayName": "Markwhen",
+	"description": "Visualize and edit markwhen documents",
+	"version": "1.3.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mark-when/markwhen"
+	},
+	"icon": "icons/markwhen.png",
+	"engines": {
+		"vscode": "^1.69.0"
+	},
+	"sponsor": {
+		"url": "https://github.com/sponsors/kochrt"
+	},
+	"publisher": "Markwhen",
+	"keywords": [
+		"timeline",
+		"gantt",
+		"calendar"
+	],
+	"categories": [
+		"Other",
+		"Visualization"
+	],
+	"activationEvents": [
+		"onCustomEditor:markwhen.timeline",
+		"onLanguage:markwhen",
+		"onCommand:markwhen.openPreview",
+		"onCommand:markwhen.viewInTimeline"
+	],
+	"main": "./out/extension.js",
+	"configurationDefaults": {
+		"markwhen": {
+			"editor.semanticHighlighting.enabled": true
+		}
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "markwhen.openPreview",
+				"title": "Open markwhen preview to the side",
+				"category": "Markwhen",
+				"icon": "$(open-preview)"
+			},
+			{
+				"command": "markwhen.viewInTimeline",
+				"title": "View event in timeline",
+				"category": "Markwhen",
+				"icon": "$(arrow-right)"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "markwhen.openPreview",
+					"when": "editorLangId == markwhen"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "markwhen.openPreview",
+					"when": "editorLangId == markwhen",
+					"group": "navigation"
+				}
+			]
+		},
+		"customEditors": [
+			{
+				"viewType": "markwhen.timeline",
+				"displayName": "Markwhen",
+				"selector": [
+					{
+						"filenamePattern": "*.mw"
+					}
+				],
+				"priority": "option"
+			}
+		],
+		"semanticTokenTypes": [],
+		"languages": [
+			{
+				"id": "markwhen",
+				"aliases": [
+					"Markwhen",
+					"mw"
+				],
+				"extensions": [
+					".mw"
+				],
+				"icon": {
+					"dark": "./icons/icon.svg",
+					"light": "./icons/icon.svg"
+				},
+				"filenamePatterns": [
+					"*.mw"
+				]
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js",
+		"link:parser": "yalc add @markwhen/parser && yalc link @markwhen/parser && npm install",
+		"unlink:parser": "yalc remove @markwhen/parser && npm install",
+		"deploy": "vsce publish"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/luxon": "^3.0.0",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.69.0",
+		"@typescript-eslint/eslint-plugin": "^5.31.0",
+		"@typescript-eslint/parser": "^5.31.0",
+		"@vscode/test-electron": "^2.1.5",
+		"eslint": "^8.20.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.0.0",
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"@markwhen/parser": "^0.4.9",
+		"vscode-languageclient": "^8.0.2"
+	},
+	"__metadata": {
+		"id": "81e92434-f234-4c87-af2c-8c9161d60c3a",
+		"publisherId": "3caa8be9-49e9-4e3f-ac45-7d9e72328393",
+		"publisherDisplayName": "Markwhen",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1686585839297,
+		"preRelease": false
+	}
+}

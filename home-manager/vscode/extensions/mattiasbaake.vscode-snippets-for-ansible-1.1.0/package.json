@@ -1,0 +1,44 @@
+{
+	"name": "vscode-snippets-for-ansible",
+	"displayName": "VSCode snippets for Ansible",
+	"description": "Provide an automatically build set of snippets for ansible modules.",
+	"version": "1.1.0",
+	"engines": {
+		"vscode": "^1.57.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"ansible"
+	],
+	"license": "GPL-3.0",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "yaml",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "ansible",
+				"path": "./snippets/snippets.code-snippets"
+			}
+		]
+	},
+	"icon": "images/icon.png",
+	"publisher": "MattiasBaake",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bammab/vscode-snippets-for-ansible.git"
+	},
+	"__metadata": {
+		"id": "50c17615-c6ac-453d-bc99-d5a7e2a02ee6",
+		"publisherId": "c3ebc453-fe72-478f-862f-c6ae2e3b215c",
+		"publisherDisplayName": "Mattias Baake",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1686585828391,
+		"preRelease": false
+	}
+}

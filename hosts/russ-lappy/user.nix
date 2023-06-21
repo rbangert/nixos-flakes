@@ -1,4 +1,4 @@
-{ inputs, outputs, lib, config, pkgs, nixneovim, ... }: {
+{ inputs, neovim-flake, outputs, lib, config, pkgs, nixneovim, ... }: {
 
   imports = [
     ../../modules/apps/default.nix

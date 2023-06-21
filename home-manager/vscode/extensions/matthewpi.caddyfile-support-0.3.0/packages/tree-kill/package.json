@@ -1,0 +1,23 @@
+{
+	"name": "tree-kill",
+	"description": "",
+	"version": "1.0.0",
+	"license": "MIT",
+	"main": "dist/index.cjs",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "tsup src/index.ts --target esnext --format esm,cjs --dts",
+		"watch": "tsup src/index.ts --target esnext --format esm,cjs --dts --watch",
+		"clean": "rimraf .turbo dist node_modules/.cache"
+	},
+	"devDependencies": {
+		"@types/node": "18.16.10",
+		"cross-env": "7.0.3",
+		"rimraf": "5.0.0",
+		"tsup": "6.7.0",
+		"typescript": "5.0.4"
+	}
+}

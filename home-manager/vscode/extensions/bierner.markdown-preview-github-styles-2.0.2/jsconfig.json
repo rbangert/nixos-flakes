@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "lib": [
+            "es6"
+        ],
+        "module": "es2020",
+        "moduleResolution": "nodenext",
+        "experimentalDecorators": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

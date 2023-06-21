@@ -1,0 +1,1 @@
+<% tp.file.create_new("TestTemplate", "Created Test", false, "Cats") %>

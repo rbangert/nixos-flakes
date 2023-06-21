@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="vscode-sshfs" Version="1.26.1" Publisher="Kelvin" />
+			<DisplayName>SSH FS</DisplayName>
+			<Description xml:space="preserve">File system, terminal and task provider using SSH</Description>
+			<Tags>remote,ssh,sshfs,sync,filesystem,terminal,sftp,scp,remote-menu,__sponsor_extension</Tags>
+			<Categories>Other</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			<Badges><Badge Link="https://github.com/SchoofsKelvin/vscode-sshfs/releases" ImgUri="https://img.shields.io/github/v/release/SchoofsKelvin/vscode-sshfs?include_prereleases&amp;label=GitHub%20version" Description="Releases on GitHub" />
+<Badge Link="https://open-vsx.org/extension/Kelvin/vscode-sshfs" ImgUri="https://img.shields.io/open-vsx/v/Kelvin/vscode-sshfs?label=Open%20VSX" Description="Open VSX Registry" />
+<Badge Link="https://marketplace.visualstudio.com/items?itemName=Kelvin.vscode-sshfs" ImgUri="https://img.shields.io/visual-studio-marketplace/v/Kelvin.vscode-sshfs?label=VS%20Marketplace&amp;logo=sdf" Description="Visual Studio Marketplace" />
+<Badge Link="https://marketplace.visualstudio.com/items?itemName=Kelvin.vscode-sshfs" ImgUri="https://img.shields.io/visual-studio-marketplace/i/Kelvin.vscode-sshfs?label=Installs" Description="Unique installs using Visual Studio Marketplace" /></Badges>
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.49.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				
+				<Property Id="Microsoft.VisualStudio.Code.SponsorLink" Value="https://github.com/sponsors/SchoofsKelvin" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/SchoofsKelvin/vscode-sshfs.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/SchoofsKelvin/vscode-sshfs.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/SchoofsKelvin/vscode-sshfs.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/SchoofsKelvin/vscode-sshfs/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/SchoofsKelvin/vscode-sshfs" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				
+				
+			</Properties>
+			<License>extension/LICENSE.txt</License>
+			<Icon>extension/resources/Logo.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/resources/Logo.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>

@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"type":"group","label":"IMG Projects","id":"f60811db8375379b","x":159,"y":-247,"width":586,"height":626,"color":"3"},
+		{"type":"group","label":"INE Projects","id":"c12ecd26ac2d8312","x":-457,"y":-247,"width":586,"height":626,"color":"2"},
+		{"type":"group","label":"Personal Projects","id":"674e2ee7b06bb1d2","x":-1078,"y":-247,"width":586,"height":626,"color":"4"},
+		{"type":"file","file":"Brag Book/Previous Jobs/INE/Projects/Probaby-Delete/Case Completion.md","id":"3addb1ecd146245f","x":-419,"y":-215,"width":412,"height":250},
+		{"type":"file","file":"Vault/Home Dashboard/~ Recently Modified Files~.md","id":"17eda785e574e36c","x":-1078,"y":462,"width":586,"height":626},
+		{"type":"file","file":"Vault/Home Dashboard/Buttons.md","id":"981f2252f02fabac","x":-445,"y":462,"width":574,"height":626},
+		{"type":"file","file":"Vault/Home Dashboard/Most Recent Medical Visits.md","id":"aebfa7e7bff09ee7","x":159,"y":462,"width":586,"height":626},
+		{"type":"text","text":"Pixie Tech Command Center","id":"b94dc8813e51a555","x":-338,"y":-1080,"width":250,"height":50,"color":"4"}
+	],
+	"edges":[]
+}
