@@ -1,0 +1,3072 @@
+nixos-rebuild switch --rollback
+sudo
+sudo nix-env --list-generations --profile /nix/var/nix/profiles/systems
+sudo nix-env --list-generations
+reboot
+ip a
+iwctl
+quit
+;ls
+ip a
+dhcpcd
+nix-shell -p dhcpcd
+cd .config/nixos
+cat modules/system/configuration.nix
+ip a
+nvim modules/system/configuration.nix
+nvim home-manager/home.nix 
+cd .config/nixos
+ls
+nano modules
+cd modules
+cat system/configuration.nix
+ip a
+dhcpcd
+nix-shell -p dhcpcd
+ip a
+iwctl
+ip a
+dhcdcd
+chcpcd
+dhcpcd
+cd .config/nixos
+cat modules/system/configuration.nix
+nvim modules/system/configuration.nix
+cd ..
+cd nixos
+ls
+sudo nixos-rebuild switch --flake .#russ-lappy
+dhcpcd
+sudo dhcpcd wlan0
+nvim hosts/russ-lappy/user.nix
+nvim hosts/russ-lappy/hardware-configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+nvim hosts/russ-lappy/hardware-configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+nvim hosts/russ-lappy/hardware-configuration.nix
+ip a
+nvim home-manager/home.nix 
+cd modules
+mkdir vscode
+nvim home-manager/home.nix 
+cd ..
+nvim home-manager/home.nix 
+sudo nixos-rebuild switch --flake .#russ-lappy
+code
+vscode
+cd modules/vscode
+nvim default.nix
+ls
+cd ..
+ls
+ls hosts/russ-lappy/user.nix
+nvim hosts/russ-lappy/user.nix
+cd modules
+cat template.nix
+cat zsh/default.nix
+cd ..
+nvim home-manager/home.nix
+systemctl status "home-manager-$USER.service"
+nix profile list
+ls
+nvim flake.nix
+ls
+cd hosts/russ-lappy
+ls
+nvim user.nix
+nvim home-manager/home.nix
+cd ..
+cd .
+cd..
+cd ..
+cd modules/packages
+ls
+nvim default.nix
+cd ..
+cat template.nix
+cat eww/default.nix
+ls
+cd ..
+nano modules/system/configuration.nix
+nvim modules/system/configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+nvim modules/system/configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+nim modules/vscode/default.nix
+ls
+nvim flake.nix
+nvim modules/system/configuration.nix
+nvim hosts/russ-lappy/user.nix
+nvim modules/packages/default.nix
+nvim modules/system/configuration.nix
+nvim hosts/russ-lappy/user.nix
+nvim modules/system/configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+nvim modules/system/configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+export NIXPKGS_ALLOW_UNFREE=1
+sudo nixos-rebuild switch --flake .#russ-lappy
+cat /etc/nix0
+cat /etc/nixos/configuration.nix
+cat flake.
+cat flake.nix
+ls lib
+nvim hosts/russ-lappy/user.ni
+nvim hosts/russ-lappy/user.nix
+nvim modules/system/configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+sudo nixos-rebuild switch --flake .#russ-lappy --impure
+nvim /nix/store/zhr7hs6bf3jy37nqxykl1wba9nssy40h-source/pkgs/applications/editors/vscode/vscode.nix
+nvim modules/system/configuration.nix
+ls
+ls hosts/russ-lappy/user.nix
+nvim hosts/russ-lappy/user.nix
+cat /etc/nixos/configuration.nix
+cat /etc/nixos/configuration.nix.bak
+sudo nixos-rebuild switch --flake .#russ-lappy
+cd .config/nixos
+sudo nixos-rebuild switch --flake .#russ-lappy
+hyprctl
+hyprctl montitors
+hyprctl monitors
+wayland
+sudo nixos-rebuild switch --flake .#russ-lappy
+cd .config/nixos
+sudo nixos-rebuild switch --flake .#russ-lappy
+hyprland
+exec hyprland
+ls
+cd .config/nixos
+nvim modules/system/configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+exec hyprland
+nvim modules/system/configuration.nix
+cd .config/nixos
+nvim modules/system/configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+reboot
+sddm
+exec hyprland
+hyprland
+exec hyprctl
+xwayland
+$PATH
+cat .nix-profile
+cd .nix-profile
+cd bin
+ls
+cd ..
+reboot
+git clone  https://github.com/Ruixi-rebirth/flakes.git --branch=minimal  .
+git clone  https://github.com/Ruixi-rebirth/flakes.git --branch=minimal  ~/.config/nixos
+rm -rf .git
+mkpasswd 3478mkpasswd 3478mkpasswd 3478mkpasswd 3478 -m sha-512
+mkpasswd "3478mkpasswd "3478mkpasswd "3478mkpasswd "3478" -m sha-512\
+
+nix flake new vscodium-project -t github:nix-community/nix-vscode-extensions
+nix run github:nix-community/nix-vscode-extensions#vscodium-with-extensions -- --list-extensions\
+\
+
+code --list-extensions
+mkpasswd two2dollar$pints -m sha-512
+mkpasswd 3478 -m sha-512
+sudo nixos-rebuild switch --flake .#laptop
+cd .config/nixos
+sudo nixos-rebuild switch --flake .#laptop
+Hyprland
+cd .config/nixos
+ls
+cd nixos
+ls
+sudo nixos-rebuild switch --flake .#russ-lappy
+reboot
+sudo nixos-rebuild switch --flake .#russ-lappy
+cd .config/nixos
+sudo nixos-rebuild switch --flake .#russ-lappy
+cat /nix/store/fw5y5647j9nmpizb8xizzivys568l3ga-hyprland-0.6.1beta/share/xsessions
+cd /nix/store/fw5y5647j9nmpizb8xizzivys568l3ga-hyprland-0.6.1beta/share/xsessions
+cd /nix/store/fw5y5647j9nmpizb8xizzivys568l3ga-hyprland-0.6.1beta/share/
+ls
+cd /nix/store/fw5y5647j9nmpizb8xizzivys568l3ga-hyprland-0.6.1beta
+ls
+cd bin
+ls
+Hyprland
+ls
+cd ..
+ls
+mkdir /nix/store/fw5y5647j9nmpizb8xizzivys568l3ga-hyprland-0.6.1beta/share/wayland-sessions
+sudo mkdir /nix/store/fw5y5647j9nmpizb8xizzivys568l3ga-hyprland-0.6.1beta/share/wayland-sessions
+sudo mkdir /nix/store/fw5y5647j9nmpizb8xizzivys568l3ga-hyprland-0.6.1beta/share
+sudo nixos-rebuild switch --flake .#russ-lappy
+cd ~/.config/nixos
+sudo nixos-rebuild switch --flake .#russ-lappy
+reboot
+Hyprland
+hyprctl monitors
+htop
+Hyprland
+cd .config/nixos
+sudo nixos-rebuild switch --flake .#russ-lappy
+htop
+Hyprland
+htop
+Hyprland --help
+cd .config/nixos/modules/hyprland
+ls
+cat default.nix
+ls
+cd ..
+ls
+ls packages
+ls
+cat packages/default.nix
+cd ,,
+ls
+cd ..
+ls
+cd hosts
+ls
+cd russ-lappy
+ls
+cat user.nix
+nviim user.nix
+nvim user.nix
+cd ..
+cd hypr
+ls
+nvim hyprland.conf
+Hyprland
+rm hyprland.conf
+cp ~/.config/nixos/modules/hyprland/hyprland.conf .
+nvim hyprland.conf
+hyprctl monitors
+nvim hyprland.conf
+htop
+Hyprland
+nvim hyprland.conf
+hyprctl monitors
+cd ..
+cd nixos
+nvim modules/system/configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+nvim hosts/russ-lappy/user.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+nvim modules/system/configuration.nix
+sudo nixos-rebuild switch --flake .#russ-lappy
+reboot
+sudo nixos-rebuild switch --flake .#russ-lappy
+cd ~/stuff/other
+unzip Vault.zip
+ls
+sudo nixos-rebuild switch --flake .#russ-lappy
+cd .config/nixos/
+cd ~/.config/nixos/
+sudo nixos-rebuild switch --flake .#russ-lappy
+sudo nixos-rebuild switch --flake .#russ-lappy --stack-trace
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+cat /sys/class/graphics/fb0/modes
+cat /sys/class/graphics/fbcon/subsystem/fbcon
+cat /sys/class/graphics/fbcon/subsystem/fb0
+ls /sys/class/graphics/fbcon/subsystem/fb0
+cat /sys/class/graphics/fbcon/subsystem/fb0/mode
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+cd .config/nixos/
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+sudo nixos-rebuild switch --flake .#russ-lappy
+lspci -nn
+nix-shell -p pciutils
+sudo nixos-rebuild switch --flake .#russ-lappy
+nix-shell -p flameshot
+sudo nixos-rebuild switch --flake .#russ-lappy
+grim -g "$(slurp)" "$(xdg-user-dir PICTURES)/$(date).png"
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+sudo systemctl status networkmanager
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+ip 
+IP a
+ip a
+ls
+cd ..
+ls
+cd nixos
+ls
+cd ..
+ls
+cd Documents
+cd ..
+cd stuff
+ls
+cd Development
+ls
+git clone https://github.com/NixOS/nixpkgs
+reboot
+htop
+nvim .config/hypr/hyprland.conf
+Hyprland
+nvim .config/hypr/hyprland.conf
+wofi
+cd .config
+cat wofi.css
+wofi --show run
+wofi --show run --xoffset=1670 --yoffset=12 --width=230px --height=984 --style=$HOME/.config/wofi.css --term=footclient --prompt=run
+wofi --show run --xoffset=1200 --yoffset=12 --width=230px --height=984 --style=$HOME/.config/wofi.css --term=footclient --prompt=run
+cd nixos
+ls .
+ls -aa
+echo "# nixos-flakes" >> README.md
+git init
+git add *
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rbangert/nixos-flakes.git
+git push -u origin main
+ls ~/.config/git
+ls
+ls ~/.config/git/config
+~/.config/git
+cd ~/.config/git
+ls
+cd con
+cat config
+cd ..
+cd $DOTS
+cd .config/nixos
+cd .git
+ls
+nvim config
+git push -u origin main
+cd ..
+ls
+cd modules/sh
+cd modules
+ls
+cd swhkd
+cat default
+cat default.nix
+rm default.nix
+ls
+mv default2.nix default.nix
+nvim default.nix
+mv default.nix deriviation.nix
+nvim default.nix
+nix-build
+ls
+mv deriviation.nix derivation.nix
+nix-build
+nvim derivation.nix
+nix-build
+nvim derivation.nix
+nix-build
+nvim derivation.nix
+cd ..
+git add *
+ls
+nvim flake.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim hosts/russ-lappy/user.nix
+cd ..
+cd nixos
+nvim modules/system/configuration.nix
+nvim modules/packages/default.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim modules/packages/default.nix
+nvim flake.nix
+nvim modules/packages/default.nix
+nvim flake.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim modules/packages/default.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim flake.nix
+ls
+cd con
+cd .config/nixos
+cd modules
+cat template.nix
+cat hyprland/default.nix
+nvim hyprland/default.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim hyprland/default.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim hyprland/default.nix
+ls
+cd packages
+ls
+nvim default.nix
+ls
+cd ..
+ls
+cd nixos
+ls
+cat default.nix
+cd ..
+ls
+cd ..
+ls
+cd hosts/russ-lappy/
+nvim user.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim user.nix
+ls
+nvim flake.
+nvim flake.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+cd modules/swhkd
+ls
+nvim derivation.nix
+cd ..
+..
+cd ..
+nvim flake.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim flake.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim flake.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim flake.nix
+reboot
+cd .config/nixos
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+nvim flake.lock
+nvim flake.lock 
+nvim flake.nix
+sudo nixos-rebuild switch --flake .#russ-lappy --show-trace
+sudo nixos-rebuild switch --upgrade
+cd .config/nixos
+sudo nixos-rebuild switch --flake --upgrade
+sudo nixos-rebuild switch --flake --upgrade ./#russ-lappy
+sudo nixos-rebuild switch --flake ./#russ-lappy --upgrade
+nvim flake.lock
+sudo nixos-rebuild switch --flake ./#russ-lappy --upgrade
+nixos-version
+ls
+nvim hosts/russ-lappy/user.nix
+swhkd
+reboot
+sudo nixos-rebuild switch --flake ./#russ-lappy
+cd .config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy
+nix-repl 
+nix search swhkd
+nix repl swhkd
+sudo nixos-rebuild switch --flake ./#russ-lappy
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+sudo nix flake update
+sudo nixos-rebuild switch --flake ./#russ-lappy
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace --impure
+time
+quit
+exit
+hyprctl monitors
+lspci -nn
+nix-shell -p pciutils
+woF
+rofi
+loginctl
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+nix flake lock
+sudo nix flake lock
+ls
+history | grep nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+nil
+nixpkgs-fmt
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+which nil
+rofi
+reboot
+cd ~/stuff/other
+mv colors.rasi ~/.config/rofi 
+mv launcher.rasi ~/.config/rofi 
+mv powermenu.rasi ~/.config/rofi 
+cd  ~/.config/rofi
+chmod +x launcher.sh
+chmod +x powermenu.sh
+rofi -show drun \\
+    -theme ${theme}
+bash ~/.config/rofi/powermenu.sh
+rofi -h
+bash ~/.config/rofi/powermenu.sh
+man rofi
+#\
+? #XDG_CONFIG_DIRS
+#\
+$ #XDG_CONFIG_DIRS
+#\
+$XDG_CONFIG_DIRS
+echo #\
+$XDG_CONFIG_DIRS
+echo $XDG_CONFIG_DIRS
+echo $SYSCONFDIR
+rofi -dump-config > config.rasi
+man rofi-demnu
+man rofi-dmenu
+io a
+man rofi-script
+man dmenu
+man rofi-dmenu
+cd ~/stuff/other
+git clone --depth=1 https://github.com/adi1090x/rofi.git\
+
+cd rofi
+chmod +x setup.sh
+./setup.sh
+bash ~/.config/rofi/powermenu/type-1/powermenu.sh 
+uptime -p | sed -e 's/up //g
+uptime -p 
+sed
+cd ~/.config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+uptime -p 
+uptime
+which nil
+bash ~/.config/rofi/powermenu/type-1/powermenu.sh 
+uptime --help
+uptime
+bash ~/.config/rofi/powermenu/type-1/powermenu.sh 
+uptime | sed 's/[^ ]* [^ ]* \(.*\),.*$/\1/'
+uptime | sed -e 's/up //g'
+man sed
+bash ~/.config/rofi/powermenu/type-1/powermenu.sh 
+uptime | sed 's/[^ ]* [^ ]* \(.*\),.*$/\1/'
+uptime
+uptime | awk -F 'up' '{print $2}'\
+
+bash ~/.config/rofi/powermenu/type-1/powermenu.sh 
+man uptime
+bash ~/.config/rofi/powermenu/type-1/powermenu.sh 
+cd zsh
+unzip ~/stuff/other/zsh.zip
+ls
+time
+doas
+bash ~/.config/rofi/powermenu/type-1/powermenu.sh 
+ls
+cd ,,
+cd ..
+ls
+cd h
+cd hypr
+ls
+chmod +x initcleanup.sh
+swayidle -h
+1073741824
+ssh 192.168.1.150
+ssh root@192.168.1.150
+ssh 192.168.1.150
+ssh root@192.168.1.150
+nvim /home/russ/.ssh/known_hosts
+ssh root@192.168.1.150
+ssh russ@192.168.1.150
+cd ..
+cd nixos
+git add *
+nvim
+ls /nix/store/gs04kfdzkmrglgg55b3rx5xz0n56559v-nvim-init-home-manager.vim
+nvim
+nvim /nix/store/gs04kfdzkmrglgg55b3rx5xz0n56559v-nvim-init-home-manager.vim
+echo #KEYMODE
+echo $KEYMODE
+eww 
+eww daemon
+ww open bar
+eww open bar
+eww open bar -c $HOME/eww
+echo $XDG_CONFIG_HOME
+export $CONFIG_DIR=~/.config/home
+cd .config/nixos
+git add * 
+git commit -m "refactoring modules"
+git push -u origin main
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+sudo nixos-rebuild switch --flake ./#russ-lappy --impure
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+k
+code --list-extensions
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+reboot
+nvim
+cd .config/nixos
+git add *
+git commit -m "refactoring modules final"
+git push -u origin main
+nvim modules/development/vscode/default.nix
+code
+nvim modules/development/vscode/default.nix
+nvim hosts/russ-lappy/user.nix
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+eww open bar -c $CONFIG_DIR/eww
+eww
+eww open bar -c $CONFIG_DIR/eww/eww.yuck
+eww open eww -c $CONFIG_DIR/eww
+eww debug
+eww opeb bar
+eww open bar
+eww 
+eww reload
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+eww reload
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+cd ..
+cd eww
+git clone https://github.com/druskus20/eugh/tree/master/polybar-replacement.git
+git clone https://github.com/druskus20/eugh/polybar-replacement.git
+git clone https://github.com/druskus20/eugh/polybar-replacement
+git clone https://github.com/druskus20/eugh.git 
+eww open eww/eugh/polybar-replacement
+eww open bar -c ./eww/eugh/polybar-replacement
+eww open bar -c ./eugh/polybar-replacement
+eww reload
+eww 
+eww kill
+eww daemon
+eww open bar -c ./eugh/polybar-replacement
+cd eugh/polybar-replacement
+eww open bar 
+eww kill
+eww daemon
+eww eww kill
+eww kill
+eww
+eww close-all
+eww daemon
+eww close-all
+eww close bar
+eww
+eww windows
+eww close dashboard
+eww close-all
+eww daemon
+eww kill
+eww close-all
+eww reload
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+sudo
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+cd ..
+git clone https://github.com/druskus20/dots.git
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+eww 
+eww close bar
+eww close-all
+eww daemon
+eww close bar
+eww close-all
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+loginctl logout
+loginctl
+loginctl --help
+loginctl kill-session 2
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+ls /nix/store/pm5yqz1nxy6lkjv2zhwhvv43a6slmcy0-source/modules/desktop/eww/
+sudo rm -rf /nix/store/pm5yqz1nxy6lkjv2zhwhvv43a6slmcy0-source/modules/desktop/eww/
+sudo nixos-rebuild switch --flake ./#russ-lappy --impure
+ls /nix/store/pm5yqz1nxy6lkjv2zhwhvv43a6slmcy0-source/modules/desktop/eww/modules/
+nix-store --delete pm5yqz1nxy6lkjv2zhwhvv43a6slmcy0-source
+nix-store --delete /nix/store/pm5yqz1nxy6lkjv2zhwhvv43a6slmcy0-source
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+/nix/store/pm5yqz1nxy6lkjv2zhwhvv43a6slmcy0-source/modules/desktop/
+ls /nix/store/pm5yqz1nxy6lkjv2zhwhvv43a6slmcy0-source/modules/desktop/
+/nix/store/pm5yqz1nxy6lkjv2zhwhvv43a6slmcy0-source/modules/desktop/eww
+ls /nix/store/pm5yqz1nxy6lkjv2zhwhvv43a6slmcy0-source/modules/desktop/eww
+cd /home/russ/.config/nixos/modules/desktop/eww
+nix flake update
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+nix flake update
+cd ..
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+sudo nix-store --repair --verify --check-contents
+sudo nixos-rebuild switch --flake ./#russ-lappy 
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+reboot
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+history
+sudo nix-store --repair --verify --check-contents && nix flake update && sudo nixos-rebuild switch --flake ./#russ-lappy
+eww close-all
+htop
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+cd .config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace --impure
+nix flake update
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+nix flake init 
+git add * 
+git commit -m "random changes"
+git push -u origin main
+sudo nix-store --repair --verify --check-contents 
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace 
+loginctl kill-session 2
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace 
+cd .config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace 
+home-manager switch -b backup
+sudo systemctl start home-manager-russ.service
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace 
+loginctl kill-session 2
+loginctl kill-session 1
+loginctl kill-session 3
+loginctl 
+loginctl kill-session 2
+loginctl kill-session 4
+loginctl 
+loginctl kill-session 6 7 
+hyperctl dispatch [workspace 1 silent;fullscreen;noanim] footclient
+\
+  nix-shell -p fltk14
+\
+russ-lappy ~/.config/nixos 
+wlsunset -l -23 -L -46
+sudo nixos-rebuild switch --flake ./#russ-lappy
+cd .config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy
+nvim
+sudo nixos-rebuild switch --flake ./#russ-lappy
+loginctl kill-session 6 7 
+loginctl kill-session 6 7 9 10 8
+loginctl 
+loginctl kill-session 2 4 6 
+loginctl kill-session 9
+loginctl
+loginctl kill-session 10
+loginctl
+loginctl kill-session 2
+loginctl kill-session 4
+loginctl kill-session 6
+loginctl --help
+loginctl kill-user russ
+taskwarrior-tui
+taskwarrior
+task
+eww bar
+eww
+eww opeb bar
+eww open bar
+cd ..
+cd eww
+eww open bar
+eww open bar0
+sudo nixos-rebuild switch --flake ./#russ-lappy
+cd .config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy
+eww close-all
+eww close bar0
+eww close bar1
+eww close bar
+eww
+eww windows
+eww close test
+eww kill-all
+eww kill
+eww kill bar0
+eww kill 
+eww daemon
+eww kill
+htop
+sudo nixos-rebuild switch --flake ./#russ-lappy
+man footclient
+man foot
+cd ..
+ls
+mkdir Dev
+cd Dev
+mkdir Nix
+rm -rf nix
+rm -rf dev
+cd ..
+rm -rf Dev
+mkdir dev
+mkdir dev/nix
+cd dev/nix
+git clone https://github.com/NixOS/nixpkgs.git
+cd $stuff
+cd stuff/other
+cat zshrc
+git clone https://github.com/rbangert/plusultra.git
+ls
+mv starship.toml ~/.config/nixos/modules/cli/zsh
+cd .config/nixos
+cd ~/.config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy
+sudo history | grep nix
+history | grep nix
+cd ~/.cache
+cat zsh_history
+nix-store --repair --verify --check-contents
+sudo nix-store --repair --verify --check-contents
+man eww
+eww 
+cd /home/russ/.config/nixos/modules/desktop/eww
+eww -c /home/russ/.config/nixos/modules/desktop/eww daemon
+eww 
+eww open bar0
+eww open bar0 -c ~/.config/nixos/modules/desktop/eww
+eww open bar -c ~/.config/nixos/modules/desktop/eww
+sudo nixos-rebuild switch --flake ./#russ-lappy
+cd ~/.config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy
+sudo nix-store --repair --verify --check-contents
+sudo nixos-rebuild switch --flake ./#russ-lappy
+swayidle -h
+swaylock -h
+swaylock-effects
+cd ~/stuff/Development
+git clone https://github.com/fufexan/dotfiles.git
+mv ~/stuff/Development/dotfiles ~/stuff/Development/fufexan-dotfiles
+mv /home/russ/stuff/Development/fufexan-dotfiles ~/dev/nix
+sudo nixos-rebuild switch --flake ./#russ-lappy
+cd ~/.config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy
+nix-store --repair --verify --check-contents
+sudo nixos-rebuild switch --flake ./#russ-lappy
+nix-store --repair --verify --check-contents
+sudo nix-store --repair --verify --check-contents
+which tmux
+userdel
+tmux 
+exit
+sudo nixos-rebuild switch --flake ./#russ-lappy
+sudo nix-store --repair --verify --check-contents
+tmux
+cat /nix/store/6q3cx3ajyaz9ji86af0xxy875n0rz2a6-hm_tmuxtmux.conf
+nvim /nix/store/6q3cx3ajyaz9ji86af0xxy875n0rz2a6-hm_tmuxtmux.conf
+tmux 
+ls /nix/store/6q3cx3ajyaz9ji86af0xxy875n0rz2a6-hm_tmuxtmu*
+nvim
+sudo nixos-rebuild switch --flake ./#russ-lappy
+wget -h
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+eww open bar -c $CONFIG_DIR/eww
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+sudo nix-store --repair --verify --check-contents 
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+sudo nix flake lock
+git add *
+git commit -m "de progress"
+git push -u origin main
+sudo nix flake --help
+sudo nix flake update
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+eww open bar -c $CONFIG_DIR/eww
+loginctl
+loginctl 12
+loginctl kill 12
+loginctl --help
+loginctl kill-session 12
+Hyprland
+cd ~/.config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+neofetch
+loginctl
+login ctl 14
+loginctl kill-all 14
+loginctl kill-session 14
+Hyprland 
+taskwarrior-tui
+test
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+cd .config/nixos
+man test
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+eww reload
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+bg
+fg
+man make
+make
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+eww reload
+history
+eww reloads
+eww reload
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+eww reload
+cd stuff/other
+ls
+gunzip pfSense-CE-2.6.0-RELEASE-amd64.iso.gz
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+eww reload
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+exec zsh
+echo $POSH_THEMES_PATH
+echo $POSH
+oh-my-posh
+oh-my-posh config
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+cd .config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+exec zsh
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+exec zsh
+cd .config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+ls
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+exec zsh
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+exec zsh
+zsh
+go
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+cd .config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+exec zsh
+echo $PATH
+cd .config/nixos
+sudo nixos-rebuild switch --flake ./#russ-lappy --show-trace
+exec bash
+cd .config/nixos
+sudo nixos-rebuild switch --flake
+exec bash
+hyperctl monitors
+hyperctl monitor
+hyprctl monitor
+hyprctl monitors
+lspci -nn
+cd stuff/other
+ls
+df -h
+df -h .
+df -h ..
+df -h ./
+reboot
+Hyprland
+htop
+cd stuff/other
+ls
+rm -rf 'kubuntu-*
+rm -rf kubuntu-23.*
+ls
+rm -rf ubuntu-23.
+ls
+rm -rf ubuntu-23.*
+ls
+cd .config/zsh
+ls
+nano powerline-go
+cd ~/.config/nixos
+sudo nixos-rebuild switch --flake .#russ-lappy
+loginctl --help
+cd .config/nixos
+sudo nixos-rebuild switch --flake .#russ-lappy
+exec zsh
+exec zsh
+cd ~/stuff/
+mkdir screenshots
+cd screenshots
+ls
+cat ~/stuff/other/zprofile
+cd .config/nixos
+nixconf
+exec zsh
+nixconf
+nixconfig
+sudo nixos-rebuild switch --flake .#russ-lappy
+ls
+lsd
+exa
+exa -al --color=always --group-directories-first --icons
+stuff
+cd stuff
+cd ~/stuff/other/
+ks
+ls
+cd ,,
+..
+ls
+cd ..
+ls
+zip beccadots
+nix-shell -p zip
+powerline-go
+cd .config/nixos
+nixconfig
+sudo nixos-rebuild switch --flake ./#russ-lappy
+cd stuff
+ls
+python -m SimpleHTTPServer 9000
+python -m simplegttpserver 9000
+python3 -m simplegttpserver 9000
+pip simplehttpserver
+nix-shell -p python39Packages.pip
+git add *
+cd ~/.config/nixos
+git add *
+exec bash
+sudo nixos-rebuild switch --flake ./#russ-lappy
+cd .config/nixos/modules/cli/zsh
+wget https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/M365Princess.omp.json
+wget https://starship.rs/presets/toml/pastel-powerline.toml
+rm M365Princess.omp.json
+wget https://starship.rs/presets/toml/tokyo-night.toml
+cd ..
+sudo nixos-rebuild switch --flake .#russ-lappy
+git add *
+sudo chown -R "${USER:-$(id -un)}" .
+git add *
+git commit -m "zsh"
+git push origin main
+sudo nixos-rebuild switch --flake .#russ-lappy
+exec zsh
+ls
+cd dev
+ls
+nix
+cd nix
+ls
+cd plusultra
+ls
+cat .git/config
+exec zsh
+exec zsh
+cd .config/nixos
+sudo nixos-rebuild switch --flake .#russ-lappy
+cd .config/nixos
+sudo nixos-rebuild switch --flake .#russ-lappy
+alacritty
+which zsh
+alacritty
+cat .git/config
+exit
+cd .config/nixos
+nixconf
+nixconfy
+nixconf
+exec zsh
+nixconf
+exec zsh
+sudo nixos-rebuild switch --flake .#russ-lappy
+tmux kill
+tmux kill-session
+tmux restart-session
+tmux 
+tmux -h
+tmux --help
+tmux kill-session
+nil
+tmux kill-session
+wl-paste
+nix repl '<nixpkgs>
+nix repl '<nixpkgs>'
+cd .config/nixos
+nixconf
+nixfmt
+nixconf
+home-manager switch -b backup
+nix flake update
+nixconf
+nix profile install github:jakehamilton/neovim
+nixconf
+nix profile install github:jakehamilton/neovim
+ls
+exit
+ls
+cd ..
+ls
+mkdir nixos-snowfall
+cd nixos-snowfall
+wl-paste
+nix flake init -t github:snowfallorg/templates\
+
+ls
+nix flake init -t github:snowfallorg/templates#system\
+
+ls
+nix flake init -t github:snowfallorg/templates#package\
+
+nix flake init -t github:snowfallorg/templates#lib\
+
+ls
+ls lib
+ls modules
+ls packages
+ls systems
+ls
+nvim 
+nvim flake.nix
+exit
+cd .config/nixos-snowfall
+ls
+nvim
+cd .config/nixos
+nixconf
+taskwarrior-tui
+tee /home/russ/.config/taskrc
+nixconf
+nix flake init --template github:cachix/devenv
+echo .devenv >> .gitignore
+nixconf
+task show
+nix profile install github:jakehamilton/neovim
+task show >> taskwarrior-conf
+cat taskwarrior-conf
+nvim
+nvim 
+nixconf
+nvim
+cd .config/nixos
+nixconf
+neovide
+neovide -h
+nvim
+cd ~/dev/nix
+git clone https://github.com/rbangert/neovim
+cd neovim
+nvim
+nvim .
+nixconf
+neovide
+neovide --neovim-bin nvim
+neovide -V
+neovide --log 
+ls
+cat neovide_rCURRENT.log
+cat .neovide-wrapped_rCURRENT.log
+rm rf .neovide-wrapped_rCURRENT.log
+ls
+rm neovide_rCURRENT.log
+ls
+nvim
+neovide 
+ls
+cd ~/.config/nixos
+noxconf
+nixconf
+export NIXPKGS_ALLOW_INSECURE=1
+nixconf
+sudo nix-env --delete-generations 1d
+df -h
+nix-collect-garbage -d
+nixconf
+mkdir ~/.config/taskrc/
+taskwarrior-tui
+mv ~/.config/task/
+rm -r ~/.config/task/taskrc
+rm -r ~/.config/taskrc
+taskwarrior-tui
+links2 -h
+links -h
+links -source https://neovim.io/doc/user/quickref.html -width 400 \
+
+links -source https://neovim.io/doc/user/quickref.html -width 400 -no-g
+cd ~/Downloads
+ls
+nix log /nix/store/ymviffqkb5qfr685l116g5rkq7k0nayq-oni2-fetch-deps.drv
+nixconf
+links https://neovim.io/doc/user/quickref.html -no-g
+links https://neovim.io/doc/user/quickref.html -g
+nixconf
+nvim
+cd ~/.config/nixos
+nixconf
+hx
+loginctl
+loginctl kill-session 1
+Hyprland
+htop
+task config
+cd .config/nixos
+nixconf
+task config
+task config -h
+task show
+task show config
+man task config
+task _config >> taskrc
+task _config 
+export TASKRC= "/home/russ/.config/taskrc" 
+export TASKRC= /home/russ/.config/taskrc
+export TASKRC= /home/russ/.config/task
+export TASKRC=/home/russ/.config/task
+task _config
+ls ../task/
+taskwarrior-tui
+task config
+task config -h
+task config --help
+task -h 
+task --help
+task
+task help
+task config help
+task config
+export TASKRC=/home/russ/.config/taskrc
+task config
+task 
+exit
+task
+sudo task
+task
+task help
+export TASKRC=/home/russ/.config/task/taskrc
+task
+man taskrc
+taskwarrior-tui
+cd .config/nixos
+nixconf
+taskwarrior-tui
+nixconf
+cd .config/nixos
+nixconf
+taskwarrior-tui
+task help
+taskw
+taskwarrior-tui
+task add --project:Home needs cleaning due:tomorr
+taskwarrior-tui
+task add --project:Home feed quail due:tonight
+task add --project:Home feed quail due:today
+task add --project:Dev install intheam.taskd due:wed
+taskwarrior-tui
+task help
+task rm 
+task add -- project:Dev install intheam.taskd due:wed
+taskwarrior-tui
+tasks
+task
+ls ~/.ssh
+rrsv
+ssh mm2.rr-sv.win
+ssh 172.245.210.126 
+ssh root@172.245.210.126 
+rrsv
+ssh root@172.245.210.126
+ssh russ@172.245.210.126
+ssh-copy-id  russ@172.245.210.126
+ssh russ@172.245.210.126
+hx
+nvim
+git clone git@github.com:coddingtonbear/inthe.am.git
+cd .config/nixos
+nixconf
+cat .git/config
+git add *
+git commit -m "branch init"
+git branch init
+git push -u origin init
+cd ~/dev/nix/neovim
+git add *
+git commit -m "branch init"
+git push -u origin init
+gh auth login
+cd ~/.config/nixos
+nixconf
+cd ~/dev/nix/neovim
+gh auth login
+git push -u origin init
+gh help
+gh repo help
+cd dev/nix/neovim
+rm -rf .git
+git init
+git add *
+git commit -m "first commit"
+git branch -M main 
+git remote add origin git@github.com:rbangert/neovim.git
+git push -u origin main
+cd ~/.config/nixos
+nixconf
+exec zsh
+nvim
+nixconf
+git clone https://github.com/vimwiki/vimwiki ~/.vim/bundle/ --branch dev
+nixconf
+nvim
+cd .config/nixos
+nix flake update
+nixconf
+nvim 
+nvim ~
+cd ~/dev/nix/neovim
+git add *
+git commit -m "taskwiki"
+git push -M origin init
+git push -u origin init
+git branch init
+git push -u origin init
+git push -u origin main
+cd ~/.config/nixos
+nixconf
+nix flake update
+nixconf
+nvim
+cd .config/nixos
+nixconf 
+vit
+cd ..
+git clone https://github.com/8ware/task-dashboard.git
+dh -f
+df -h
+sudo  nix-env --delete-generations 1d
+nix-env --delete-generations 1d
+nix-store --gc
+nix-collect-garbage -d
+df -h
+reboot
+Hyprland
+df -h
+sudo nix-env -p /nix/var/nix/profiles/system --list-generations
+cd .config/nixos
+git add *
+git commit -m "nvim"
+git push -u origin main
+sudo nix-collect-garbage -d
+cd dev
+ls
+git clone https://github.com/8ware/task-dashboard.git
+cd task-dashboard
+cp doc/sample-config.json ~/.task/dashboard.json
+ls
+./task-dashboar
+./task-dashboard
+/bin/bash -c $PWD/task-dashboard &
+task shell
+vit
+ls
+nvim
+tasknc
+nix-shell -p tasknc
+cd ~/.config/nixos
+nixconf
+npm install --global taskbook
+yarn global add taskbook
+nixconf
+yarn global add taskbook
+tb
+taskbook
+yarn
+tb
+yarn tb
+tb
+yarn --help
+ls ~/.yarn/bin/tb 
+~/.yarn/bin/tb
+yarn global install taskbook
+nvim 
+nixconf
+whois
+tb
+which tb
+~/.yarn/bin/tb
+tb --version
+ls /usr/bin/env
+ls /bin/env
+cd .config/nixos
+nixconf
+tb
+touch ~/.taskbook.json
+ls ~/.cache
+tb -t Deploy Outline
+mkdir ~/.cache/tasks
+tb -t Deploy Outline
+tb -t Make Breakfast 
+tb -t Upwork progress 
+tb -t Deploy Appsmith 
+tb -t Deploy Mattermost Bot
+tb
+ls ~/.cache/tasks
+cat ~/.cache/tasks/.taskbook
+ls ~/.cache/tasks/.taskbook/archive/storage
+cat ~/.cache/tasks/.taskbook/storage
+ls ~/.cache/tasks/.taskbook/storage
+cat ~/.cache/tasks/.taskbook/storage/storage.json
+tb -t @Home Post Things for Sale 2d
+tb
+tb -d @Home
+tb -d @Home Post things for sale 2d
+tb -d Post things for sale 2d
+tb -d 6
+tb -d Post things for sale p:1 2
+tb -d @Home Post things for sale p1 1
+tb -t @Home Post Things for Sale p:1 1
+tb
+tb -t @Home Post Things for Sale p:1
+tb -d 6 7
+tb
+xev
+nix-shell -p xorg.xev
+grep 'grp:.*toggle' /usr/share/X11/xkb/rules/base.lst
+ls /usr/share/X11/
+$(nix-build --no-out-link '<nixpkgs>' -A xkeyboard_config)/etc/X11/xkb/rules/base.lst
+sudo $(nix-build --no-out-link '<nixpkgs>' -A xkeyboard_config)/etc/X11/xkb/rules/base.lst
+sudo nix-build --no-out-link '<nixpkgs>' -A xkeyboard_config
+sudo cat /nix/store/9wj8kpj2vzqd4ngyfc246zsfnzp77phh-xkeyboard-config-2.33
+sudo cat /nix/store/9wj8kpj2vzqd4ngyfc246zsfnzp77phh-xkeyboard-config-2.33/share/X11/xkb/rules/base.lst
+xmodmap -pm
+nix-shell -p xorg.xmodmap
+cd .config/nixos
+nixconf
+sudo cat /nix/store/9wj8kpj2vzqd4ngyfc246zsfnzp77phh-xkeyboard-config-2.33/share/X11/xkb/rules/base.lst
+ls /nix/store/9wj8kpj2vzqd4ngyfc246zsfnzp77phh-xkeyboard-config-2.33/share/X11/
+ls /nix/store/9wj8kpj2vzqd4ngyfc246zsfnzp77phh-xkeyboard-config-2.33/share/X11/xkb
+$(nix-build --no-out-link '<nixpkgs>' -A xorg.xproto)/include/X11/keysymdef.h
+$(sudo nix-build --no-out-link '<nixpkgs>' -A xorg.xproto)/include/X11/keysymdef.h
+$(sudo nix-build --no-out-link '<nixpkgs>' -A xorg.xcproto)/include/X11/keysymdef.h
+$(sudo nix-build --no-out-link '<nixpkgs>' -A xorg.xcbproto)/include/X11/keysymdef.h
+cd .config/nixos
+nixconf
+wtf
+wtfutil 
+ssh rrsv
+ssh rr-sv
+dstask
+cd .dstask
+git remote add origin git@github.com:rbangert/tasks.git
+dstask
+dstask help
+stuff
+cd stuff
+cd ~/stuff
+ls
+cd ..
+ls
+cat xkb-options.txt
+rm stuff/xkb-options.txt
+mv xkb-options.txt stuff
+nixconf
+man shh
+man ssh
+cd dev
+mkdir rrsv
+mkdir edge.rr-sv.win
+cd edge.rr-sv.win
+echo "# edge.rr-sv.win" >> README.md
+git init\
+
+git branch -M main
+git remote add origin git@github.com:rr-sv/edge.rr-sv.win.git
+git push -u origin main
+nixconf
+ping 10.0.0.1
+cat .ssh/id_ed25519.pub
+sudo tailscale up --accept-routes
+tailscale status
+tailscale 
+tailscale netcheck
+tailscale 
+tailscale set
+tailscale set --accept-routes=true
+sudo tailscale set --accept-routes=true
+ping 10.0.0.1
+ping 10.0.0.2
+ping 10.0.0.40
+sudo tailscale --accept-routes=false
+sudo tailscale set --accept-routes=false
+sudo tailscale set --accept-routes=pfsense
+sudo tailscale set --accept-routes=true
+nslookup
+cd .config/nixos
+nixconf
+nslookup
+nslookup -type=txt contently.com
+nslookup -type=txt salesforce.com
+nslookup salesforce.com -type=txt
+nslookup salesforce.con
+nslookup salesforce.com
+nslookup salesforce.com --type=txt
+nslookup --type=txt salesforce.com
+nslookup --type=any salesforce.com
+nslookup --type=any salesforce.com 1.1.1.1
+nslookup -q=txt salesforce.com
+nslookup -q=txt salesforce.com 1.1.1.1
+nslookup -q=any salesforce.com 1.1.1.1
+nslookup -q=txt salesforce.com
+nslookup salesforce.com
+nslookup -q=txt salesforce.com
+nixconf
+wgcf register
+wgcf generate
+ls wgcf-profile.conf
+cat wgcf-profile.conf
+ls
+cat wgcf-account.toml
+wgcf status
+nvim .ssh/config
+cd ~/Downloads
+ls
+unzip Vault\ -\ Copy.zip
+ls
+unzip IMG.zip
+ssh dev
+ls
+cd Documents/Vault
+cd ..
+ls
+cd dev
+ls
+mkdir go
+cd go
+cd .config/nixos
+nixconf
+tmux run-shell -b 'command -v fzf'
+nixconf
+cd ..
+cd Documents
+cd becca
+ls
+zip work
+gunzip work
+gunzip work.zip
+nix-shell -p zip
+cd ..
+nvim .ssh/config
+history | grep ssh
+history 
+ssh rrsv
+cd .config/nixos
+nixconf
+exec zsh
+nixconf
+exec zsh
+nixconf
+cd .config/nixos
+nixconf
+exec zsh
+tmux attach || tmux
+exec zsh
+ls
+ls ~
+cd .config/nixos
+nixconf
+exit
+cd .config/nixos
+nixconf
+wtfutil 
+htop
+nixconf
+exit
+cd .config/nixos
+nixconf
+tmux kill-session
+nixconf
+cd .config/nixos
+nixconf
+e
+ex
+
+ex
+nixconf
+t
+tmux kill-session
+n
+nixconf
+ni
+ei
+tmux kill-session
+htop
+tmux kill-session
+sudo tailscale down
+sudo tailscale up --accept-dns=false
+sudo tailscale up --accept-dns=false --accept-routes
+sudo tailscale up --accept-dns=false --accept-routes=false
+ping info.callexperts.con
+ping info.callexperts.com
+sudo tailscale up --accept-dns --accept-routes
+tailscale set --help
+tailscale set --accept-routes --accept-dns
+sudo tailscale set --accept-routes --accept-dns
+which zsh
+ls /usr/local/share/zsh/
+ls /etc/profiles/per-user/russ/
+ls /etc/profiles/per-user/russ/share
+ls /etc/profiles/per-user/russ/share/zsh
+ls /nix/store/lxpp5mq4gsr7qq4f8kdp7njlg9fbkvlv-home-manager-path/share/zsh/site-functions
+shtab --shell=zsh -u tmuxp.cli.create_parser \\
+  | sudo tee /usr/local/share/zsh/site-functions/_TMUXP\
+
+shtab --shell=zsh -u tmuxp.cli.create_parser \\
+  | sudo tee /nix/store/lxpp5mq4gsr7qq4f8kdp7njlg9fbkvlv-home-manager-path/share/zsh/site-functions/_TMUXP\
+
+shtab --shell=zsh -u tmuxp.cli.create_parser >> _TMUXP
+nix-repl
+sudo nix-repl
+exec bash
+tmux kill-session
+nix-repl
+nix repl
+echo $NIX_PATH
+nix repl -f '<nixpkgs>'
+cd .config/nixos
+nvim
+nix repl
+ls
+cd hosts/russ-lappy/
+nix repl
+cd ..
+ls
+cd ,,
+nix repl -lf '<nixpkgs>'
+nix repl -f '<nixpkgs>'
+ping google.com
+nixpkgs-fmt
+nix profile install --accept-flake-config github:cachix/devenv/latest 
+tmux attach || tmux
+nix repl 
+cd ..
+ls
+cd nixos
+ls
+nix repl
+git add *
+git commit -m "spaghetti"
+git push -u origin main
+nix repl
+nix repl -f '<nixpkgs>'
+nixconf
+htop
+cd .config/nixos
+nixconf
+nil
+ls /home/russ/.nix-profile/bin/nil
+nil -h
+nil --help
+nil pare ~/.config/nixos/flake.nix
+nil parse ~/.config/nixos/flake.nix
+nixconf
+nil
+lspci -nn1
+lspci -nn
+lspci 
+tmux session-kill
+tmux kill-session
+tmux detach-client
+lspci -nn
+lspci --help
+lspci -m
+lspci -k
+lspci -mm
+lspci -n
+lspci -nn
+lspci -v
+pciutils
+cd .config/nixos
+nixconf
+sudo tailscale set --accept-routes=rrsv
+sudo tailscale set --exit-node=rrsv
+ssh rrsv
+lspci -vvv
+lspci -vv
+lspci -n
+lspci -nn
+lspci -nn >> lspci.out
+sudo tailscale set --exit-node=rrsv
+sudo tailscale set --exit-node=rr-sv
+sudo tailscale set --exit-node=rrsv
+sudo tailscale set --exit-node=" "
+sudo tailscale set --exit-node=""
+sudo tailscale set --accept-routes=10.0.0.0/24,192.168.1.0/24
+sudo tailscale set --accept-routes
+ssh dev
+cat .ssh/config
+ls .ssh
+cat ~/.ssh/config
+ping 10.0.0.2
+ping 10.0.0.40
+ssh rrsv
+zcat /proc/config.gz
+cd dev
+ls
+cd go
+git clone git@github.com:rbangert/go-rest-api-docker.git
+lspci -vvv
+lspci -v
+lspci -h
+lspci -k
+lspci -h
+lspci -m
+lspci -mm
+lspci -mk
+lspci -k
+modprobe -h
+cd go-rest-api-docker/
+ls
+go
+gopath
+go gopath
+echo $GOPATH
+go help gopath
+tmux detach-client
+cd .config/nixos
+nixconf
+xdg-settings get default-web-browser
+cd 
+cd ~/.config/nixos
+nixconf
+printenv
+which firefox
+hyprctl monitors
+htop
+cd .config/nixosopenssl rand -hex 32
+openssl rand -hex 32
+nix-shell -p openssl
+nixconf
+export $(dbus-launch)
+nixconf
+openssl rand -hex 24
+nixconf
+la
+cd ~/dev/docker-tailscale
+la
+cat .gitignore
+cla .github
+la .github
+cat .github/dependabot.yml
+nano .github/dependabot.yml
+la .github/workflows
+cat .github/workflows/caddyBuilder.ps1
+nano .github/workflows/caddyBuilder.ps1
+...
+ls
+cd dev/docker-tailscale
+git branch -M dev
+git init
+git branch -M dev
+git remote add origin git@github.com:rbangert/docker-caddy-tailscale.git
+nixconf
+ssh rrsv
+route
+traceroute git.rr-sv.win
+dig git.rr-sv.win
+sudo tailscale down
+sudo tailscale up --accept-dns --accept-routes
+sudo tailscale down
+ssh dev
+sudo tailscale --accept-routes --accept-dns
+sudo tailscale up --accept-routes --accept-dns
+cat ~/.ssh/id_ed25519.pub
+wget https://dev.rr-sv.win/paperless-install.sh
+ssh rrsv
+ssh root@192.168.1.160
+ssh rrsv
+nixconf
+tsh login --proxy=rrsv.online --user teleport-admin
+nano ~/.ssh/config
+ssh rrsv
+sudo tailscale status
+nano ~/.ssh/config
+ssh rrsv
+pwd
+;s
+ssh rrsv
+git remote add origin git@git.rr-sv.win:russell/compose-files.git
+git push -u origin main
+cd /home/russ/.config/Mattermost/diagnostics/
+cat diagnostics_11-5-2023_15-13-27-560.txt
+..
+ls
+cat Network\ Persistent\ State
+cat certificate.json
+pwd
+ls
+cd ..
+ls
+mv Mattermost Mattermost.bak/
+cat .ssh/id_ed25519.pub
+cat ~/.ssh/id_ed25519.pub
+ssh-keygen -c -f ~/.ssh/id_ed25519 -C "russ@rr-sv.win"
+cat ~/.ssh/id_ed25519.pub
+mkdir -p "$HOME"/.local/share/keyrings
+nano .xinitrc
+source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+source /etc/X11/xorg.conf.d
+source /etc/X11/xorg.conf.
+ls /etc/X11/xorg.conf.d
+cd nixos
+nixconf
+seahorse
+nixconf
+eeeeeeeee
+reboot
+sudo reboot
+sudo shutdown -r now
+Hyprland
+nano .ssh/config
+ls
+ssh dev
+sh-copy-id russ@dev
+sh-copy-id 
+ssh-copy-id  russ@dev
+exit
+ssh dev
+spc -r russ@dev:/etc/nixos/configuration.nix .config/nixos-snowfall/systems/x86_64-linux/devbox
+spc
+rsync
+cd .config/nixos
+nixconf
+rsync -a russ@dev:/etc/nixos/ ~/.config/nixos-snowfall/systems/x86_64-linux/devbox
+ssh rrsv
+wget https://dev.rr-sv.win/docker-compose.yml 
+ls
+rm docker-compose.yml
+ping 10.0.0.2
+rsync -a russ@dev:/etc/nixos/ ~/.config/nixos-snowfall/systems/x86_64-linux/devbox
+ssh dev
+nix repl
+rsync ~/.config/nixos-snowfall russ@dev:/home/russ
+rsync -a ~/.config/nixos-snowfall russ@dev:/home/russ/nixos-repo
+ssh root@ 
+ssh root@192.168.1.160 
+rsync -a root@192.168.1.160:/home/rebecca/paperless-ngx/docker-compose.yml .
+rsync -a ~/dev/nix/plusultra/lib russ@dev:/home/russ/nixos-repo/lib
+aplay -l
+nixconf
+nix repl
+rsync -a ~/.ssh/id_ed25519.pub russ@dev:/home/russ/.ssh/
+rsync -a ~/.ssh/id_ed25519 russ@dev:/home/russ/.ssh/
+cd ..
+ls
+git clone git@github.com:serokell/gemini-i
+git clone https://github.com/serokell/gemini-infra.git
+cat ~/.config/zsh/aliases
+nix repl 
+ls
+cd ~/.config/nixos
+nix repl 
+nix repl
+nix flake check 
+nixconf
+nixconf --impure
+la
+ls
+ls systems/russ-lappy/default.nix
+git add *
+nixconf
+nixconf --show-trace
+git add *
+nixconf --impure
+git add *
+nixconf --impure
+nixconf --show-trace
+nix repl
+ls
+pwd
+cd ~/dev
+ls
+cd nix
+ls
+cd plusultra
+nix repl
+cd ~/Documents/Vault
+ls
+zip projectpak.zip projectpak
+nix-shell -p zip
+rsync -a projectpak.zip russ@rrsv:/srv/www/dev
+rsync -a ./projectpak.zip russ@rrsv:/srv/www/dev/
+rsync
+rsync -a ./projectpak.zip russ@rrsv:/srv/www/dev/
+nix repl
+cd lib
+cd deploy
+nix repl 
+ls
+cd Documents
+ls
+git clone git@github.com:Pink-and-Green/Organized-and-Progressing-Sandbox.git
+openssl rand -base64 32
+nix-shell -p openssl
+sudo tailscale set --exit-node="rrsv"
+sudo tailscale set --exit-node="rr-sv"
+sudo tailscale set --exit-node=" "
+sudo tailscale set --exit-node=""
+ping 192.168.1.250
+sudo tailscale set --accept-routes
+ssh rrsv
+nslookup -q=txt hazeltreesf.com
+nslookup -q=txt hazeltree.com
+nslookup -q=txt rr-sv.win
+sh-copy-id russ@rrsv
+ssh-copy-id russ@rrsv
+ssh-copy-id russ@rrsv -f
+ssh-copy-id -f russ@rrsv 
+cat ~/.ssh/id_ed25519.pub
+cat ~/.ssh/id_ed25519
+rsync -a russ@rrsv:/home/russ/hugo ~/dev
+ls
+cd ..
+ls
+cd ..
+cd dev
+ls
+rsync -a russ@rrsv:/home/russ/hugo ./hugo
+htop
+sudo tailscale set --accept-routes
+ssh russ@10.0.0.100
+ssh root@10.0.0.100
+ssh root@192.168.1.190
+cat ~/.ssh/id_ed25519.pub
+nano .ssh/config
+nano ~/.ssh/config
+ls
+cd stuff
+ls
+cd other
+ls
+unzip obsidian-pieces-0-1-1.zip obsidian-pieces
+unzip obsidian-pieces-0-1-1.zip obsidian-pieces/
+ls obsidian-pieces/
+rm -r obsidian-pieces
+unzip obsidian-pieces-0-1-1.zip
+ls
+mv obsidian-pieces/ ../../Documents/Vault/.obsidian/plugins/
+cd ~/.config/nixos
+nixconf
+flake check .#github:rbangert/nixos-flakes
+ssh dev
+ls
+cd ..
+ls
+mkdir nixos-flakes
+cd nixos-flakes
+git clone git@github.com:rbangert/nixos-flakes.git
+ls
+rm -r nixos-flakes
+rm -rf nixos-flakes
+git clone git@github.com:rbangert/nixos-flakes.git . 
+ls
+nixconf
+nb
+nano ~/.config/tmux/tmux.conf
+nvim ~/.config/tmux/tmux.conf
+ls ~/.config/tmux
+nixconf
+tmux session-kill
+tmux kill-session
+nixconf
+cd ~/.config/nixos-flakes
+nixconf
+tmux kill-session
+cd ~/.config/nixos-flakes
+nixconf
+tmux kill-session
+cd ~/.config/nixos-flakes
+tmux kill-session
+cd ~/.config/nixos-flakes
+tmux kill-session
+cd ~/.config/nixos-flakes
+nixconf
+tmux kill-session
+cd ~/.config/nixos-flakes
+tmux kill-session
+cd ~/.config/nixos-flakes
+nixconf
+tmux 
+tmux -h
+tmux --help
+tmux refresh
+tmux restart-session
+tmux kill-session
+cd ~/.config/nixos-flakes
+nixconf
+tmux source ~/.config/tmux/tmux.conf
+eww
+eww daemon
+eww bar
+eww state
+nix flake show github:fufexan/dotfiles
+eww 
+eww windows
+eww bar
+nixconf
+eww 
+eww open bar
+wlsunset
+wlsunset --help
+curl https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=d84a50d98afe7c49ddd8df275c668d8a
+curl https://api.openweathermap.org/data/2.5/weather?q=south%20jordan&appid=d84a50d98afe7c49ddd8df275c668d8a
+https://api.openweathermap.org/data/2.5/weather?q=south%20jordan&units=imperial&appid=d84a50d98afe7c49ddd8df275c668d8a
+curl 'https://api.openweathermap.org/data/2.5/weather?q=south%20jordan&units=imperial&appid=d84a50d98afe7c49ddd8df275c668d8a'
+nix run github:fufexan/dotfiles
+nix flake show github:fufexan/dotfiles
+cd ~/stuff/other
+git clone https://github.com/saimoomedits/eww-widgets.git
+cd eww-widgets
+ls
+cd eww
+ls
+cd bar
+ls
+cd ..
+mv bar/ ~/.config/eww
+eww reload
+cd ~/.config/eww
+ls
+eww reload
+$HOME/.config/eww/bar/launch_bar
+/home/russ/.config/eww/bar/launch_bar
+nixconf
+flake update
+nix flake update
+nix flake update --impure
+nix flake update --show-trace
+nix flake --help
+nix flake update --help
+nix build --recreate-lock-file
+nix flake update --help
+nix flake update
+git init
+nix flake update
+nixconf
+nixconf --impure
+cat /etc/nixos/hardware-configuration.nix
+nixconf
+cd ~/dev/nix
+git clone https://github.com/AmadeusWM/dotfiles-hyprland.git
+nvim ~/dev/nix/dotfiles-hyprland
+cd ~/dev/nix/dotfiles-hyprland
+ls
+cd themes
+ls
+cd minimal
+ls
+cd waybar
+ls
+cd ../eqq
+cd ../eww
+ls
+nvim eww.yuck
+$HOME/.config/eww/bar/launch_bar
+tmux source ~/.config/tmux/tmux.conf
+$HOME/.config/eww/bar/launch_bar
+which bash
+ls /usr/bin/env
+$HOME/.config/eww/bar/launch_bar
+cd ~/.local/
+ls
+which eww
+ls /etc/profiles/per-user/russ/bin/eww
+ls ../.cache
+$HOME/.config/eww/bar/launch_bar
+eww daemon
+$HOME/.config/eww/bar/launch_bar
+cd ~/.config/nixos
+nixconf
+nixconf --show-trace
+flake update
+nix flake update
+cd ~/.config/nixos-flakes
+nixconf
+nix flake update
+ping google.com
+ip a
+ip link set enp0s31f6 up
+sudo ip link set enp0s31f6 up
+ip a
+sudo ip link set enp0s31f6 up
+ip a
+iwctl
+ip a
+dhcpcd
+sudo dhcpcd wlan0
+ip a 
+iwd
+iwctl
+ip a
+ip link set wlan0 down
+sudo ip link set wlan0 down
+sudo ip link set wlan0 up
+ls
+ip a
+nixos-rebuild switch --rollback
+reboot
+sudo reboot
+sudo shutdown -r now
+ip a
+Hyprland
+nixconf
+git add *
+git init
+git add *
+fzf
+waybar
+cliphist
+nix-shell -p cliphist
+nixconf
+git commit -m "hyprland tweaks"
+git push -u origin main
+$HOME/.config/eww/bar/launch_bar
+~/.config/hypr/themes/minimal/waybar/waybar.sh
+htop
+~/.config/hypr/themes/minimal/waybar/waybar.sh
+~/.config/hypr/themes/minimal/eww/launch_bar 
+nixconf
+htop
+ssh rrsv
+cd Documents/Vault
+ls
+cd ~/Documents/Vault
+ls
+nb 
+nb browse
+cd .config/nixos
+cd ~/.config/nixos
+cd ~/.config/nixos-
+cd ~/.config/nixos-flakes
+nixconf
+nb browse
+nixconf
+nb browse
+nb
+nb settings
+nixconf
+cat ~/.config/tmux/tmux.conf
+cd .config/nixos
+cd ~/.config/nixos
+nixconf
+cd ~/.config/nixos-flakes
+nixconf
+ssh rrsv
+nixconf
+traceroute cloud.local
+sudo traceroute cloud.local
+htop
+nixconf
+git add * 
+git commit -m "more tweaks
+git commit -m "more tweaks"
+git push -u origin main
+sudo tailscale set --accept-routes=10.0.0.0/24
+sudo tailscale set --accept-routes=true 
+htop
+Hyprland
+logout
+Hyprland
+nvim 
+cd dev/
+cd ..
+ls
+cd nix
+ls
+nvim neovim/
+ls neovim
+nvim neovim/flake.nix
+cd ~/dev/nix/neovim
+ls -a
+rm -rf .git
+rm -rf README.md 
+cat LICENSE
+ls
+ls -a
+cat .gitignore
+htop
+loginctl
+loginctl kill-session 1
+loginctl kill-session 4
+loginctl kill-session 5
+Hyprland
+sudo -i sh -c 'nix-channel --update && nix-env --install --attr nixpkgs.nix && launchctl remove org.nixos.nix-daemon && launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist'
+nix-env --upgrade
+nix profile --upgrade
+nix profile --help
+nix profile upgrade
+cd ~/.config/nixos-flakes
+nix profile upgrade
+nix profile list
+sudo nix-channel --list
+sudo nix-channel --update
+sudo nix-channel --list
+nixos-rebuild switch --upgrade --flake .#russ-lappy
+pwd
+nix repl
+git add *
+git push -u origin main
+git commit -m "pre-upgrade"
+git push -u origin main
+ssh rrsv
+tmux source ~/.config/tmux/tmux.conf
+tmux
+tmux -h
+tmux --help
+tmux session-start
+nixos-rebuild switch --upgrade --flake .#russ-lappy
+tmux
+l
+tmux source ~/.config/tmux/tmux.conf
+sudo nixos-rebuild switch --upgrade --flake .#russ-lappy
+git add *
+git commit -m "post-upgrade"
+git push -u origin main
+nixconf
+tmux
+tmux kill
+tmux kill-session
+nixconf
+tmux --help
+man tmux
+tmux
+tmux attach || tmux
+nixconf
+tmux attach || tmux
+ls .config/tmux
+cd ~/.config/nixos-flakes
+nixconf
+ls .config/tmux
+tmux attach || tmux
+ls .config/tmux
+nixconf
+tmux attach || tmux
+tmux new-session
+ls .config/tmux
+ls ~/.config/
+ls ~/.config/tmux
+cat ~/.config/tmux/tmux.conf
+nixconf
+tmux new-session
+ls ~/.config/tmux
+cat ~/.config/tmux/tmux.conf
+nixconf
+tmux new-session
+nix-shell -p tmux
+sudo reboot
+reboot
+sudo shutdown -r now
+Hyprland
+tmux
+nix-shell -p tmux
+cd .config/nixos-flakes
+ls
+nixconf
+htop
+ssh rrsv
+cd dev/nix/dotfiles-hyprland
+git clone https://github.com/AmadeusWM/dotfiles-hyprland.git
+ssh rrsv
+ls
+rm wgcf-*
+mv beccadots stuff
+ls home-manager
+cat home-manager/home.nix
+ls
+rm -rf home-manager
+nixconf
+git add *
+git commit -m "tmux repair"
+git push -u origin main
+\
+\
+
+ls
+cattr-db\
+
+sudo nix-collect-garbage -d 1d
+sudo nix-collect-garbage 1d -d
+sudo nix-collect-garbage --help
+sudo nix-collect-garbage -d --delete-older-than 1d
+ssh rrsv
+hugo
+cd Documents/Vault
+cd ~/Documents/Vault
+mkdir hugo
+cd hugo
+hugo help new
+e"],"Sec-Fetch-User":["?1"],"Cf-Visitor":["{\"scheme\":\"https\"}"],"Accept-Language":["en-US,en;q=0.5"],"Sec-Fetch-Dest":["document"],"Sec-Gpc":["1"]},"tls":{"resumed":false,"version":772,"cipher_suite":4865,"proto":"h2","server_name":"time.rr-sv.win"}},"duration":0.004971759,"status":502,"err_id":"s9u01fa4e","err_trace":"reverseproxy.statusError (reverseproxy.go:1299)"}\
+
+hugo new site rr-sv
+ls
+cd rr-sv
+ls
+cat con
+cat config.toml
+${cwd}
+$CWD
+pwd
+hugo
+hugo server -D -p 
+hugo server -D -p 1313
+ls
+git init
+astRender\
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)\
+
+git clone https://gitlab.com/writeonlyhugo/up-business-theme.git themes/up-business-theme
+https://gitlab.com/writeonlyhugo/up-business-theme.git themes/up-business-theme\
+``
+echo "theme = 'up-business-theme'"
+hugo --help
+hugo server -D -p 1313
+ls
+ls data
+ls config.toml
+ls content
+ls themes/up-business-theme
+ls
+cd themes/up-business-theme
+ls
+cd hugoBasicExample
+hugo server -D -p 1313
+ls
+ls data
+ls content
+cd ..
+ls
+cd ..
+ls
+hugo --help
+hugo server
+cat ~/.ssh/config
+histroy | ssh
+history | grep ssh
+ls ~/.cache/zsh_history
+LS ~/.CACHE/zsh_historY
+cat ~/.cache/zsh_history| less
+cat ~/.cache/zsh_history| grep ssh
+cat ~/.cache/zsh_history| grep key
+ssh-keygen -c -f ~/.ssh/id_shared -C "shared@code-server"
+ssh-keygen -h
+ssh-keygen 
+ssh-keygen --help
+ssh code-server
+ssh russ@192.168.1.190
+ssh root@192.168.1.190
+eww daemon
+htop
+cat ~/.cache/zsh_history| grep git
+cat ~/.cache/zsh_history| grep git pull
+cat ~/.cache/zsh_history| grep "git pull"
+cd ..
+ls
+cd rrsv
+ls
+ls edge.rr-sv.win
+rm -rf edge.rr-sv.win
+rsync -a russ@rrsv:/home/russ/ edge.rrsv/
+cd .config/nixos
+nixconf
+rsync -a russ@rrsv:/home/russ/ edge.rrsv/
+rsync -a russ@rrsv:/home/russ edge.rrsv/
+rsync -a russ@rrsv:/home/russ/docker edge.rrsv/
+ls edge.rrsv
+rsync -a russ@rrsv:/home/russ/docker .
+ls
+rm -r edge.rrsv
+mv docker edge.rrsv
+ls
+cd edge.rrsv
+ls
+git init
+nvim .git/info/exclude
+git add *
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:rr-sv/edge.rr-sv.win.git
+git push -u origin main
+cd ~/Documents/Vault
+ls
+glow Home.md
+cd /dev
+ssh dev
+ssh code-server
+ssh russ@192.168.1.190
+ssh russ@192.168.1.190\
+
+ssh root@192.168.1.190
+ssh russ@192.168.1.190
+wtfutil 
+htop
+wtfutil 
+htop
+cd ~/.config/nixos
+ls
+exec zsh
+exec bash
+nixconf
+tmux kill-session
+cd modules/cli
+\
+git clone m:rbangert/neovim.git 
+\
+git clone git@github.com:rbangert/neovim.git 
+mv neovim ../development
+cd dev/nix/
+ls
+git clone if empty(glob('~/.vim/autoload/plug.vim'))
+git clone https://github.com/dmadisetti/.dots.git
+mv .dots dmadisettidots
+git add *
+cd ..
+..
+git add *
+git commit -m "neovim begins"
+git push -u origin main
+nixconf
+neovim
+nvim
+neovim
+nixconf
+nixconf --impure
+ssh code-server
+nix flake update
+cd ..
+cd .config/nixos
+nix flake update
+nixconf
+htop
+ip link set wlan0 down 
+udo p link set wlan0 down 
+sudo ip link set wlan0 down
+sudo ip link set wlan0 up
+nixconf
+ip a
+sudo ip link set enp0s31f6 up
+ip a
+nixconf
+sudo shutdown -r now
+Hyprland
+cd . .config/nixos
+cd ~/.config/nixos
+nixconf
+git att *
+git add *
+nixconf
+htop
+nixconf
+nvim
+nixconf
+nvim
+nixconf
+nvim
+nix --help
+nix store -h
+nix store --help
+nix store ls
+nix store ls neovim
+nix --help
+nix search --hekp
+nix search --help
+nix --help
+ls /nix/store | grep neovim
+bash -c ls /nix/store
+bash -c ls /nix/store/
+bash -c 'LS /nix/store/
+'ls' /nix/store
+'ls' /nix/store | grep neovim 
+'ls' /nix/store | grep neovim | xargs -I % sudo nix profile remove %
+nix profile list
+nix profile remove /nix/store/bkvpyq7bxrk0hyf15avqs4x02vwxg1z6-neovim-0.8.3
+nix profile list
+nvim
+nixconf
+nvim
+git clone git@github.com:rbangert/neovim-flake.git .
+cd ~/dev/nix/neovim
+ls
+rm -r ./*
+git clone git@github.com:rbangert/neovim-flake.git .
+ls -a
+rm .gitignore
+git clone git@github.com:rbangert/neovim-flake.git .
+nix run .#neovim
+history | grep nix
+nix profile remove /nix/store/f06pp80dj622rfl1721wgh3fw3wbqxcg-source/modules/development/neovim/
+nix profile list
+cd ..
+mv neovim ~/dev
+ls
+cd ~/dev/
+cd neovim
+nix run .#neovim
+cd ..
+ls
+cd ~/.config/nixos
+nixconf
+git add *
+git commit -m "moving to code-server"
+git push -u origin main
+nano ~/.ssh/config
+cat ~/.ssh/id_ed25519
+ssh code-server
+ls -l ~/.ssh
+sudo tailscale set --accept-dns
+ip a
+sudo ip link set enp0s31f6 up
+ip a
+sudo ip link set enp0s31f6 up
+iwctl
+ip a
+sudo ip link set wlan0 up
+ip a
+ip link set wlan0 up
+lgoinctl
+loginctl
+loginctl kill-session 1 3
+ip a
+Hyprland
+matterhorn
+man matterhorn
+matterhorn --hepl
+matterhorn --help
+matterhorn --check-config
+nixconf
+nvim
+cd ~/dev/nix
+ls
+git clone \
+  âƒ´€âƒ´€âƒ´€Direct Messagesâƒ´€âƒ´€âƒ´¤\
+
+git clone git@github.com:rbangert/flk.git
+ssh rrsv
+cd ~/dev
+git clone git@github.com:rbangert/bak.git
+nix run github:ublue-os/fleek -- init
+nvim ~/.fleek.yml
+charm 
+cd ~/.config/nixos
+git pull origin main
+git diff
+git stash *
+git stash --help
+git stash list
+git stash --help
+git stash show
+git stash --help
+git stash --include-untracked
+git pull origin main
+nixconf
+lspci -v
+lspci -vv
+lspci -vvv
+lspci
+lspci -h
+lspci -k
+nixconf
+ls
+git pull origin main
+cd mattermost
+docker compose -H "ssh://russ@rrsv" up 
+nixconf
+docker compose -H "ssh://russ@rrsv" up 
+docker compose --help
+docker context ls
+docker context
+docker context create 
+docker context create edge.rrsv
+docker context ls
+docker context --help
+docker context update edge.rrsv --help
+docker context update edge.rrsv --docker "host=ssh://russ@rrsv"
+docker compose --context edge.rrsv up
+docker context 
+docker compose --help
+cd ..
+ls
+cd mattermost
+docker context use edge.rrsv
+docker compose up -d
+neovim
+nixconf
+nvim ~/.fleek.yml
+nixconf
+nix flake update
+nixconf
+nvim ~/.fleek.yml
+nixconf
+nvim ~/.fleek.yml
+nixconf
+nvim ~/.fleek.yml
+nix flake update
+ssh rrsv
+git clone git@github.com:Pink-and-Green/DMA-Services-Proof.git
+ls
+cd DMA-Services-Proof
+ls
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+ls public
+pwd
+hugo
+hugo server -w 
+git clone https://gitlab.com/writeonlyhugo/up-business-theme/ themes/up-business-theme
+hugo
+ls
+git status
+ls
+cd ..
+mv DMA-Services-Proof ~/dev/dma-fixinginprogress
+git clone git@github.com:Pink-and-Green/DMA-Services-Proof.git
+cd DMA-Services-Proof
+nvim compose.yml
+git add *
+git commit -m "adding compose file"
+git push -u origin main
+cd ..
+rsync -a DMA-Services-Proof russ@rrsv:/home/russ/
+cd DMA-Services-Proof
+git checkout ba0cba9
+rsync -a DMA-Services-Proof russ@rrsv:/home/russ/
+cd ..
+rsync -a DMA-Services-Proof russ@rrsv:/home/russ/
+hugo server -w 
+ls
+cd dmadisettidots
+ls
+pwd
+cd ..
+ls
+cd ..
+;s
+ls
+cd dma-fixinginprogress
+ls
+cd static
+ls
+ls images
+cd ..
+cd static
+rsync -a images/ russ@rrsv:/home/russ/DMA-Services-Proof
+ls
+cd ..
+ls
+cd ..
+cd nix
+ls
+cd DMA-Services-Proof
+hugo server -w
+ls
+git branch -d spaghetti
+git revert
+git revert ba0cba9
+git stash *
+git stash 
+git revert ba0cba9
+ls
+cd ..
+rm DM
+rm DMA-Services-Proof
+git clone git@github.com:Pink-and-Green/DMA-Services-Proof.git
+rm rf 
+rm -rf DMA-Services-Proof
+git clone git@github.com:Pink-and-Green/DMA-Services-Proof.git
+cd DMA-Services-Proof
+git revert 0c80dd3
+ls
+git add *
+git commit -m "reverting changes to init"
+git push -u origin main
+cd ..
+rsync -a DMA-Services-Proof russ@rrsv:/home/russ/
+hugo server -w
+cd DMA-Services-Proof
+hugo server -w
+hugo
+hugo 
+hugo
+hugo 
+cd ..
+ls
+cd ..
+ls
+cd dma-fixinginprogress/resources/
+;s
+ls
+cd _gen
+ls
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+mkdir newdmasite
+cd newdmasite
+hugo init
+hugo --help
+hugo new site dma
+ld
+;s
+ls
+cd dma
+ls
+cd ..
+ls
+cd newdmasite/dma
+git clone https://gitlab.com/writeonlyhugo/up-business-theme.git themes/up-business-theme
+hugo
+ls
+cd..
+cd ..
+ls
+cd ..
+s
+cd ~/dev
+ls
+cd nix
+ls
+cd DMA-Services-Proof
+ls
+git status
+hugo
+ls
+hugo
+ls
+hugo
+ls
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+hugo
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+ls public
+git add * 
+git commit -m "site building + minor corrections"
+git push -u origin main
+hugo 
+ls
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+hugo server -w
+hugo
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+hugo
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+hugo
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+hugo
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+hugo server -w
+hugo
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+lazygit
+ip a
+sudo ip link set wlan0 up
+sudo rf-kill 
+rfkill
+sudo rf-kill wlan
+sudo rf-kill --help
+sudo rfkill --help
+sudo rfkill unblock wlan
+sudo ip link set wlan0 up
+ip a
+ssh rrsv
+wget https://git.amazingcat.net/cattr/core/docker/-/releases/permalink/latest/downloads/installer
+ls
+cat installer
+https://git.amazingcat.net/cattr/core/docker/-/releases/permalink/latest/downloads/compose
+rm installer
+ls
+cd ~/stuff/other
+wget https://git.amazingcat.net/cattr/core/docker/-/releases/permalink/latest/downloads/compose 
+ls
+cat compose
+docker ps
+cd ..
+;s
+cd dev
+ls
+cd rrsv
+ls
+cd edge.rrsv
+git pull origin main
+cd cattr
+docker ps
+cker stop 54dadfa622a8 8efb774b95d8 ff7785afe151 5e2ea3079583 e1a1bbccff47
+docker stop 54dadfa622a8 8efb774b95d8 ff7785afe151 5e2ea3079583 e1a1bbccff47
+docker rm 54dadfa622a8 8efb774b95d8 ff7785afe151 5e2ea3079583 e1a1bbccff47
+docker compose up -d
+nixconf
+nix store 
+flake update
+nix flake update
+nixconf
+error: getting status of '/nix/store/k4jgp4q0wv42l760zfcp6a6i6bvx85gp-source/modules/development/neovim': No such file or directory
+nix-store --repair --verify --check-contents 
+sudo nix-store --repair --verify --check-contents 
+ssh rrsv
+cd ..
+git pull origin main
+cd caddy
+rsync -a Caddyfile russ@rrsv:/home/russ/caddy/Caddyfile
+docker restart caddy-proxy
+docker logs -f caddy-proxy
+docker restart caddy-proxy
+docker logs -f caddy-proxy
+git pull origin main
+rsync -a Caddyfile russ@rrsv:/home/russ/caddy/Caddyfile
+docker restart caddy-proxy
+docker logs -f caddy-proxy
+hugo
+git add *
+git commit -m "add contact number"
+git push -u origin main
+rsync -a public/ russ@rrsv:/srv/www/dmaservices.cc/
+rsync -a ~/.ssh/ russ@dev:/home/russ/.ssh/
+rsync -a ~/.ssh/ russ@devcontainers:/home/russ/.ssh/
+cat ~/.ssh/config
+rsync -a ~/.ssh/ russ@code-server:/home/russ/.ssh/
+history | grep docker
+cat ~/.cache/zsh_history| grep "docker"
+nvim
+nixconf
+rm -rf /nix/store/k4jgp4q0wv42l760zfcp6a6i6bvx85gp-source/modules/development/neovim
+nixconf
+nix store ls neovim
+nix store ls development
+nix store ls
+nix store ls 
+cat ~/.cache/zsh_history| grep "nix"
+'ls' /nix/store | grep neovim\
+
+nixconf
+git add *
+nixconf
+nixconf --show-trace
+nixconf --show-trace 
+cat ~/.cache/zsh_history| grep "nix"
+nix-store --repair --verify --check-contents
+sudo nix-store --repair --verify --check-contents
+ls
+cd ..
+cd cattr
+docker compose up -d
+nixconf
+ls /nix/store/swbfb53ws0yjjl43n6nlv3gksyr34qlb-source/
+ls /nix/store/swbfb53ws0yjjl43n6nlv3gksyr34qlb-source/README.mD
+cat /nix/store/swbfb53ws0yjjl43n6nlv3gksyr34qlb-source/README.md
+git add *
+ls
+nixconf
+nvim
+nixconf
+nix repl
+nixconf
+nix flake update
+git add *
+nixconf
+nix store --help
+nix store repair /nix/store/7j0241n6dxdlaqhzyr7g9r669ixd00ys-source/plugins/nvim-lsp/
+nix store delete /nix/store/7j0241n6dxdlaqhzyr7g9r669ixd00ys-source/plugins/nvim-lsp/
+nixconf
+cat /nix/store/7j0241n6dxdlaqhzyr7g9r669ixd00ys-source/plugins/nvim-lsp/default.nix
+nix store delete /nix/store/7j0241n6dxdlaqhzyr7g9r669ixd00ys-source/plugins/nvim-lsp/
+nix flake update
+nix store --help
+nix store delete /nix/store/7j0241n6dxdlaqhzyr7g9r669ixd00ys-source/plugins/nvim-lsp/
+nixconf
+nvim
+nix-channel --list | grep nixos
+nix run github:cwfryer/neovim-flake .#default
+cd ~/Documents/Vault
+lla 
+la
+git init
+git add *
+rm -rf hugo
+git add *
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:rbangert/vault.git
+git push -u origin main
+nixconf
+nix flake update
+nixconf
+nix flake update
+nixconf
+nix repl :lf .#
+nix repl 
+nixconf
+git add *
+git commit -m "before reinstall"
+git push -u origin main
+Hyprland
+cd ~/
+duh
+duf
+nix-shell -p duf
+nixconf
+du -h /home
+du --help
+du -hc
+du --help
+du -hcs
+ls
+du -hcs Downloads
+du -hcs stuff
+ls stuff
+ls stuff/Development
+du -hcs stuff/Development
+ls stuff/Development/
+ls stuff/Development/nixpkgs
+cd ..
+ls
+cd home
+cd stuff
+ls
+cd home
+pwd
+cd ~
+cd stuff
+ls
+rm -rf Development
+du -hcs other
+cd other
+ls
+rm pfSense-CE-2.6.0-RELEASE-amd64.iso
+rm nixos-wsl-installer.tar.gz
+rm Vault.zip
+rm archlinux-2023.06.01-x86_64.iso
+rm ubuntu-23.04-desktop-amd64.iso
+rm sox-14.4.2-win32.exe
+rm vac470.exe
+rm nircmd-x64.zip
+ls
+rm 6xYM2NRd 9XXrWpYB bnTu-Fij
+ls
+cd __MACOSX
+ls
+cd ..
+rm __MACOSX
+rm -r __MACOSX
+rm zsh.zip zshrc\(1\)
+rm 2rofi
+rm -r 2rofi
+rm -r rofi
+ls
+rm -r eww-widgets zsh
+y
+cd ..
+ls
+cd ..
+ls
+ssh rrsv
+cd ..
+ls
+cd cattr
+ls
+docker ps
+ls
+docker compose up -d
+nano docker-compose.yml
+docker compose up -d
+cd ..
+git add *
+git commit -m "cattr tweaks"
+git push -u origin main
+git pull 
+cd vaultwarden
+docker compose up -d
+docker network ls
+docker network rename cattr_default cattr-net
+cd ../caddy
+docker compose up -d
+rsync -a Caddyfile russ@rrsv:/opt/caddy/conf/Caddyfile
+docker compose up -d
+rsync -a Caddyfile russ@rrsv:/opt/caddy/conf/Caddyfile
+docker restart caddy-proxy 
+cd ../vaultwarden
+docker compose up -d 
+docker ps
+docker logs -f cattr-frontend\
+
+cd ..
+cd caddy
+rsync -a Caddyfile russ@rrsv:/opt/caddy/conf/Caddyfile
+docker restart caddy-proxy 
+docker restart cattr-frontend
+docker compose --help
+docker ps
+er stop 84b2ea83afe3 edaf53f75ffc 3d697e15c9f6 34ef1bbc14d7 1decda253dff
+docker stop 84b2ea83afe3 edaf53f75ffc 3d697e15c9f6 34ef1bbc14d7 1decda253dff
+docker network create cattr-net
+docker compose up 0d
+docker compose up -d
+cd ../cattr
+ls
+./cattr.sh
+chmod +x cattr.sh
+./cattr.sh
+htop
+exit
+: 1687366123:0;cd ~/dev/rrsv/edge.rrsv/cattr
+: 1687366126:0;docker ps
+: 1687366137:0;docker stop db85844803fa
+: 1687366158:0;docker system prune -a
+: 1687366170:0;docker network ls
+: 1687366185:0;docker ps -a
+: 1687366192:0;ls
+: 1687366198:0;./cattr.sh
+: 1687374034:0;cat https://time.rr-sv.win/
+: 1687374056:0;cat /home/russ/.config/xsettingsd/xsettingsd.conf
+: 1687382809:0;cd ~/Downloads
+: 1687382809:0;ls
+: 1687382815:0;cd ..
+: 1687382905:0;ls
+: 1687382908:0;cd russ
+: 1687382909:0;ls
+: 1687382912:0;cd Downloads
+: 1687382912:0;s
+: 1687382913:0;ls
+: 1687382920:0;cd ..
+: 1687382922:0;cd stuff
+: 1687382922:0;ls
+: 1687382925:0;cd other
+: 1687382925:0;ls
+: 1687382943:0;cd ..
+: 1687382944:0;ls
+: 1687382980:0;dd if=nixos-gnome-23.05.1194.b6c73c5fe53-x86_64-linux.iso of=/dev/sdb
+: 1687382994:0;sudo if=nixos-gnome-23.05.1194.b6c73c5fe53-x86_64-linux.iso of=/dev/sdb
+: 1687383003:0;sudo dd if=nixos-gnome-23.05.1194.b6c73c5fe53-x86_64-linux.iso of=/dev/sdb
+: 1687384564:0;cd ~/dev/rrsv/edge.rrsv/kimai
+: 1687384571:0;docker compose up -d
+: 1687384663:0;docker network create kimai-net
+: 1687384674:0;docker compose up -d
+: 1687384870:0;docker container --help
+: 1687384892:0;docker container rename kimai-sqldb-1 kimai-sqldb
+: 1687384906:0;docker container rename kimai-kimai-1 kimai-frontend
+: 1687384948:0;docker ps
+: 1687385086:0;cd ../caddy
+: 1687385097:0;rsync -a Caddyfile russ@rrsv:/home/russ/caddy/Caddyfile
+: 1687385148:0;sudo chmod +x updatecaddy.sh
+: 1687385153:0;./updatecaddy.sh
+: 1687386929:0;docker restart caddy-proxy
+: 1687386944:0;docker logs -f caddy-proxy
+: 1687386963:0;./updatecaddy.sh
+: 1687386969:0;docker logs -f caddy-proxy
+: 1687386988:0;./updatecaddy.sh
+: 1687386994:0;docker logs -f caddy-proxy
+: 1687387562:0;./updatecaddy.sh
+: 1687387570:0;docker logs -f caddy-proxy
+: 1687387615:0;docker ps
+: 1687387684:0;docker network inspect proxy-net
+: 1687387744:0;cd ../kimai
+: 1687387747:0;docker compose up -d
+: 1687387788:0;docker ps
+: 1687388060:0;docker compose up -d
+: 1687388272:0;cd ../caddy
+: 1687388274:0;./updatecaddy.sh
+: 1687388363:0;cd ../kimai
+: 1687388366:0;docker compose up -d
+: 1687388422:0;docker logs -f kimai-frontend
+: 1687388522:0;docker compose up -d
+: 1687388541:0;docker logs -f kimai-frontend
+: 1687388731:0;cd ~/dev/rrsv/edge.rrsv
+: 1687388733:0;git add *
+: 1687388745:0;git commit -m "kimai deployment"
+: 1687388751:0;git push -u origin main
+: 1687388760:0;cd ~/.config/nixos
+: 1687388766:0;cd ~/dev/rrsv/edge.rrsv
+: 1687388775:0;git add *
+: 1687388873:0;git commit -m "dots"
+: 1687389277:0;git push -u origin main
+: 1687389368:0;cd ~/.ssh
+: 1687389369:0;ls
+: 1687389372:0;cat config
+: 1687390004:0;1password 
+: 1687391068:0;docker ps
+: 1687391094:0;cd ../homepage
+: 1687391097:0;docker compose up -d
+: 1687391134:0;cd ../caddy
+: 1687391136:0;./updatecaddy.sh
+: 1687391299:0;cd ../homepage
+: 1687391302:0;docker compose up -d
+: 1687391490:0;ls -l /opt/
+: 1687391529:0;rsync -a config/ russ@rrsv:/opt/homepage
+: 1687391702:0;./update.sh
+: 1687391893:0;ls
+: 1687392650:0;./update.sh
+: 1687395353:0;cd ../ca
+: 1687395356:0;cd ../caddy
+: 1687395358:0;./update.sh
+: 1687395367:0;cd ../charm
+: 1687395370:0;docker compose up -d
+: 1687395463:0;cd ../ca
+: 1687395464:0;cd ../caddy
+: 1687395466:0;./update.sh
+: 1687395492:0;cd ../homepage
+: 1687395494:0;./update.sh
