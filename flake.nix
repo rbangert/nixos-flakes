@@ -65,7 +65,7 @@
     in
     {
       nixosConfigurations = {
-        russ-lappy = mkSystem inputs.nixpkgs "x86_64-linux" "russ-lappy";
+        nixbook = mkSystem inputs.nixpkgs "x86_64-linux" "nixbook";
       };
     };
 

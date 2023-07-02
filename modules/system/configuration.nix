@@ -226,6 +226,7 @@
     '';
 
   };
+  networking.hostName = "nixbook";
 
   boot = {
     #cleanOnBoot = true;
@@ -246,7 +247,7 @@
     font = "Lat2-Terminus16";
     keyMap = "us";
   };
-
+networking.hostName = "nixbook";
   networking = {
     enableIPv6 = false;
     #networkmanager.enable = true;
@@ -259,6 +260,11 @@
       #    allowPing = false;
     };
   };
+
+  services.xserver.enable = true;
+
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
   services = {
     tailscale.enable = true;
